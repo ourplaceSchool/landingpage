@@ -8,6 +8,9 @@ import manchaAmarela from '../../assets/images/mancha-amarela.png'
 import greenBook from '../../assets/images/green-book.png'
 import openBook from '../../assets/images/open-book.png'
 import teacher from '../../assets/images/teacher.png'
+import blueVector from '../../assets/images/blue-vector.png'
+import frameDots from '../../assets/images/frame-dots.png'
+import rainbowFrame from '../../assets/images/rainbow-frame.png'
 
 export const Container = styled.div `
   display: flex;
@@ -219,6 +222,54 @@ export const ButtonBottom = styled.button `
   &:hover {
     background-color: ${({ theme }) =>  theme.colors.darkHover};
   }
+`;
+export const BlueVectorIcon = styled.div `
+  background-image: url(${blueVector});
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 613.89px;
+  height: 727.31px;
+  position: absolute;
+  left: -16.94%;
+  left: 0;
+  right: 74.31%;
+  top: 74.23%;
+  bottom: 6.31%;
+`;
+export const OrangeDots = styled.div `
+  background-image: url(${frameDots});
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 143px;
+  height: 158px;
+  position: absolute;
+  left: -0.35%;
+  right: 89.38%;
+  top: 71.3%;
+  bottom: 33.08%;
+
+`;
+export const OrangeDotsTwo = styled.div `
+  background-image: url(${frameDots});
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 143px;
+  height: 158px;
+  position: absolute;
+  left: -2.5%;
+  right: 89.38%;
+  top: 78.3%;
+  bottom: 33.08%;
+`;
+export const RainbowIcon = styled.div `
+  background-image: url(${rainbowFrame});
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 480px;
+  height: 371px;
+  right: -205px;
+  bottom: -25px;
 `;
 
 

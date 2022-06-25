@@ -21,7 +21,11 @@ import {
   BookIcon,
   OpenBookIcon,
   TeacherIcon,
-  ButtonBottom
+  ButtonBottom,
+  BlueVectorIcon,
+  OrangeDots,
+  OrangeDotsTwo,
+  RainbowIcon
 } from './styles'
 
 export default function Home() {
@@ -78,6 +82,12 @@ export default function Home() {
         </Info>
       </InfoWrapper>
       <ButtonBottom>Clique para uma aula teste!</ButtonBottom>
+
+      {/* Bottom Icons */}
+      <BlueVectorIcon />
+      <OrangeDots />
+      <OrangeDotsTwo />
+      <RainbowIcon />
     </Container>
   )
 }
