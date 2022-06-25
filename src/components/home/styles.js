@@ -15,7 +15,7 @@ export const Container = styled.div `
   flex-direction: column;
   position: relative;
   overflow: hidden;
-  padding-bottom: 310px;
+  padding-bottom: 80px;
 `;
 export const CurlyBg = styled.div `
   background-image: url(${curlyBackground});
@@ -201,6 +201,24 @@ export const TeacherIcon = styled.div `
   background-size: contain;
   width: 80px;
   height: 80px;
+`;
+export const ButtonBottom = styled.button `
+  background-color: ${({ theme }) =>  theme.colors.darkPrimary};
+  color: ${({ theme }) =>  theme.colors.white};
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 335px;
+  height: 53px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  z-index: 3;
+
+  &:hover {
+    background-color: ${({ theme }) =>  theme.colors.darkHover};
+  }
 `;
 
 

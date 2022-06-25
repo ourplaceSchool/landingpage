@@ -1,7 +1,8 @@
 import GlobalStyle from './globalStyles';
 import { ThemeProvider } from 'styled-components';
-import NavBar from './components/navBar';
-import Home from './components/home';
+import NavBar from './components/NavBar';
+import Home from './components/Home';
+import Footer from './/components/Footer'
 
 const theme = {
   colors: {
@@ -19,6 +20,7 @@ function App() {
       <GlobalStyle />
       <NavBar />
       <Home />
+      <Footer />
     </ThemeProvider>
   );
 }
