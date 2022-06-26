@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import logoHorizontal from '../../assets/images/logo-horizontal.png'
-import instagram from '../../assets/images/Instagram.png'
+import instagram from '../../assets/images/Instagram.svg'
 import facebook from '../../assets/images/Facebook.png'
 import mail from '../../assets/images/Mail.png'
 
@@ -53,7 +53,7 @@ export const Information = styled.p`
 export const RedeSociais = styled.div `
   display: flex;
 `;
-export const InstaIcon = styled.div `
+export const InstaIcon = styled.svg `
   background-image: url(${instagram});
   background-repeat: no-repeat;
   background-size: contain;
@@ -61,8 +61,9 @@ export const InstaIcon = styled.div `
   margin-right: 20px;
   width: 40px;
   height: 40px;
+  cursor: pointer;
 `;
-export const FacebookIcon = styled.div `
+export const FacebookIcon = styled.svg `
   background-image: url(${facebook});
   background-repeat: no-repeat;
   background-size: contain;
@@ -70,14 +71,16 @@ export const FacebookIcon = styled.div `
   margin-right: 20px;
   width: 40px;
   height: 40px;
+  cursor: pointer;
 `;
-export const MailIcon = styled.div `
+export const MailIcon = styled.svg `
   background-image: url(${mail});
   background-repeat: no-repeat;
   background-size: contain;
   margin-top: 10px;
   width: 40px;
   height: 40px;
+  cursor: pointer;
 `;
 export const Div = styled.div`
   color: ${({ theme }) =>  theme.colors.white};

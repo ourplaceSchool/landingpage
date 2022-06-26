@@ -1,16 +1,16 @@
 import styled from "styled-components"
-import curlyBackground from '../../assets/images/curly-background.png'
-import classroomPhoto from '../../assets/images/classroom-photo.png'
-import house from '../../assets/images/house.png'
-import manchaLaranja from '../../assets/images/mancha-laranja.png'
-import manchaLaranjaClaro from '../../assets/images/mancha-laranja-claro.png'
-import manchaAmarela from '../../assets/images/mancha-amarela.png'
-import greenBook from '../../assets/images/green-book.png'
-import openBook from '../../assets/images/open-book.png'
-import teacher from '../../assets/images/teacher.png'
-import blueVector from '../../assets/images/blue-vector.png'
-import frameDots from '../../assets/images/frame-dots.png'
-import rainbowFrame from '../../assets/images/rainbow-frame.png'
+import curlyBackground from '../assets/images/curly-background.png'
+import classroomPhoto from '../assets/images/classroom-photo.png'
+import house from '../assets/images/house.png'
+import manchaLaranja from '../assets/images/mancha-laranja.png'
+import manchaLaranjaClaro from '../assets/images/mancha-laranja-claro.png'
+import manchaAmarela from '../assets/images/mancha-amarela.png'
+import greenBook from '../assets/images/green-book.png'
+import openBook from '../assets/images/open-book.png'
+import teacher from '../assets/images/teacher.png'
+import blueVector from '../assets/images/blue-vector.png'
+import frameDots from '../assets/images/frame-dots.png'
+import rainbowFrame from '../assets/images/rainbow-frame.png'
 
 export const Container = styled.div `
   display: flex;
