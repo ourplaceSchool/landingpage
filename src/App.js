@@ -3,7 +3,8 @@ import { ThemeProvider } from 'styled-components';
 import NavBar from './components/NavBar';
 // import Home from './Home';
 // import QuemSomos from './QuemSomos';
-import FaleConosco from './FaleConosco';
+// import FaleConosco from './FaleConosco';
+import Metodologia from './Metodologia';
 import Footer from './components/Footer'
 
 const theme = {
@@ -21,7 +22,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <NavBar />
-      <FaleConosco />
+      <Metodologia />
       <Footer />
     </ThemeProvider>
   );
