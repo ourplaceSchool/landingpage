@@ -2,7 +2,8 @@ import GlobalStyle from './globalStyles';
 import { ThemeProvider } from 'styled-components';
 import NavBar from './components/NavBar';
 // import Home from './Home';
-import QuemSomos from './QuemSomos';
+// import QuemSomos from './QuemSomos';
+import FaleConosco from './FaleConosco';
 import Footer from './components/Footer'
 
 const theme = {
@@ -20,7 +21,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <NavBar />
-      <QuemSomos />
+      <FaleConosco />
       <Footer />
     </ThemeProvider>
   );
