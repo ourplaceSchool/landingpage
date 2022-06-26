@@ -9,7 +9,11 @@ import {
   CardText,
   ImageBg1,
   ImageBg2,
-  ImageBg3
+  ImageBg3,
+  TitleCard,
+  InfoCard,
+  Button,
+  SunIcon
 } from './styles'
 
 export default function Metodologia() {
@@ -29,26 +33,36 @@ export default function Metodologia() {
           <Card>
             <ImageBg1 />
             <CardText>
-
+              <TitleCard> 2 a 3 anos</TitleCard>
+              <InfoCard>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              </InfoCard>
             </CardText>
           </Card>
 
           <Card>
             <ImageBg2 />
             <CardText>
-
+              <TitleCard> 7 a 9 anos</TitleCard>
+              <InfoCard>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              </InfoCard>
             </CardText>
           </Card>
 
           <Card>
             <ImageBg3 />
             <CardText>
-
+              <TitleCard> 10 a 12 anos</TitleCard>
+              <InfoCard>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              </InfoCard>
             </CardText>
           </Card>
-          
         </CardContainer>
+        <Button>MATRICULE-SE</Button>
       </Wrapper>
+      <SunIcon />
     </Container>
   )
 }
