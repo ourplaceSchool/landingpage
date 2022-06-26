@@ -1,10 +1,10 @@
 import React from 'react'
+import Carousel from '../components/Carousel'
 import {
   Container,
   Title,
   GalleryWrapper,
   ColoringGallery,
-  GalleryPhoto
 } from './styles'
 
 export default function Galeria() {
@@ -12,7 +12,7 @@ export default function Galeria() {
     <Container>
       <Title>Galeria</Title>
       <GalleryWrapper>
-        <GalleryPhoto />
+        <Carousel />
       </GalleryWrapper>
       <ColoringGallery />
     </Container>
