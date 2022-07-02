@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content'
 import {
   Container,
   Title,
@@ -25,15 +27,45 @@ import {
 } from './styles'
 
 export default function FaleConosco() {
+  // SweetAlert 
+
+  const MySwal = withReactContent(Swal)
+  const success = () => {
+    MySwal.fire({
+      title: "Thank you!",
+      text: "Sua Mensagem foi enviada!",
+      icon: "success",
+    });
+  }
+
+  const invalid = () => {
+    MySwal.fire({
+        title: "Oops!",
+        text: "Parece que você esqueceu alguma informação.",
+        icon: "error",
+      });
+  }
+
+  const error = () => {
+    MySwal.fire({
+        title: "Sorry",
+        text: "Não conseguimos enviar sua mensagem! Please, tenta de novo.",
+        icon: "error",
+      });
+}
+
+  // Contact form 
   const form = useRef();
-  
+
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.sendForm('service_pn3i43y', 'ourplacecontactform', form.current, 'DqAwU5RY3lcyym7Uf')
       .then((result) => {
           console.log(result.text);
+          success();
       }, (error) => {
+          error();
           console.log(error.text);
       });
 
