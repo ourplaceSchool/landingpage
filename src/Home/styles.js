@@ -130,7 +130,7 @@ export const Wrapper = styled.div `
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-top: 150px;
+  margin-top: 182px;
   width: 80%;
 `;
 export const H2 = styled.h2`

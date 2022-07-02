@@ -99,7 +99,7 @@ export const InputBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 10px;
 `
 export const InputFields = styled.div`
   display: flex;
@@ -201,13 +201,14 @@ export const Button = styled.button `
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 316.08px;
-  height: 56px;
+  height: 87px;
   cursor: pointer;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 45px;
+  margin-bottom: 15px;
 
   &:hover {
     background-color: ${({ theme }) =>  theme.colors.darkHover};

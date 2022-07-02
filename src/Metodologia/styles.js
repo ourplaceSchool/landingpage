@@ -44,22 +44,22 @@ export const CardContainer = styled.div`
 `
 export const Card = styled.div`
   width: 60%;
-  height: 381px;
+  height: 408px;
   margin: 15px;
   border-radius: 8px;
   box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.25);
   background-color: ${({ theme }) => theme.colors.white};
   position: relative;
   z-index: 1;
+  overflow: hidden;
 `
 export const CardText = styled.div `
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
   background-color: ${({ theme }) => theme.colors.white};
-  width: 312px;
+  width: 100%;
   height: 82px;
   position: absolute;
   bottom: 0;
@@ -79,7 +79,7 @@ export const ImageBg2 = styled.div `
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
-  height: 371px;
+  height: 410px;
   align-self: baseline;
   z-index: 1;
 `;
