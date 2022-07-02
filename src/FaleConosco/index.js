@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content'
+// import { schema } from '../components/Validations/UserValidation';
 import {
   Container,
   Title,
@@ -28,8 +29,8 @@ import {
 
 export default function FaleConosco() {
   // SweetAlert 
-
   const MySwal = withReactContent(Swal)
+
   const success = () => {
     MySwal.fire({
       title: "Thank you!",
@@ -38,34 +39,34 @@ export default function FaleConosco() {
     });
   }
 
-  const invalid = () => {
-    MySwal.fire({
-        title: "Oops!",
-        text: "Parece que você esqueceu alguma informação.",
-        icon: "error",
-      });
-  }
+  // const invalid = () => {
+  //   MySwal.fire({
+  //     title: "Oops!",
+  //     text: "Parece que você esqueceu alguma informação.",
+  //     icon: "error",
+  //   });
+  // }
 
-  const error = () => {
+  const failed = () => {
     MySwal.fire({
-        title: "Sorry",
-        text: "Não conseguimos enviar sua mensagem! Please, tenta de novo.",
-        icon: "error",
-      });
-}
+      title: "Sorry",
+      text: "Não conseguimos enviar sua mensagem! Please, tenta de novo.",
+      icon: "error",
+    });
+  };
 
   // Contact form 
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
 
     emailjs.sendForm('service_pn3i43y', 'ourplacecontactform', form.current, 'DqAwU5RY3lcyym7Uf')
       .then((result) => {
-          console.log(result.text);
           success();
+          console.log(result.text);
       }, (error) => {
-          error();
+          failed();
           console.log(error.text);
       });
 
@@ -99,25 +100,25 @@ export default function FaleConosco() {
           <InputFields>
             <InputDiv>
               <InputLabel>Nome</InputLabel>
-              <Input type='text' name="user_name"/>
+              <Input type='text' name="user_name" required/>
               <ProfileIcon />
             </InputDiv>
 
             <InputDiv>
               <InputLabel>E-mail</InputLabel>
-              <Input type='email' name="user_email"/>
+              <Input type='email' name="user_email" required/>
               <EmailIcon />
             </InputDiv>
 
             <InputDiv>
               <InputLabel>Telefone</InputLabel>
-              <Input type='phone' name="user_phone"/>
+              <Input type='tel' name="user_phone"/>
               <CallIcon />
             </InputDiv>
           </InputFields>
           <InputDiv>
             <InputLabel>Sua Mensagem</InputLabel>
-            <MessageField type="textarea" name="message" placeholder='Digite aqui seu texto'/>
+            <MessageField type="textarea" name="message" placeholder='Digite aqui seu texto' required/>
           </InputDiv>
         </InputBox>
         <Button type="submit" value="Send">Enviar Mensagem</Button>
