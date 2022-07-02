@@ -83,7 +83,7 @@ export const GreenStainBottom = styled.div `
   bottom: 0;
   left: 0;
 `;
-export const Wrapper = styled.div`
+export const Wrapper = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;

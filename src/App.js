@@ -4,9 +4,9 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer'
 // import Home from './Home';
 // import QuemSomos from './QuemSomos';
-// import FaleConosco from './FaleConosco';
+import FaleConosco from './FaleConosco';
 // import Metodologia from './Metodologia';
-import Galeria from './Galeria';
+// import Galeria from './Galeria';
 
 const theme = {
   colors: {
@@ -23,7 +23,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <NavBar />
-      <Galeria />
+      <FaleConosco />
       <Footer />
     </ThemeProvider>
   );
