@@ -19,7 +19,7 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
 `;
-export const Navegation = styled.a`
+export const Navegation = styled.div`
   font-size: 20px;
   font-family: Poppins, sans-serif;
   color: ${({ theme }) =>  theme.colors.white};
