@@ -195,7 +195,23 @@ export const Button = styled.button `
   }
 `
 export const SunIcon = styled.div `
-  /* background-image: url(${sunIcon});
+  background-image: url(${sunIcon});
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 235px;
+  height: 175px;
+  align-self: baseline;
+  z-index: 1;
+  position: absolute;
+  bottom: -119px;
+  left: 0;
+
+  @media ${device.mobileM} {
+    /* bottom: -144px; */
+  }
+
+  @media ${device.tablet} { 
+      /* background-image: url(${sunIcon});
   background-repeat: no-repeat;
   background-size: contain;
   width: 397px;
@@ -205,8 +221,5 @@ export const SunIcon = styled.div `
   position: absolute;
   bottom: -43px;
   left: 0; */
-
-  @media ${device.tablet} { 
-    
   }
 `;
