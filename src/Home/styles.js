@@ -35,6 +35,15 @@ export const CurlyBg = styled.div `
     top: 73px;
   }
 
+  @media ${device.laptop} { 
+    top: -30px;
+  }
+
+  @media ${device.desktop} { 
+    top: -183px;
+    height: 995px;
+  }
+
 `;
 export const ClassroomPh = styled.div `
   background-image: url(${classroomPhoto});
@@ -45,6 +54,13 @@ export const ClassroomPh = styled.div `
   z-index: 1;
   position: absolute;
   top: 240px;
+
+  @media ${device.laptopM} { 
+    height: 667px;
+  }
+  @media ${device.desktop} { 
+    height: 1188px;
+  }
 `;
 export const LittleHouse = styled.div `
   background-image: url(${house});
@@ -71,8 +87,24 @@ export const LittleHouse = styled.div `
     top: 180px;
   }
   @media ${device.laptop} { 
-    height: 331px;
+    height: 245;
+    left: -43px;
+  }
+
+  @media ${device.laptopM} { 
+    height: 300px;
     left: -58px;
+    top: 210px;
+  }
+  @media ${device.laptopM} { 
+    height: 331px;
+    top: 215px;
+  }
+  @media ${device.desktop} { 
+    width: 100%;
+    height: 466px;
+    left: -70px;
+    top: 361px;
   }
 `;
 export const OrangeStain = styled.div `
@@ -91,6 +123,25 @@ export const OrangeStain = styled.div `
     width: 180px;
     height: 260px;
   }
+
+  @media ${device.laptop} {
+    width: 252px;
+    top: 130px;
+  }
+  @media ${device.laptopM} { 
+    width: 281px;
+    top: 195px;
+  }
+  /* @media ${device.laptopL} { 
+    width: 281px;
+    top: 195px;
+  } */
+  @media ${device.desktop} { 
+    width: 382px;
+    top: 335px;
+    height: 100%;
+  }
+
 `;
 export const OrangeStrip = styled.div `
   display: none;
@@ -107,7 +158,20 @@ export const OrangeStrip = styled.div `
     top: 80px;
     right: 0px;
   }
-  
+  @media ${device.laptop} {
+    top: 174px;
+    right: 77px;
+  }
+  @media ${device.laptopM} {
+    top: 290px;
+    right: 101px;
+  }
+  @media ${device.desktop} { 
+    width: 263px;
+    height: 307px;
+    top: 345px;
+    right: 45px;
+  }
 `;
 export const YellowStrip = styled.div `
   background-image: url(${manchaAmarela});
@@ -126,10 +190,17 @@ export const YellowStrip = styled.div `
     right: -113px;
     transform: rotateX(0deg);
   }
-
   @media ${device.laptop} { 
-    top: 87px;
-    right: -57px;
+    top: 96px;
+    right: -81px;
+  }
+  @media ${device.laptopM} { 
+    top: 151px;
+  }
+  @media ${device.desktop} { 
+    height: 200px;
+    width: 250px;
+    top: 206px;
   }
 `;
 export const Title = styled.h1`
@@ -152,8 +223,19 @@ export const Title = styled.h1`
   }
 
   @media ${device.laptop} { 
+    font-size: 60px;
+    width: 60%;
+  }
+
+  @media ${device.laptopM} { 
     font-size: 76px;
     width: 70%;
+  }
+
+  @media ${device.desktop} { 
+    display: flex;
+    align-items: center;
+    font-size: 120px;
   }
 `;
 export const H5 = styled.h5 `
@@ -167,9 +249,16 @@ export const H5 = styled.h5 `
   @media ${device.tablet} { 
     font-size: 22px;
   }
-
   @media ${device.laptop} { 
+    top: 170px;
+    font-size: 25px;
+  }
+  @media ${device.laptopM} { 
     top: 195px;
+    font-size: 32px;
+  }
+  @media ${device.desktop} { 
+    font-size: 50px;
   }
 `;
 export const Button = styled.button `
@@ -197,10 +286,22 @@ export const Button = styled.button `
     width: 223px;
     top: 245px;
   }
-
   @media ${device.laptop} { 
     font-size: 18px;
-    top: 285px;
+    top: 255px;
+    width: 277px;
+    height: 35px;
+  }
+
+  @media ${device.laptopM} { 
+    top: 323px;
+  }
+
+  @media ${device.desktop} { 
+    height: 65px;
+    width: 380px;
+    font-size: 26px;
+    top: 444px;
   }
 
 `;
@@ -216,7 +317,15 @@ export const Wrapper = styled.div `
   }
 
   @media ${device.laptop} { 
-    margin-top: 182px;
+    margin-top: 723px;
+  }
+
+  @media ${device.laptopM} { 
+    margin-top: 864px;
+  }
+
+  @media ${device.desktop} { 
+    margin-top: 1438px;
   }
 `;
 export const H2 = styled.h2`
@@ -228,6 +337,10 @@ export const H2 = styled.h2`
   z-index: 3;
   @media ${device.laptop} { 
     font-size: 56px;
+  }
+
+  @media ${device.desktop} { 
+    font-size: 110px;
   }
 `;
 export const Text = styled.p`
@@ -243,6 +356,10 @@ export const Text = styled.p`
   @media ${device.laptop} { 
     font-size: 18px;
   }
+
+  @media ${device.desktop} { 
+    font-size: 34px;
+  }
 `;
 export const Bold = styled.p`
   font-family: 'Poppins', sans-serif;
@@ -250,17 +367,22 @@ export const Bold = styled.p`
   font-weight: 700;
   color: ${({ theme }) =>  theme.colors.darkPrimary};
   text-align: center;
+
+  @media ${device.desktop} { 
+    font-size: 34px;
+  }
 `;
 export const InfoWrapper = styled.div `
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   position: relative;
-  width: 80%;
 
   @media ${device.tablet} { 
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
     width: 100%;
   }
 `;
@@ -284,7 +406,14 @@ export const InfoCard = styled.div`
 
   @media ${device.tablet} { 
     margin-right: 10px;
+    height: 410px;
   }
+
+  @media ${device.desktop} { 
+    width: 500px;
+    height: 700px;
+  }
+
 `;
 export const Titulo = styled.p`
   font-family: 'Quicksand', sans-serif;
@@ -292,12 +421,20 @@ export const Titulo = styled.p`
   color: ${({ theme }) =>  theme.colors.darkPrimary};
   text-align: center;
   margin-bottom: 0;
+
+  @media ${device.desktop} { 
+    font-size: 30px;
+  }
 `;
 export const Information = styled.p`
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
   color: ${({ theme }) =>  theme.colors.darkPrimary};
   text-align: center;
+
+  @media ${device.desktop} { 
+    font-size: 20px;
+  }
 `;
 export const BookIcon = styled.div `
   background-image: url(${greenBook});
@@ -305,6 +442,11 @@ export const BookIcon = styled.div `
   background-size: contain;
   width: 80px;
   height: 80px;
+
+  @media ${device.desktop} { 
+    width: 120px;
+    height: 120px;
+  }
 `;
 export const OpenBookIcon = styled.div `
   background-image: url(${openBook});
@@ -312,6 +454,11 @@ export const OpenBookIcon = styled.div `
   background-size: contain;
   width: 80px;
   height: 80px;
+
+  @media ${device.desktop} { 
+    width: 120px;
+    height: 120px;
+  }
 `;
 export const TeacherIcon = styled.div `
   background-image: url(${teacher});
@@ -319,6 +466,11 @@ export const TeacherIcon = styled.div `
   background-size: contain;
   width: 80px;
   height: 80px;
+
+  @media ${device.desktop} { 
+    width: 120px;
+    height: 120px;
+  }
 `;
 export const ButtonBottom = styled.button `
   background-color: ${({ theme }) =>  theme.colors.darkPrimary};
@@ -350,6 +502,12 @@ export const ButtonBottom = styled.button `
   @media ${device.tablet} { 
     margin-top: 20px;
   }
+
+  @media ${device.desktop} { 
+    font-size: 24px;
+    width: 390px;
+    height: 65px;
+  }
 `;
 export const BlueVectorIcon = styled.div `
   background-image: url(${blueVector});
@@ -363,6 +521,10 @@ export const BlueVectorIcon = styled.div `
   right: 74.31%;
   top: 74.23%;
   bottom: 6.31%;
+
+  @media ${device.desktop} { 
+    top: 80.23%;
+  }
 `;
 export const OrangeDots = styled.div `
   background-image: url(${frameDots});
