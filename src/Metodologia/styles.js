@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../device"
 import asianKid from '../assets/images/asian-kid.png';
 import homeworKid from '../assets/images/homework-kid.png';
 import headphoneKid from '../assets/images/headphone-kid.png';
@@ -25,33 +26,70 @@ export const Title = styled.h1`
   justify-content: center;
   text-align: center;
   font-family: 'Quicksand', sans-serif;
-  font-size: 64px;
+  font-size: 25px;
   color: ${({ theme }) =>  theme.colors.darkPrimary};
+
+  @media ${device.tablet} { 
+    font-size: 64px;
+  }
+
+  @media ${device.desktop} { 
+    font-size: 150px;
+  }
 `;
 export const Information = styled.p`
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 32px;
-  text-align: center;
+  font-size: 15px;
+  text-align: justify;
   color: ${({ theme }) =>  theme.colors.darkPrimary};
   margin: 0;
-  width: 80%;
+
+  @media ${device.tablet} { 
+    font-size: 18px;
+    line-height: 32px;
+    width: 80%;
+  }
+
+  @media ${device.desktop} { 
+    font-size: 30px;
+    line-height: 50px;
+  }
 `;
 export const CardContainer = styled.div`
   display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
+
+  @media ${device.tablet} { 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media ${device.laptop} { 
+    flex-wrap: nowrap;
+  }
 `
 export const Card = styled.div`
-  width: 60%;
-  height: 408px;
-  margin: 15px;
+  width: 100%;
+  height: 395px;
+  margin: 5px;
   border-radius: 8px;
   box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.25);
   background-color: ${({ theme }) => theme.colors.white};
   position: relative;
   z-index: 1;
   overflow: hidden;
+
+  @media ${device.tablet} { 
+    width: 46%;
+  }
+  @media ${device.desktop} { 
+    width: 25%;
+    height: 610px;
+  }
 `
 export const CardText = styled.div `
   display: flex;
@@ -64,6 +102,10 @@ export const CardText = styled.div `
   position: absolute;
   bottom: 0;
   z-index: 2;
+
+  @media ${device.desktop} { 
+    height: 170px;
+  }
 `;
 export const ImageBg1 = styled.div `
   background-image: url(${asianKid});
@@ -73,15 +115,23 @@ export const ImageBg1 = styled.div `
   height: 500px;
   align-self: baseline;
   z-index: 1;
+
+  @media ${device.desktop} { 
+    height: 800px;
+  }
 `;
 export const ImageBg2 = styled.div `
   background-image: url(${homeworKid});
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
-  height: 410px;
+  height: 500px;
   align-self: baseline;
   z-index: 1;
+
+  @media ${device.desktop} { 
+    height: 800px;
+  }
 `;
 export const ImageBg3 = styled.div `
   background-image: url(${headphoneKid});
@@ -91,6 +141,10 @@ export const ImageBg3 = styled.div `
   height: 500px;
   align-self: baseline;
   z-index: 1;
+
+  @media ${device.desktop} { 
+    height: 800px;
+  }
 `;
 export const TitleCard = styled.h1`
   display: flex;
@@ -99,6 +153,11 @@ export const TitleCard = styled.h1`
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
   color: ${({ theme }) =>  theme.colors.darkPrimary};
+  margin: 3px;
+
+  @media ${device.desktop} { 
+    font-size: 30px;
+  }
 `;
 export const InfoCard = styled.p`
   font-family: 'Poppins', sans-serif;
@@ -106,9 +165,10 @@ export const InfoCard = styled.p`
   font-size: 14px;
   text-align: center;
   color: ${({ theme }) =>  theme.colors.darkPrimary};
-  margin: 0;
-  width: 250px;
-  height: 55.06px;
+  margin: 3px;
+  @media ${device.desktop} { 
+    font-size: 25px;
+  }
 `;
 export const Button = styled.button `
   background-color: ${({ theme }) =>  theme.colors.darkPrimary};
@@ -127,9 +187,15 @@ export const Button = styled.button `
   &:hover {
     background-color: ${({ theme }) =>  theme.colors.darkHover};
   }
+
+  @media ${device.desktop} { 
+    width: 245px;
+    height: 60px;
+    font-size: 23px;
+  }
 `
 export const SunIcon = styled.div `
-  background-image: url(${sunIcon});
+  /* background-image: url(${sunIcon});
   background-repeat: no-repeat;
   background-size: contain;
   width: 397px;
@@ -138,5 +204,9 @@ export const SunIcon = styled.div `
   z-index: 1;
   position: absolute;
   bottom: -43px;
-  left: 0;
+  left: 0; */
+
+  @media ${device.tablet} { 
+    
+  }
 `;
