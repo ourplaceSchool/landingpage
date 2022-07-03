@@ -31,6 +31,10 @@ export const CurlyBg = styled.div `
   position: absolute;
   top: 184px;
 
+  @media ${device.tablet} { 
+    top: 73px;
+  }
+
 `;
 export const ClassroomPh = styled.div `
   background-image: url(${classroomPhoto});
@@ -62,8 +66,9 @@ export const LittleHouse = styled.div `
     left: -22px;
   }
   @media ${device.tablet} { 
-    height: 284px;
+    height: 206px;
     left: -58px;
+    top: 180px;
   }
   @media ${device.laptop} { 
     height: 331px;
@@ -81,20 +86,26 @@ export const OrangeStain = styled.div `
   position: absolute;
   top: 50px;
   right: -66px;
+
+  @media ${device.tablet} { 
+    width: 180px;
+    height: 260px;
+  }
 `;
 export const OrangeStrip = styled.div `
-  background-image: url(${manchaLaranjaClaro});
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 87.51px;
-  height: 138.27px;
-  z-index: 3;
-  position: absolute;
-  top: 267px;
-  right: 28px;
+  display: none;
 
-  @media ${device.mobileS} { 
-    display: none;
+  @media ${device.tablet} { 
+    display: flex;
+    background-image: url(${manchaLaranjaClaro});
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 87.51px;
+    height: 138.27px;
+    z-index: 3;
+    position: absolute;
+    top: 80px;
+    right: 0px;
   }
   
 `;
@@ -109,6 +120,12 @@ export const YellowStrip = styled.div `
   top: 438px;
   right: -31px;
   transform: rotateX(180deg);
+
+  @media ${device.tablet} { 
+    top: 5px;
+    right: -113px;
+    transform: rotateX(0deg);
+  }
 
   @media ${device.laptop} { 
     top: 87px;
@@ -144,11 +161,15 @@ export const H5 = styled.h5 `
   color: ${({ theme }) =>  theme.colors.darkPrimary};
   z-index: 3;
   position: absolute;
-  top: 195px;
+  top: 130px;
+  font-size: 12px;
 
-  @media ${device.mobileS} { 
-    top: 130px;
-    font-size: 12px;
+  @media ${device.tablet} { 
+    font-size: 22px;
+  }
+
+  @media ${device.laptop} { 
+    top: 195px;
   }
 `;
 export const Button = styled.button `
@@ -174,7 +195,7 @@ export const Button = styled.button `
   @media ${device.tablet} { 
     font-size: 14px;
     width: 223px;
-    top: 199px;
+    top: 245px;
   }
 
   @media ${device.laptop} { 
@@ -189,6 +210,10 @@ export const Wrapper = styled.div `
   position: relative;
   margin-top: 440px;
   width: 80%;
+
+  @media ${device.tablet} { 
+    margin-top: 590px;
+  }
 
   @media ${device.laptop} { 
     margin-top: 182px;
@@ -211,6 +236,10 @@ export const Text = styled.p`
   color: ${({ theme }) =>  theme.colors.darkPrimary};
   text-align: center;
 
+  @media ${device.tablet} { 
+    font-size: 14px;
+  }
+
   @media ${device.laptop} { 
     font-size: 18px;
   }
@@ -228,6 +257,12 @@ export const InfoWrapper = styled.div `
   justify-content: center;
   position: relative;
   width: 80%;
+
+  @media ${device.tablet} { 
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 `;
 export const InfoCard = styled.div`
   display: flex;
@@ -235,9 +270,7 @@ export const InfoCard = styled.div`
   align-items: center;
   position: relative;
   width: 80%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: 10px;
+  
   margin-bottom: 12px;
   padding: 20px;
   background: ${({ theme }) =>  theme.colors.white};
@@ -245,14 +278,12 @@ export const InfoCard = styled.div`
   box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.25);
   z-index: 3;
 
-  @media ${device.mobileM} { 
-    /* height: 370px;
-    height: 469px; */
+  @media ${device.mobileL} { 
+    width: 300px;
   }
 
-  @media ${device.mobileL} { 
-    /* height: 395px; */
-    width: 300px;
+  @media ${device.tablet} { 
+    margin-right: 10px;
   }
 `;
 export const Titulo = styled.p`
@@ -314,6 +345,10 @@ export const ButtonBottom = styled.button `
   @media ${device.mobileL} { 
     width: 335px;
     font-size: 22px;
+  }
+
+  @media ${device.tablet} { 
+    margin-top: 20px;
   }
 `;
 export const BlueVectorIcon = styled.div `
