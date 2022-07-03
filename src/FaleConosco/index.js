@@ -2,7 +2,8 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content'
-// import { schema } from '../components/Validations/UserValidation';
+import { device } from "../device"
+
 import {
   Container,
   Title,
@@ -24,7 +25,8 @@ import {
   InputDiv,
   EmailIcon,
   CallIcon,
-  Button
+  Button,
+  LinesImg
 } from './styles'
 
 export default function FaleConosco() {
@@ -73,16 +75,21 @@ export default function FaleConosco() {
     form.current.reset();
   };
 
+  const deviceSize = () => {
+    if(device.mobileS && device.mobileM && device.mobileL){
+      return `display: 'none'`
+    }
+  }
 
   return (
     <Container>
       <ColoredTopBg />
       <Title>Fale Conosco</Title>
       <Box>
-        <Div>
-          <PinLocation  />
+        {/* <Div style={{deviceSize}}>
+          <PinLocation/>
           <Info>Av. Sen. Casemiro da Rocha, 981</Info>
-        </Div>
+        </Div> */}
 
         <Div>
           <PhoneIcon />
@@ -123,6 +130,7 @@ export default function FaleConosco() {
         </InputBox>
         <Button type="submit" value="Send">Enviar Mensagem</Button>
       </Wrapper>
+      <LinesImg />
     </Container>
   )
 }

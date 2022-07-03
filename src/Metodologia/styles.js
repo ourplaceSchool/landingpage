@@ -205,21 +205,4 @@ export const SunIcon = styled.div `
   position: absolute;
   bottom: -119px;
   left: 0;
-
-  @media ${device.mobileM} {
-    /* bottom: -144px; */
-  }
-
-  @media ${device.tablet} { 
-      /* background-image: url(${sunIcon});
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 397px;
-  height: 287px;
-  align-self: baseline;
-  z-index: 1;
-  position: absolute;
-  bottom: -43px;
-  left: 0; */
-  }
 `;
