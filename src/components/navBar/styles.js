@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from '../../device';
 import logoHorizontal from '../../assets/images/logo-horizontal.png'
 
 export const Container = styled.div `
@@ -7,6 +8,14 @@ export const Container = styled.div `
   background-color: ${({ theme }) =>  theme.colors.primary};
   height: 32px;
   padding: 40px 40px;
+
+  @media ${device.mobileS} { 
+    max-width: 800px;
+  }
+
+  @media ${device.desktop} {
+    max-width: 1400px;
+  }
 `;
 export const Logo = styled.div `
   background-image: url(${logoHorizontal});
