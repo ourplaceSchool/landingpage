@@ -1,7 +1,7 @@
 import styled from "styled-components";
+import { device } from "../device";
 import coloringGallery from '../assets/images/coloring-gallery.png'
 import galleryPhoto from '../assets/images/gallery-photo.png'
-
 
 export const Container = styled.div `
   display: flex;
@@ -30,6 +30,10 @@ export const ColoringGallery = styled.div `
   position: absolute;
   bottom: -5px;
   left: 780px;
+
+  @media ${device.laptopM} { 
+    left: 870px
+  }
 `;
 export const GalleryWrapper = styled.div `
   display: flex;

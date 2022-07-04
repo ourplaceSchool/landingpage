@@ -9,6 +9,7 @@ export const Container = styled.div `
   flex-direction: column;
   overflow: hidden;
   margin: 0 auto;
+  overflow: hidden;
 `;
 export const SlideContainer = styled.div`
   display: flex;
