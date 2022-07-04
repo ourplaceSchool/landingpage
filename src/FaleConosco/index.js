@@ -26,7 +26,7 @@ import {
   EmailIcon,
   CallIcon,
   Button,
-  LinesImg
+  LinesImg,
 } from './styles'
 
 export default function FaleConosco() {
@@ -86,10 +86,10 @@ export default function FaleConosco() {
       <ColoredTopBg />
       <Title>Fale Conosco</Title>
       <Box>
-        {/* <Div style={{deviceSize}}>
+        <Div style={{deviceSize}}>
           <PinLocation/>
           <Info>Av. Sen. Casemiro da Rocha, 981</Info>
-        </Div> */}
+        </Div>
 
         <Div>
           <PhoneIcon />

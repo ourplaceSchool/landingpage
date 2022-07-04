@@ -51,18 +51,18 @@ export const Box = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: baseline;
-`;
-export const PinLocation = styled.div `
-  display: none;
+    margin: 9px;
 
   @media ${device.tablet} { 
-    display: block;
-    background-image: url(${vectorLocation});
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 25px;
-    height: 25px;
+    margin: 0;
   }
+`;
+export const PinLocation = styled.div `
+  background-image: url(${vectorLocation});
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
 `;
 
 export const PhoneIcon = styled.div `
@@ -90,6 +90,18 @@ export const IconEmail = styled.div `
   }
 `;
 export const Div = styled.div `
+  width: 82%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-Bottom: 10px;
+
+  @media ${device.laptop} { 
+    margin: 50px;
+  }
+  
+`;
+export const Div2 = styled.div `
   width: 82%;
   display: flex;
   flex-direction: column;
