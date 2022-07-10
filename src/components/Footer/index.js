@@ -21,12 +21,12 @@ export default function Footer() {
         <Div>
           <Logo />
           <Wrapper>
-            {/* <Info>
+            <Info>
               <Titulo>Sobre</Titulo>
               <Information>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
               </Information>          
-            </Info> */}
+            </Info>
 
             <Info>
               <Titulo>Unidades</Titulo>

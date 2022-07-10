@@ -18,7 +18,10 @@ export const Container = styled.div `
   @media ${device.laptop} { 
     padding-left: 55px;
     height: 300px;
-    height: 146px;
+  }
+
+  @media ${device.laptopM} { 
+    height: 360px;
   }
 `;
 export const Logo = styled.div `
@@ -30,15 +33,25 @@ export const Logo = styled.div `
   margin-right: 30px;
 
   @media ${device.tablet} { 
-  width: 102px;
   height: 20px;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
  @media ${device.laptop} { 
-  margin-top: 145px;
-  width: 205px;
-  height: 52px;
-  margin-right: 105px;
+  width: 220px;
+  height: 35px;
+}
+
+@media ${device.laptopM} { 
+  width: 245px;
+  height: 56px;
+  align-self: end;
+}
+
+@media ${device.desktop} { 
+  width: 300px;
+  height: 84px;
 }
 `;
 export const Wrapper = styled.div`
@@ -51,7 +64,6 @@ export const Info = styled.div`
 
   @media ${device.laptop} { 
     width: 216px;
-    margin: 0 30px;
     padding: 20px;
     height: 125px;
   }
@@ -70,6 +82,15 @@ export const Titulo = styled.p`
   @media ${device.laptop} { 
     font-size: 18px;
   }
+
+  @media ${device.laptopM} { 
+    font-size: 28px;
+  }
+
+  @media ${device.desktop} { 
+    width: 316px;
+    font-size: 43px;
+  }
 `;
 export const Information = styled.p`
   font-family: 'Poppins', sans-serif;
@@ -85,6 +106,11 @@ export const Information = styled.p`
 
   @media ${device.laptop} { 
     font-size: 14px;
+    width: 100%;
+  }
+
+  @media ${device.laptopM} { 
+    font-size: 16px;
     width: 100%;
   }
 `;
@@ -111,6 +137,11 @@ export const InstaIcon = styled.svg `
     width: 40px;
     height: 40px;
   }
+
+  @media ${device.laptopM} { 
+    width: 62px;
+    height: 62px;
+  }
 `;
 export const FacebookIcon = styled.svg `
   background-image: url(${facebook});
@@ -132,6 +163,11 @@ export const FacebookIcon = styled.svg `
     width: 40px;
     height: 40px;
   }
+
+  @media ${device.laptopM} { 
+    width: 62px;
+    height: 62px;
+  }
 `;
 export const MailIcon = styled.svg `
   background-image: url(${mail});
@@ -152,6 +188,11 @@ export const MailIcon = styled.svg `
     width: 40px;
     height: 40px;
   }
+
+  @media ${device.laptopM} { 
+    width: 62px;
+    height: 62px;
+  }
 `;
 export const Div = styled.div`
   color: ${({ theme }) =>  theme.colors.white};
@@ -165,12 +206,15 @@ export const CopyRight = styled.div`
   font-weight: 400;
   color: ${({ theme }) =>  theme.colors.white};
 
-  @media ${device.laptop} { 
+  @media ${device.tablet} { 
     font-size: 10px;
   }
 
   @media ${device.laptop} { 
     font-size: 16px;
-    margin-top: 90px;
+  }
+
+  @media ${device.desktop} { 
+    font-size: 20px;
   }
 `;
