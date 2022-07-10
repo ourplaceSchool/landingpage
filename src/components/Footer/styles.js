@@ -29,6 +29,11 @@ export const Logo = styled.div `
   height: 9px;
   margin-right: 30px;
 
+  @media ${device.tablet} { 
+  width: 102px;
+  height: 20px;
+}
+
  @media ${device.laptop} { 
   margin-top: 145px;
   width: 205px;
@@ -58,6 +63,10 @@ export const Titulo = styled.p`
   text-align: start;
   margin-bottom: 0;
 
+  @media ${device.tablet} { 
+    font-size: 16px;
+  }
+
   @media ${device.laptop} { 
     font-size: 18px;
   }
@@ -69,6 +78,10 @@ export const Information = styled.p`
   width: 80%;
   color: ${({ theme }) =>  theme.colors.white};
   text-align: start;
+
+  @media ${device.tablet} { 
+    font-size: 12px;
+  }
 
   @media ${device.laptop} { 
     font-size: 14px;
@@ -88,6 +101,11 @@ export const InstaIcon = styled.svg `
   height: 15px;
   cursor: pointer;
 
+  @media ${device.tablet} { 
+    width: 30px;
+    height: 30px;
+  }
+
   @media ${device.laptop} { 
     margin-right: 20px;
     width: 40px;
@@ -104,6 +122,11 @@ export const FacebookIcon = styled.svg `
   height: 15px;
   cursor: pointer;
 
+  @media ${device.tablet} { 
+    width: 30px;
+    height: 30px;
+  }
+
   @media ${device.laptop} { 
     margin-right: 20px;
     width: 40px;
@@ -118,6 +141,11 @@ export const MailIcon = styled.svg `
   width: 15px;
   height: 15px;
   cursor: pointer;
+
+  @media ${device.tablet} { 
+    width: 30px;
+    height: 30px;
+  }
 
   @media ${device.laptop} { 
     margin-right: 20px;
@@ -136,6 +164,10 @@ export const CopyRight = styled.div`
   font-size: 8px;
   font-weight: 400;
   color: ${({ theme }) =>  theme.colors.white};
+
+  @media ${device.laptop} { 
+    font-size: 10px;
+  }
 
   @media ${device.laptop} { 
     font-size: 16px;
