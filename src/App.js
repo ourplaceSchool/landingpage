@@ -24,7 +24,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Router>
-        {/* <NavBar /> */}
+        <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="sobre" element={<QuemSomos />} />

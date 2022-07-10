@@ -4,25 +4,31 @@ import logoHorizontal from '../../assets/images/logo-horizontal.png'
 
 export const Container = styled.div `
   display: flex;
+  align-items: center;
   justify-content: space-between;
   background-color: ${({ theme }) =>  theme.colors.primary};
-  height: 32px;
-  padding: 40px 40px;
+  height: 57px;
+  padding: 0 20px;
+  color: ${({ theme }) => theme.colors.wite};
 
-  @media ${device.mobileS} { 
-    max-width: 800px;
+  @media ${device.laptop} { 
+    height: 32px;
+    padding: 40px 40px;
   }
 
-  @media ${device.desktop} {
-    max-width: 1400px;
-  }
 `;
+
 export const Logo = styled.div `
   background-image: url(${logoHorizontal});
   background-repeat: no-repeat;
   background-size: contain;
-  width: 124px;
-  height: 32px;
+  width: 57px;
+  height: 15px;
+
+  @media ${device.laptop} { 
+    width: 124px;
+    height: 32px;
+  }
 `;
 export const Wrapper = styled.div`
   display: flex;

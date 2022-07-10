@@ -1,11 +1,13 @@
 import React from 'react'
+import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import { NavLink } from "react-router-dom";
 import { 
   Container,
   Logo,
   Wrapper,
   Navegation,
-  Button
+  Button,
+  BurgerLineStyle
 } from './styles'
 
 export default function NavBar() {
@@ -23,6 +25,12 @@ export default function NavBar() {
   return (
     <Container>
       <Logo />
+      <HiOutlineMenuAlt3 style={{
+        color: 'white',
+        height: '25px',
+        width: '25px',
+      }}/>
+      {/*
       <Wrapper>
 
         <Navegation>
@@ -70,7 +78,7 @@ export default function NavBar() {
           > Galeria </NavLink>
         </Navegation>
       </Wrapper>
-      <Button>MATRICULE-SE</Button>
+      <Button>MATRICULE-SE</Button> */}
     </Container>
   )
 }
