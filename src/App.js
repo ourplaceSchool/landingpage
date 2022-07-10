@@ -32,7 +32,7 @@ function App() {
           <Route path="galeria" element={<Galeria />} />
           <Route path="contato" element={<FaleConosco />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </Router>
     </ThemeProvider>
   );

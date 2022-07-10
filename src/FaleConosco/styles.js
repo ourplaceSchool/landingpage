@@ -309,7 +309,7 @@ export const LinesImg = styled.div `
   width: 198px;
   height: 335px;
   bottom: -27px;
-  right: -8px;
+  right: 2px;
   z-index: 1;
 `;
 export const Button = styled.button `
