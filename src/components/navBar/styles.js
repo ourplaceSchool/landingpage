@@ -6,6 +6,7 @@ export const Container = styled.div `
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
   background-color: ${({ theme }) =>  theme.colors.primary};
   height: 57px;
   padding: 0 20px;
@@ -44,6 +45,23 @@ export const Navegation = styled.div`
   &:hover {
     color: ${({ theme }) =>  theme.colors.darkPrimary};
   }
+`;
+export const DropdownButton = styled.div`
+  z-index: 100;
+`;
+export const DropDownWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: ${({ theme }) => theme.colors.primary};
+  margin-top: 48px;
+  border-radius: 5px;
+  padding: 20px;
+  padding-bottom: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+
 `;
 export const Button = styled.button `
   background-color: ${({ theme }) =>  theme.colors.darkPrimary};
