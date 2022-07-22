@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from '../../device';
 import logoHorizontal from '../../assets/images/logo-horizontal.png'
+import { Link } from 'react-router-dom'
 
 export const Container = styled.div `
   display: flex;
@@ -16,7 +17,6 @@ export const Container = styled.div `
     height: 32px;
     padding: 40px 40px;
   }
-
 `;
 
 export const Logo = styled.div `
@@ -35,7 +35,16 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
 `;
-export const Navegation = styled.div`
+
+export const NavbarLink = styled(Link)`
+  color: ${({ theme }) =>  theme.colors.white};
+  text-decoration: none;
+
+  &:hover {
+    background-color: ${({ theme }) =>  theme.colors.darkPrimary};
+  }
+`;
+export const Navigation = styled.div`
   font-size: 20px;
   font-family: Poppins, sans-serif;
   color: ${({ theme }) =>  theme.colors.white};
@@ -43,7 +52,7 @@ export const Navegation = styled.div`
   padding: 10px;
 
   &:hover {
-    color: ${({ theme }) =>  theme.colors.darkPrimary};
+    background-color: ${({ theme }) =>  theme.colors.darkPrimary};
   }
 `;
 export const DropdownButton = styled.div`

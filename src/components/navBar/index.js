@@ -6,7 +6,7 @@ import {
   Container,
   Logo,
   Wrapper,
-  Navegation,
+  Navigation,
   Button,
   DropdownButton,
   DropDownWrapper
@@ -16,7 +16,6 @@ export default function NavBar() {
   const dropDownRef = useRef(null)
   const [isActive, setIsActive] = useState(false)
   const onClick = () => setIsActive(!isActive)
-  console.log(isActive)
 
   let activeStyle = {
     color: '#1B6270',
@@ -30,7 +29,6 @@ export default function NavBar() {
 
 
   if(window.innerWidth < 769){
-    console.log('Tamanho da Janela', window.innerWidth)
     return(
       <Container>
         
@@ -57,50 +55,50 @@ export default function NavBar() {
             }}/>
 
             <DropDownWrapper ref={dropDownRef}>
-              <Navegation>
+              <Navigation>
                 <NavLink
                   to="/"
                   style={({ isActive }) =>
                     isActive ? activeStyle : nonActive
                   }
                 > Home </NavLink>
-              </Navegation>
+              </Navigation>
 
-              <Navegation>
+              <Navigation>
                 <NavLink
                     to="/metodologia"
                     style={({ isActive }) =>
                       isActive ? activeStyle : nonActive
                     }
                   > Metodologia </NavLink>
-              </Navegation>
+              </Navigation>
 
-              <Navegation>
+              <Navigation>
                 <NavLink
                     to="/sobre"
                     style={({ isActive }) =>
                       isActive ? activeStyle : nonActive
                     }
                 > Quem Somos </NavLink>
-              </Navegation>
+              </Navigation>
 
-              <Navegation>
+              <Navigation>
                 <NavLink
                     to="/contato"
                     style={({ isActive }) =>
                       isActive ? activeStyle : nonActive
                     }
                 > Fale Conosco </NavLink>
-              </Navegation>
+              </Navigation>
 
-              <Navegation>
+              <Navigation>
                 <NavLink
                     to="/galeria"
                     style={({ isActive }) =>
                       isActive ? activeStyle : nonActive
                     }
                 > Galeria </NavLink>
-              </Navegation>
+              </Navigation>
             </DropDownWrapper>
           </>
           )
@@ -109,56 +107,55 @@ export default function NavBar() {
       </Container>
     )
   } else {
-    console.log('Tamanho da Janela', window.innerWidth)
     return (
       <Container>
         <Logo />
         <Wrapper>
 
-          <Navegation>
+          <Navigation>
             <NavLink
               to="/"
               style={({ isActive }) =>
                 isActive ? activeStyle : nonActive
               }
             > Home </NavLink>
-          </Navegation>
+          </Navigation>
 
-          <Navegation>
+          <Navigation>
             <NavLink
                 to="/metodologia"
                 style={({ isActive }) =>
                   isActive ? activeStyle : nonActive
                 }
               > Metodologia </NavLink>
-          </Navegation>
+          </Navigation>
 
-          <Navegation>
+          <Navigation>
             <NavLink
                 to="/sobre"
                 style={({ isActive }) =>
                   isActive ? activeStyle : nonActive
                 }
             > Quem Somos </NavLink>
-          </Navegation>
+          </Navigation>
 
-          <Navegation>
+          <Navigation>
             <NavLink
                 to="/contato"
                 style={({ isActive }) =>
                   isActive ? activeStyle : nonActive
                 }
             > Fale Conosco </NavLink>
-          </Navegation>
+          </Navigation>
 
-          <Navegation>
+          <Navigation>
             <NavLink
                 to="/galeria"
                 style={({ isActive }) =>
                   isActive ? activeStyle : nonActive
                 }
             > Galeria </NavLink>
-          </Navegation>
+          </Navigation>
         </Wrapper>
         <Button>MATRICULE-SE</Button>
       </Container>
