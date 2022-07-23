@@ -1,11 +1,7 @@
 import React from 'react'
+
 import { 
   Container,
-  ClassroomPh,
-  LittleHouse,
-  OrangeStain,
-  OrangeStrip,
-  YellowStrip,
   Title,
   H5,
   H2,
@@ -25,24 +21,28 @@ import {
   OrangeDots,
   OrangeDotsTwo,
   RainbowIcon,
+  Star,
+  ArrowCurvey,
+  CurlyBg,
+  Color,
+  Title2,
+  Underline
 } from './styles'
 
 export default function Home() {
   return (
     <Container>
-
-
-      {/* IMAGES */}
-      <ClassroomPh />
-      <LittleHouse />
-      <OrangeStain />
-      <OrangeStrip />
-      <YellowStrip />
-
       {/* TEXT */}
-      <Title>Making the world our place</Title>
-      <H5>Inglês a partir dos 3 anos de idade, sem sair de casa.</H5>
+      <Title>
+        No matter where, we get there!
+        <Star />
+      </Title>
+      <H5>Inglês para crianças, adolescentes e adultos. Online e presencial.</H5>
       <Button>Clique para uma aula teste!</Button>
+      <ArrowCurvey />
+
+      <CurlyBg />
+      <Title2>Making the world <Color>our place!</Color></Title2>
 
       {/* Apresentação */}
       <Wrapper>

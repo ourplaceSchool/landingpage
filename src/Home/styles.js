@@ -1,17 +1,16 @@
 import styled from "styled-components"
 import { device } from "../device"
-import curlyBackground from '../assets/images/curly-background.png'
+import whiteBg from '../assets/images/white-bg.png'
 import classroomPhoto from '../assets/images/classroom-photo.png'
-import house from '../assets/images/house.png'
-import manchaLaranja from '../assets/images/mancha-laranja.png'
-import manchaLaranjaClaro from '../assets/images/mancha-laranja-claro.png'
-import manchaAmarela from '../assets/images/mancha-amarela.png'
 import greenBook from '../assets/images/green-book.png'
 import openBook from '../assets/images/open-book.png'
 import teacher from '../assets/images/teacher.png'
 import blueVector from '../assets/images/blue-vector.png'
 import frameDots from '../assets/images/frame-dots.png'
 import rainbowFrame from '../assets/images/rainbow-frame.png'
+import star from '../assets/images/star.png'
+import arrowCurvey from '../assets/images/arrow-curvey.png'
+import underlineTitle from '../assets/images/title-underline.png'
 
 export const Container = styled.div `
   display: flex;
@@ -22,17 +21,16 @@ export const Container = styled.div `
   padding-bottom: 80px;
 `;
 export const CurlyBg = styled.div `
-  background-image: url(${curlyBackground});
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 100%;
-  height: 665px;
-  z-index: 2;
-  position: absolute;
-  top: 184px;
+  display: none;
 
   @media ${device.tablet} { 
-    top: 73px;
+    background-image: url(${whiteBg});
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 665px;
+    z-index: 2;
+    margin-top: 100px;
   }
 
   @media ${device.laptop} { 
@@ -63,160 +61,42 @@ export const ClassroomPh = styled.div `
     height: 1188px;
   }
 `;
-export const LittleHouse = styled.div `
-  background-image: url(${house});
+
+export const Star = styled.div `
+  background-image: url(${star});
   background-repeat: no-repeat;
   background-size: contain;
-  width: 336.78px;
-  height: 121px;
-  z-index: 3;
+  width: 20px;
+  height: 20px;
   position: absolute;
-  top: 220px;
-  left: -32px;
-
-  @media ${device.mobileM} { 
-    height: 120px;
-    left: -20px;
-  }
-  @media ${device.mobileL} { 
-    height: 145px;
-    left: -22px;
-  }
-  @media ${device.tablet} { 
-    height: 206px;
-    left: -58px;
-    top: 180px;
-  }
-  @media ${device.laptop} { 
-    height: 245;
-    left: -43px;
-  }
-
-  @media ${device.laptopM} { 
-    height: 300px;
-    left: -58px;
-    top: 210px;
-  }
-  @media ${device.laptopM} { 
-    height: 331px;
-    top: 215px;
-  }
-  @media ${device.desktop} { 
-    width: 100%;
-    height: 466px;
-    left: -70px;
-    top: 361px;
-  }
+  right: 9px;
+  top: 38px;
 `;
-export const OrangeStain = styled.div `
-  background-image: url(${manchaLaranja});
+
+export const ArrowCurvey = styled.div `
+  background-image: url(${arrowCurvey});
   background-repeat: no-repeat;
   background-size: contain;
-  overflow: hidden;
-  width: 120px;
-  height: 238px;
-  z-index: 4;
+  width: 70px;
+  height: 70px;
   position: absolute;
-  top: 50px;
-  right: -66px;
-
-  @media ${device.tablet} { 
-    width: 180px;
-    height: 260px;
-  }
-
-  @media ${device.laptop} {
-    width: 252px;
-    top: 130px;
-  }
-  @media ${device.laptopM} { 
-    width: 281px;
-    top: 195px;
-  }
-  /* @media ${device.laptopL} { 
-    width: 281px;
-    top: 195px;
-  } */
-  @media ${device.desktop} { 
-    width: 382px;
-    top: 335px;
-    height: 100%;
-  }
-
-`;
-export const OrangeStrip = styled.div `
-  display: none;
-
-  @media ${device.tablet} { 
-    display: flex;
-    background-image: url(${manchaLaranjaClaro});
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 87.51px;
-    height: 138.27px;
-    z-index: 3;
-    position: absolute;
-    top: 80px;
-    right: 0px;
-  }
-  @media ${device.laptop} {
-    top: 174px;
-    right: 77px;
-  }
-  @media ${device.laptopM} {
-    top: 290px;
-    right: 101px;
-  }
-  @media ${device.desktop} { 
-    width: 263px;
-    height: 307px;
-    top: 345px;
-    right: 45px;
-  }
-`;
-export const YellowStrip = styled.div `
-  background-image: url(${manchaAmarela});
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 172.67px;
-  height: 75.17px;
-  z-index: 2;
-  position: absolute;
-  top: 438px;
-  right: -31px;
-  transform: rotateX(180deg);
-
-  @media ${device.tablet} { 
-    top: 5px;
-    right: -113px;
-    transform: rotateX(0deg);
-  }
-  @media ${device.laptop} { 
-    top: 96px;
-    right: -81px;
-  }
-  @media ${device.laptopM} { 
-    top: 151px;
-  }
-  @media ${device.desktop} { 
-    height: 200px;
-    width: 250px;
-    top: 206px;
-  }
+  left: 24px;
+  top: 218px;
+  /* left: 113px;
+  top: 244px; */
 `;
 export const Title = styled.h1`
+  position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   font-family: 'Quicksand', sans-serif;
-  font-size: 30px;
+  font-size:25px;
   color: ${({ theme }) =>  theme.colors.darkPrimary};
-  width: 80%;
-  height: 208px;
-  margin-top: 35px;
-  z-index: 3;
-  position: absolute;
-  top: 6px;
+  width: 70%;
+  margin-top: 25px;
+
 
   @media ${device.tablet} { 
     font-size: 46px;
@@ -239,13 +119,65 @@ export const Title = styled.h1`
     font-size: 120px;
   }
 `;
-export const H5 = styled.h5 `
-  font-size: 25px;
-  color: ${({ theme }) =>  theme.colors.darkPrimary};
-  z-index: 3;
+
+// export const Underline = styled.div `
+//   background-image: url(${underlineTitle});
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   width: 100%;
+//   height: 221px;
+//   /* position: absolute;
+//   left: 57.01%;
+//   right: 18.19%;
+//   top: 16.15%;
+//   bottom: 83.51%; */
+// `;
+export const Title2 = styled.h1`
   position: absolute;
-  top: 130px;
-  font-size: 12px;
+  top: 240px;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 30px;
+  color: ${({ theme }) =>  theme.colors.darkPrimary};
+  width: 85%;
+
+  @media ${device.tablet} { 
+    font-size: 46px;
+    width: 50%;
+  }
+
+  @media ${device.laptop} { 
+    font-size: 60px;
+    width: 60%;
+  }
+
+  @media ${device.laptopM} { 
+    font-size: 76px;
+    width: 70%;
+  }
+
+  @media ${device.desktop} { 
+    display: flex;
+    align-items: center;
+    font-size: 120px;
+  }
+`;
+export const Color = styled.h1`
+  color: ${({ theme }) =>  theme.colors.primary};
+  font-family: 'Quicksand', sans-serif;
+  font-size: 30px;
+  margin: 0;
+`;
+export const H5 = styled.h5 `
+  color: ${({ theme }) =>  theme.colors.darkPrimary};
+  font-size: 13px;
+  /* font-size: 17px; */
+  width: 70%;
+  margin: 0;
 
   @media ${device.tablet} { 
     font-size: 22px;
@@ -263,7 +195,7 @@ export const H5 = styled.h5 `
   }
 `;
 export const Button = styled.button `
-  background-color: ${({ theme }) =>  theme.colors.darkPrimary};
+  background-color: ${({ theme }) =>  theme.colors.primary};
   color: ${({ theme }) =>  theme.colors.white};
   border-radius: 8px;
   border: none;
@@ -276,7 +208,8 @@ export const Button = styled.button `
   line-height: 18px;
   z-index: 3;
   position: absolute;
-  top: 193px;
+  top: 166px;
+  /* top: 193px; */
 
   &:hover {
     background-color: ${({ theme }) =>  theme.colors.darkHover};
@@ -310,7 +243,7 @@ export const Wrapper = styled.div `
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-top: 440px;
+  margin-top: 230px;
   width: 80%;
 
   @media ${device.tablet} { 
