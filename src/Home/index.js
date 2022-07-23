@@ -26,7 +26,8 @@ import {
   CurlyBg,
   Color,
   Title2,
-  Underline
+  InfoBox,
+  TextInfoBox
 } from './styles'
 
 export default function Home() {
@@ -42,14 +43,17 @@ export default function Home() {
       <ArrowCurvey />
 
       <CurlyBg />
-      <Title2>Making the world <Color>our place!</Color></Title2>
+      <InfoBox>
+        <Title2>Making the world <Color>our place!</Color></Title2>
+        <TextInfoBox>
+          A <strong>Our Place</strong> é uma instituição de ensino afetivo lúdico e personalizado de acordo com os interesses de cada aluno e faixa etária. Que oferece o serviço no conforto de sua casa de maneira presencial ou online, sem tomar o seu tempo ou em nosso espaço estudantil, planejado para oferecer aos alunos uma experiência sensorial e interativa complementando a forma de metodologia.
+          Independente de onde esteja, nos preparamos para ensinar Inglês de maneira efetiva e divertida transformando qualquer lugar em nossa sala de aula.
+        </TextInfoBox>
+      </InfoBox>
 
       {/* Apresentação */}
       <Wrapper>
-        <H2>Apresentação</H2>
         <Text>
-        A Our Place é uma instituição de ensino afetivo lúdico e personalizado de acordo com os interesses de cada aluno e faixa etária. Que oferece o serviço no conforto de sua casa, sem tomar o seu tempo ou em nosso espaço estudantil, planejado para oferecer aos alunos uma experiência sensorial e interativa complementando a forma de metodologia.
-        Independente de onde esteja, nos preparamos para ensinar Inglês de maneira efetiva e divertida transformando qualquer lugar em nossa sala de aula.
         <Bold>No matter where, we get there!</Bold>
         </Text>
       </Wrapper>

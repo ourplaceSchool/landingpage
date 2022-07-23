@@ -23,13 +23,14 @@ export const Container = styled.div `
 export const CurlyBg = styled.div `
   display: none;
 
-  @media ${device.tablet} { 
+  @media ${device.tablet} {
+    display: block;
     background-image: url(${whiteBg});
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
     height: 665px;
-    z-index: 2;
+    z-index: 1;
     margin-top: 100px;
   }
 
@@ -44,23 +45,23 @@ export const CurlyBg = styled.div `
 
 `;
 
-export const ClassroomPh = styled.div `
-  background-image: url(${classroomPhoto});
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 100%;
-  height: 650px;
-  z-index: 1;
-  position: absolute;
-  top: 240px;
+// export const ClassroomPh = styled.div `
+//   background-image: url(${classroomPhoto});
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   width: 100%;
+//   height: 650px;
+//   z-index: 1;
+//   position: absolute;
+//   top: 240px;
 
-  @media ${device.laptopM} { 
-    height: 667px;
-  }
-  @media ${device.desktop} { 
-    height: 1188px;
-  }
-`;
+//   @media ${device.laptopM} { 
+//     height: 667px;
+//   }
+//   @media ${device.desktop} { 
+//     height: 1188px;
+//   }
+// `;
 
 export const Star = styled.div `
   background-image: url(${star});
@@ -71,6 +72,19 @@ export const Star = styled.div `
   position: absolute;
   right: 9px;
   top: 38px;
+
+  @media ${device.mobileM} { 
+   right: 44px;
+  }
+
+  @media ${device.mobileL} { 
+   right: 65px;
+  }
+
+  @media ${device.tablet} { 
+   right: 130px;
+   top: 80px;
+  }
 `;
 
 export const ArrowCurvey = styled.div `
@@ -82,8 +96,15 @@ export const ArrowCurvey = styled.div `
   position: absolute;
   left: 24px;
   top: 218px;
-  /* left: 113px;
-  top: 244px; */
+
+  @media ${device.mobileL} { 
+    left: 75px;
+  }
+
+  @media ${device.tablet} { 
+    top: 315px;
+    left: 232px;
+  }
 `;
 export const Title = styled.h1`
   position: relative;
@@ -100,7 +121,7 @@ export const Title = styled.h1`
 
   @media ${device.tablet} { 
     font-size: 46px;
-    width: 50%;
+    margin-top: 44px;
   }
 
   @media ${device.laptop} { 
@@ -134,7 +155,8 @@ export const Title = styled.h1`
 // `;
 export const Title2 = styled.h1`
   position: absolute;
-  top: 240px;
+  top: 253px;
+  left: 30px;
   z-index: 5;
   display: flex;
   flex-direction: column;
@@ -145,9 +167,12 @@ export const Title2 = styled.h1`
   color: ${({ theme }) =>  theme.colors.darkPrimary};
   width: 85%;
 
-  @media ${device.tablet} { 
-    font-size: 46px;
-    width: 50%;
+  @media ${device.tablet} {
+    flex-direction: row; 
+    font-size: 33px;
+    width: 80%;
+    top: 390px;
+    left: 165px;
   }
 
   @media ${device.laptop} { 
@@ -171,13 +196,39 @@ export const Color = styled.h1`
   font-family: 'Quicksand', sans-serif;
   font-size: 30px;
   margin: 0;
+
+  @media ${device.tablet} { 
+    font-size: 33px;
+    margin-left: 6px;
+  }
+`;
+export const InfoBox = styled.div `
+  z-index: 5;
+`;
+export const TextInfoBox = styled.p`
+  position: absolute;
+  top: 390px;
+  left: 20px;
+  width: 90%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: ${({ theme }) =>  theme.colors.darkPrimary};
+  text-align: center;
+
+  @media ${device.tablet} { 
+    top: 454px;
+    left: 50px;
+  }
 `;
 export const H5 = styled.h5 `
   color: ${({ theme }) =>  theme.colors.darkPrimary};
   font-size: 13px;
-  /* font-size: 17px; */
   width: 70%;
   margin: 0;
+
+  @media ${device.mobileL} { 
+   font-size: 16px;
+  }
 
   @media ${device.tablet} { 
     font-size: 22px;
@@ -218,7 +269,7 @@ export const Button = styled.button `
   @media ${device.tablet} { 
     font-size: 14px;
     width: 223px;
-    top: 245px;
+    top: 273px;
   }
   @media ${device.laptop} { 
     font-size: 18px;
@@ -243,11 +294,11 @@ export const Wrapper = styled.div `
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-top: 230px;
+  margin-top: 626px;
   width: 80%;
 
   @media ${device.tablet} { 
-    margin-top: 590px;
+    margin-top: -330px;
   }
 
   @media ${device.laptop} { 
@@ -407,7 +458,7 @@ export const TeacherIcon = styled.div `
   }
 `;
 export const ButtonBottom = styled.button `
-  background-color: ${({ theme }) =>  theme.colors.darkPrimary};
+  background-color: ${({ theme }) =>  theme.colors.primary};
   color: ${({ theme }) =>  theme.colors.white};
   border-radius: 8px;
   border: none;
