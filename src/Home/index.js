@@ -1,7 +1,6 @@
 import React from 'react'
 import { 
   Container,
-  CurlyBg,
   ClassroomPh,
   LittleHouse,
   OrangeStain,
@@ -25,13 +24,13 @@ import {
   BlueVectorIcon,
   OrangeDots,
   OrangeDotsTwo,
-  RainbowIcon
+  RainbowIcon,
 } from './styles'
 
 export default function Home() {
   return (
     <Container>
-      <CurlyBg />
+
 
       {/* IMAGES */}
       <ClassroomPh />

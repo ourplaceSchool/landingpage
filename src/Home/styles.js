@@ -45,6 +45,7 @@ export const CurlyBg = styled.div `
   }
 
 `;
+
 export const ClassroomPh = styled.div `
   background-image: url(${classroomPhoto});
   background-repeat: no-repeat;

@@ -11,10 +11,12 @@ import Galeria from './Galeria';
 
 const theme = {
   colors: {
-    primary: '#65B7AC',
+    primary: '#AD4226',
     darkPrimary: '#1B6270',
     white: '#FFFFFF',
-    darkHover: 'rgba(27, 98, 112, 0.8)'
+    darkHover: 'rgba(27, 98, 112, 0.8)',
+    bgColor: '#FEF5D0',
+    bgTransparent: 'rgba(254, 245, 208, .88)'
   }
 }
 
