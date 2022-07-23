@@ -10,7 +10,7 @@ import frameDots from '../assets/images/frame-dots.png'
 import rainbowFrame from '../assets/images/rainbow-frame.png'
 import star from '../assets/images/star.png'
 import arrowCurvey from '../assets/images/arrow-curvey.png'
-import underlineTitle from '../assets/images/title-underline.png'
+import vectorPhoto from '../assets/images/vector-photo.svg'
 
 export const Container = styled.div `
   display: flex;
@@ -19,6 +19,17 @@ export const Container = styled.div `
   position: relative;
   overflow: hidden;
   padding-bottom: 80px;
+`;
+export const BoxContainer = styled.div `
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  margin-top: 15px;
+
+  @media ${device.tablet} { 
+    flex-direction: column; 
+    align-items: start;
+  }
 `;
 export const CurlyBg = styled.div `
   display: none;
@@ -45,23 +56,30 @@ export const CurlyBg = styled.div `
 
 `;
 
-// export const ClassroomPh = styled.div `
-//   background-image: url(${classroomPhoto});
-//   background-repeat: no-repeat;
-//   background-size: contain;
-//   width: 100%;
-//   height: 650px;
-//   z-index: 1;
-//   position: absolute;
-//   top: 240px;
+export const ClassroomVector = styled.div `
+  display: none;
 
-//   @media ${device.laptopM} { 
-//     height: 667px;
-//   }
-//   @media ${device.desktop} { 
-//     height: 1188px;
-//   }
-// `;
+  @media ${device.tablet}{
+    display: block;
+    background-image: url(${vectorPhoto});
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 614px;
+    height: 365px;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(-179.3deg);
+  }
+
+  @media ${device.laptopM} { 
+    height: 667px;
+  }
+  @media ${device.desktop} { 
+    height: 1188px;
+  }
+`;
 
 export const Star = styled.div `
   background-image: url(${star});
@@ -82,8 +100,8 @@ export const Star = styled.div `
   }
 
   @media ${device.tablet} { 
-   right: 130px;
-   top: 80px;
+   right: 34px;
+   top: 62px;
   }
 `;
 
@@ -95,7 +113,11 @@ export const ArrowCurvey = styled.div `
   height: 70px;
   position: absolute;
   left: 24px;
-  top: 218px;
+  top: 210px;
+
+  @media ${device.mobileM} { 
+    left: 46px;
+  }
 
   @media ${device.mobileL} { 
     left: 75px;
@@ -103,7 +125,7 @@ export const ArrowCurvey = styled.div `
 
   @media ${device.tablet} { 
     top: 315px;
-    left: 232px;
+    left: 65px;
   }
 `;
 export const Title = styled.h1`
@@ -120,8 +142,9 @@ export const Title = styled.h1`
 
 
   @media ${device.tablet} { 
-    font-size: 46px;
-    margin-top: 44px;
+    font-size: 38px;
+    margin-top: 68px;
+    width: 52%;
   }
 
   @media ${device.laptop} { 
@@ -232,6 +255,7 @@ export const H5 = styled.h5 `
 
   @media ${device.tablet} { 
     font-size: 22px;
+    width: 69%;
   }
   @media ${device.laptop} { 
     top: 170px;
@@ -270,6 +294,7 @@ export const Button = styled.button `
     font-size: 14px;
     width: 223px;
     top: 273px;
+    left: 108px;
   }
   @media ${device.laptop} { 
     font-size: 18px;

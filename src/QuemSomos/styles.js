@@ -12,6 +12,7 @@ export const Container = styled.div `
   flex-direction: column;
   overflow: hidden;
   position: relative;
+  margin-top: 25px;
 `;
 export const Title = styled.h1`
   display: flex;
@@ -19,7 +20,7 @@ export const Title = styled.h1`
   text-align: center;
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;
-  color: ${({ theme }) =>  theme.colors.white};
+  color: ${({ theme }) =>  theme.colors.darkPrimary};
   width: 100%;
   z-index: 2;
 

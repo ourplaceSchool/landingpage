@@ -10,6 +10,7 @@ export const Container = styled.div `
   align-items: center;
   flex-direction: column;
   position: relative;
+  margin-top: 15px;
 `;
 export const Wrapper = styled.div`
   display: flex;
@@ -171,7 +172,7 @@ export const InfoCard = styled.p`
   }
 `;
 export const Button = styled.button `
-  background-color: ${({ theme }) =>  theme.colors.darkPrimary};
+  background-color: ${({ theme }) =>  theme.colors.primary};
   color: ${({ theme }) =>  theme.colors.white};
   margin-top: 30px;
   margin-bottom: 49px;
@@ -203,6 +204,6 @@ export const SunIcon = styled.div `
   align-self: baseline;
   z-index: 1;
   position: absolute;
-  bottom: -119px;
+  bottom: -1px;
   left: 0;
 `;

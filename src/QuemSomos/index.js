@@ -12,13 +12,11 @@ import {
   Bold,
   HouseLogo,
   ColoredBg,
-  TopBgGreen
 } from './styles'
 
 export default function QuemSomos() {
   return (
     <Container>
-      <TopBgGreen />
       <Title>Quem Somos</Title>
       <Wrapper>
         <GreenFrame />

@@ -4,11 +4,11 @@ import coloringTop from '../assets/images/coloring-top.png';
 import vectorLocation from '../assets/images/vector-location.png';
 import vectorPhone from '../assets/images/vector-phone.png';
 import iconEmail from '../assets/images/icon-email.png';
-import tintaVerde from '../assets/images/tinta-verde-box.png';
+import tintaVermelha from '../assets/images/tinta-vermelha.png';
 import profile from '../assets/images/Profile.png';
 import message from '../assets/images/Message.png';
 import call from '../assets/images/Call.png';
-import FrameContact from '../assets/images/frame-contact.png'
+import rainbow from '../assets/images/rainbow.png'
 
 export const Container = styled.div `
   display: flex;
@@ -126,12 +126,12 @@ export const Info = styled.div`
     font-size: 16px;
   }
 `;
-export const GreenStainBottom = styled.div `
+export const StainBottom = styled.div `
   display: none;
 
   @media ${device.laptop} {  
     display: block;  
-    background-image: url(${tintaVerde});
+    background-image: url(${tintaVermelha});
     background-repeat: no-repeat;
     background-size: contain;
     width: 353.3px;
@@ -301,19 +301,19 @@ export const CallIcon = styled.div `
   top: 47%;
   bottom: 40%;
 `;
-export const LinesImg = styled.div `
-  background-image: url(${FrameContact});
+export const Rainbow = styled.div `
+  background-image: url(${rainbow});
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
   width: 198px;
   height: 335px;
-  bottom: -27px;
+  bottom: -167px;
   right: 2px;
   z-index: 1;
 `;
 export const Button = styled.button `
-  background-color: ${({ theme }) =>  theme.colors.darkPrimary};
+  background-color: ${({ theme }) =>  theme.colors.primary};
   color: ${({ theme }) =>  theme.colors.white};
   border-radius: 8px;
   border: none;

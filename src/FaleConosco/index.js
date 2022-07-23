@@ -15,7 +15,7 @@ import {
   Info,
   Div,
   Wrapper,
-  GreenStainBottom,
+  StainBottom,
   InputBox,
   InputFields,
   MessageField,
@@ -26,7 +26,7 @@ import {
   EmailIcon,
   CallIcon,
   Button,
-  LinesImg,
+  Rainbow,
 } from './styles'
 
 export default function FaleConosco() {
@@ -102,7 +102,7 @@ export default function FaleConosco() {
         </Div>
       </Box>
       <Wrapper ref={form} onSubmit={sendEmail}>
-        <GreenStainBottom />
+        <StainBottom />
         <InputBox>
           <InputFields>
             <InputDiv>
@@ -130,7 +130,7 @@ export default function FaleConosco() {
         </InputBox>
         <Button type="submit" value="Send">Enviar Mensagem</Button>
       </Wrapper>
-      <LinesImg />
+      <Rainbow />
     </Container>
   )
 }

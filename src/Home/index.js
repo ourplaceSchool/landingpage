@@ -2,6 +2,7 @@ import React from 'react'
 
 import { 
   Container,
+  BoxContainer,
   Title,
   H5,
   H2,
@@ -27,20 +28,26 @@ import {
   Color,
   Title2,
   InfoBox,
-  TextInfoBox
+  TextInfoBox,
+  ClassroomVector
 } from './styles'
 
 export default function Home() {
   return (
     <Container>
-      {/* TEXT */}
-      <Title>
-        No matter where, we get there!
-        <Star />
-      </Title>
-      <H5>Inglês para crianças, adolescentes e adultos. Online e presencial.</H5>
-      <Button>Clique para uma aula teste!</Button>
-      <ArrowCurvey />
+      <BoxContainer>
+        <Title>
+          No matter where, we get there!
+          <Star />
+        </Title>
+        <H5>Inglês para crianças, adolescentes e adultos. Online e presencial.</H5>
+        <Button>
+          Clique para uma aula teste!
+        </Button>
+        <ArrowCurvey />
+
+        <ClassroomVector />
+      </BoxContainer>
 
       <CurlyBg />
       <InfoBox>
@@ -52,11 +59,7 @@ export default function Home() {
       </InfoBox>
 
       {/* Apresentação */}
-      <Wrapper>
-        <Text>
-        <Bold>No matter where, we get there!</Bold>
-        </Text>
-      </Wrapper>
+      <Wrapper />
 
       {/* INFOS */}
       <InfoWrapper>
