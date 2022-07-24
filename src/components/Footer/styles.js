@@ -6,64 +6,92 @@ import facebook from '../../assets/images/Facebook.png'
 import mail from '../../assets/images/Mail.png'
 
 export const Container = styled.div `
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 10px;
-  align-items: center;
   background-color: ${({ theme }) =>  theme.colors.primary};
-  height: 100px;
+  height: 145px;
   padding: 20px;
 
   @media ${device.laptop} { 
-    padding-left: 55px;
-    height: 300px;
+    height: 470px; 
   }
 
-  @media ${device.laptopM} { 
-    height: 360px;
+  @media ${device.desktop} { 
+    height: 520px; 
   }
 `;
 export const Logo = styled.div `
+  position: absolute;
+  left: 107px;
+  top: 22px;
   background-image: url(${logoHorizontal});
   background-repeat: no-repeat;
   background-size: contain;
-  width: 59px;
-  height: 9px;
-  margin-right: 30px;
+  width: 90px;
+  height: 25px;
+
+  @media ${device.mobileM} { 
+    left: 140px;
+  }
+
+  @media ${device.mobileL} { 
+    left: 164px;
+  }
 
   @media ${device.tablet} { 
-  height: 20px;
-  width: 100%;
-  justify-content: space-evenly;
-}
+    height: 64px;
+    width: 155px;
+    left: 13px;
+    top: 72px;
+  }
 
  @media ${device.laptop} { 
-  width: 220px;
-  height: 35px;
-}
+    left: 436px;
+    top: 30px;
+    width: 220px;
+    height: 35px;
+  }
 
-@media ${device.laptopM} { 
-  width: 245px;
-  height: 56px;
-  align-self: end;
-}
+  @media ${device.laptopM} { 
+    width: 245px;
+    height: 56px;
+    left: 450px;
+  }
 
-@media ${device.desktop} { 
-  width: 300px;
-  height: 84px;
-}
+  @media ${device.laptopL} { 
+    left: 607px;
+  }
+
+  @media ${device.desktop} { 
+    width: 300px;
+    height: 84px;
+    left: 170px;
+    top: 140px;
+  }
 `;
 export const Wrapper = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+
+  @media ${device.laptopM} { 
+    grid-gap: 230px;
+  }
 
 `;
 export const Info = styled.div`
   display: flex;
   flex-direction: column;
 
+  @media ${device.tablet} { 
+    width: 60%;
+  }
+
   @media ${device.laptop} { 
-    width: 216px;
+    width: 240px;
     padding: 20px;
     height: 125px;
   }
@@ -93,6 +121,8 @@ export const Titulo = styled.p`
   }
 `;
 export const Information = styled.p`
+  display: flex;
+  flex-wrap: wrap;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 8px;
@@ -106,16 +136,15 @@ export const Information = styled.p`
 
   @media ${device.laptop} { 
     font-size: 14px;
-    width: 100%;
-  }
-
-  @media ${device.laptopM} { 
-    font-size: 16px;
-    width: 100%;
+    width: 317px;
   }
 `;
 export const RedeSociais = styled.div `
   display: flex;
+
+  @media ${device.tablet} { 
+    width: 60%;
+  }
 `;
 export const InstaIcon = styled.svg `
   background-image: url(${instagram});
@@ -198,9 +227,22 @@ export const Div = styled.div`
   color: ${({ theme }) =>  theme.colors.white};
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-self: flex-end;
+  margin-top: 40px;
+
+  @media ${device.tablet} { 
+    margin-top: 0px;
+    margin-left: 190px;
+  }
+
+  @media ${device.laptop} { 
+    align-self: center;
+    margin-top: 60px;
+    margin-left: 0px;
+  }
 `;
 export const CopyRight = styled.div`
+  align-self: center;
   font-family: 'Quicksand', sans-serif;
   font-size: 8px;
   font-weight: 400;

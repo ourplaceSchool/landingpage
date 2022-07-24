@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { device } from "../device"
 import coloringTop from '../assets/images/coloring-top.png';
 import vectorLocation from '../assets/images/vector-location.png';
-import vectorPhone from '../assets/images/vector-phone.png';
+import whatsapp from '../assets/images/whatsapp.png';
 import iconEmail from '../assets/images/icon-email.png';
 import tintaVermelha from '../assets/images/tinta-vermelha.png';
 import profile from '../assets/images/Profile.png';
@@ -61,12 +61,12 @@ export const PinLocation = styled.div `
   background-image: url(${vectorLocation});
   background-repeat: no-repeat;
   background-size: contain;
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
 `;
 
 export const PhoneIcon = styled.div `
-  background-image: url(${vectorPhone});
+  background-image: url(${whatsapp});
   background-repeat: no-repeat;
   background-size: contain;
   width: 25px;

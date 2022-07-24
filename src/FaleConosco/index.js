@@ -93,6 +93,7 @@ export default function FaleConosco() {
 
         <Div>
           <PhoneIcon />
+          <Info>+11 94330-0535</Info>
           <Info>+11 99961-0535</Info>
         </Div>
 
