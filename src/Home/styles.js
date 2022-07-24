@@ -30,6 +30,10 @@ export const BoxContainer = styled.div `
     flex-direction: column; 
     align-items: start;
   }
+
+  @media ${device.laptopM} { 
+    align-items: start;
+  }
 `;
 export const CurlyBg = styled.div `
   display: none;
@@ -103,6 +107,18 @@ export const Star = styled.div `
    right: 34px;
    top: 62px;
   }
+
+  @media ${device.laptop} { 
+   right: 45px;
+   top: 100px;
+   width: 35px;
+   height: 35px;
+  }
+
+  @media ${device.laptopM} { 
+   right: 178px;
+   top: 128px;
+  }
 `;
 
 export const ArrowCurvey = styled.div `
@@ -127,8 +143,21 @@ export const ArrowCurvey = styled.div `
     top: 315px;
     left: 65px;
   }
+
+  @media ${device.laptop} { 
+    top: 399px;
+    left: 151px;
+    width: 90px;
+    height: 90px;
+  }
+
+  @media ${device.laptopM} { 
+    top: 466px;
+    left: 279px;
+  }
 `;
 export const Title = styled.h1`
+  z-index: 5;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -199,11 +228,12 @@ export const Title2 = styled.h1`
   }
 
   @media ${device.laptop} { 
-    font-size: 60px;
-    width: 60%;
+    font-size: 50px;
+    top: 484px;
   }
 
   @media ${device.laptopM} { 
+    top: 597px;
     font-size: 76px;
     width: 70%;
   }
@@ -224,6 +254,14 @@ export const Color = styled.h1`
     font-size: 33px;
     margin-left: 6px;
   }
+
+  @media ${device.laptop} { 
+    font-size: 50px;
+  }
+
+  @media ${device.laptopM} { 
+    font-size: 76px;
+  }
 `;
 export const InfoBox = styled.div `
   z-index: 5;
@@ -241,6 +279,16 @@ export const TextInfoBox = styled.p`
   @media ${device.tablet} { 
     top: 454px;
     left: 50px;
+  }
+
+  @media ${device.laptop} { 
+    top: 610px;
+    font-size: 18px;
+  }
+
+  @media ${device.laptopM} { 
+    top: 815px;
+    font-size: 22px;
   }
 `;
 export const H5 = styled.h5 `
@@ -298,13 +346,15 @@ export const Button = styled.button `
   }
   @media ${device.laptop} { 
     font-size: 18px;
-    top: 255px;
+    top: 346px;
     width: 277px;
     height: 35px;
+    left: 212px;
   }
 
   @media ${device.laptopM} { 
-    top: 323px;
+    top: 420px;
+    left: 330px;
   }
 
   @media ${device.desktop} { 
@@ -335,7 +385,7 @@ export const Wrapper = styled.div `
   }
 
   @media ${device.desktop} { 
-    margin-top: 1438px;
+    margin-top: 65px;
   }
 `;
 export const H2 = styled.h2`

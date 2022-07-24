@@ -58,9 +58,6 @@ export default function Home() {
         </TextInfoBox>
       </InfoBox>
 
-      {/* Apresentação */}
-      <Wrapper />
-
       {/* INFOS */}
       <InfoWrapper>
         <InfoCard>

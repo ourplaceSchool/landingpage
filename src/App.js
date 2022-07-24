@@ -27,13 +27,11 @@ function App() {
       <GlobalStyle />
       <Router>
         <NavBar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="sobre" element={<QuemSomos />} />
-          <Route path="metodologia" element={<Metodologia />} />
-          <Route path="galeria" element={<Galeria />} />
-          <Route path="contato" element={<FaleConosco />} />
-        </Routes>
+          <Home />
+          <QuemSomos />
+          <Metodologia />
+          {/* <Galeria /> */}
+          <FaleConosco />
         <Footer />
       </Router>
     </ThemeProvider>
