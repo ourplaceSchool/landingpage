@@ -1,5 +1,5 @@
 import GlobalStyle from './globalStyles';
-import { ThemeProvider } from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer'
@@ -25,17 +25,23 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Router>
+
         <NavBar />
           <Home />
           <QuemSomos />
           <Metodologia />
-          {/* <Galeria /> */}
+          {/* <Galeria id="gallery"/> */}
           <FaleConosco />
         <Footer />
-      </Router>
+
     </ThemeProvider>
   );
 }
 
 export default App;
+
+// const Container = styled.div`
+//   display: grid;
+//   grid-template-columns: repeat(auto-fill, 1fr);
+//   grid-gap: 50px;
+// `;

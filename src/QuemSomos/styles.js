@@ -12,7 +12,10 @@ export const Container = styled.div `
   flex-direction: column;
   overflow: hidden;
   position: relative;
-  margin-top: 25px;
+
+  @media ${device.tablet} { 
+    margin: 0;
+  }
 `;
 export const Title = styled.h1`
   display: flex;

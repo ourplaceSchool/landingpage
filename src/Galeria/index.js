@@ -9,7 +9,7 @@ import {
 
 export default function Galeria() {
   return (
-    <Container>
+    <Container id="galeria">
       <Title>Galeria</Title>
       <GalleryWrapper>
         <Carousel />

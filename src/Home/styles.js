@@ -19,6 +19,7 @@ export const Container = styled.div `
   position: relative;
   overflow: hidden;
   padding-bottom: 80px;
+  margin-bottom: 30px;
 `;
 export const BoxContainer = styled.div `
   display: flex;
@@ -44,7 +45,7 @@ export const CurlyBg = styled.div `
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
-    height: 665px;
+    height: 380px;
     z-index: 1;
     margin-top: 100px;
   }
@@ -438,6 +439,7 @@ export const InfoWrapper = styled.div `
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-top: 580px;
 
   @media ${device.tablet} { 
     flex-direction: row;

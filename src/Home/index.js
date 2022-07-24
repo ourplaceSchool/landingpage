@@ -34,7 +34,7 @@ import {
 
 export default function Home() {
   return (
-    <Container>
+    <Container id="home">
       <BoxContainer>
         <Title>
           No matter where, we get there!

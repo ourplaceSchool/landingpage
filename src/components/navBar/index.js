@@ -1,8 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import { IoIosArrowDown } from 'react-icons/io';
-import { NavLink } from "react-router-dom";
-import { device } from '../../device';
+
 import { 
   Container,
   Logo,
@@ -11,7 +10,8 @@ import {
   Button,
   DropdownButton,
   DropDownWrapper,
-  TopBg
+  TopBg,
+  Link
 } from './styles'
 
 export default function NavBar() {
@@ -58,50 +58,11 @@ export default function NavBar() {
               }}/>
 
               <DropDownWrapper ref={dropDownRef}>
-                <Navigation>
-                  <NavLink
-                    to="/"
-                    style={({ isActive }) =>
-                      isActive ? activeStyle : nonActive
-                    }
-                  > Home </NavLink>
-                </Navigation>
-
-                <Navigation>
-                  <NavLink
-                      to="/metodologia"
-                      style={({ isActive }) =>
-                        isActive ? activeStyle : nonActive
-                      }
-                    > Metodologia </NavLink>
-                </Navigation>
-
-                <Navigation>
-                  <NavLink
-                      to="/sobre"
-                      style={({ isActive }) =>
-                        isActive ? activeStyle : nonActive
-                      }
-                  > Quem Somos </NavLink>
-                </Navigation>
-
-                <Navigation>
-                  <NavLink
-                      to="/contato"
-                      style={({ isActive }) =>
-                        isActive ? activeStyle : nonActive
-                      }
-                  > Fale Conosco </NavLink>
-                </Navigation>
-
-                <Navigation>
-                  <NavLink
-                      to="/galeria"
-                      style={({ isActive }) =>
-                        isActive ? activeStyle : nonActive
-                      }
-                  > Galeria </NavLink>
-                </Navigation>
+                  <Link href="#home"> Home </Link>
+                  <Link href="#metodologia"> Metodologia </Link>
+                  <Link href="#quemsomos"> Quem Somos </Link>
+                  <Link href="#contato"> Fale Conosco </Link>
+                  <Link href="#galeria"> Galeria </Link>
               </DropDownWrapper>
             </>
             )
@@ -112,58 +73,20 @@ export default function NavBar() {
     )
   } else {
     return (
-      <Container>
+      <>
         <TopBg />
-        <Logo />
-        <Wrapper>
-
-          <Navigation>
-            <NavLink
-              to="/"
-              style={({ isActive }) =>
-                isActive ? activeStyle : nonActive
-              }
-            > Home </NavLink>
-          </Navigation>
-
-          <Navigation>
-            <NavLink
-                to="/metodologia"
-                style={({ isActive }) =>
-                  isActive ? activeStyle : nonActive
-                }
-              > Metodologia </NavLink>
-          </Navigation>
-
-          <Navigation>
-            <NavLink
-                to="/sobre"
-                style={({ isActive }) =>
-                  isActive ? activeStyle : nonActive
-                }
-            > Quem Somos </NavLink>
-          </Navigation>
-
-          <Navigation>
-            <NavLink
-                to="/contato"
-                style={({ isActive }) =>
-                  isActive ? activeStyle : nonActive
-                }
-            > Fale Conosco </NavLink>
-          </Navigation>
-
-          <Navigation>
-            <NavLink
-                to="/galeria"
-                style={({ isActive }) =>
-                  isActive ? activeStyle : nonActive
-                }
-            > Galeria </NavLink>
-          </Navigation>
-        </Wrapper>
-        <Button>MATRICULE-SE</Button>
-      </Container>
+        <Container>
+          <Logo />
+          <Wrapper>
+            <Link href="#home"> Home </Link>
+            <Link href="#metodologia"> Metodologia </Link>
+            <Link href="#quemsomos"> Quem Somos </Link>
+            <Link href="#contato"> Fale Conosco </Link>
+            <Link href="#galeria"> Galeria </Link>
+          </Wrapper>
+          <Button>MATRICULE-SE</Button>
+        </Container>
+      </>
     )
   }
 

@@ -16,7 +16,7 @@ import {
 
 export default function QuemSomos() {
   return (
-    <Container>
+    <Container id="quemsomos">
       <Title>Quem Somos</Title>
       <Wrapper>
         <GreenFrame />

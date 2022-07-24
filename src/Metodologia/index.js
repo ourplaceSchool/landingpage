@@ -18,7 +18,7 @@ import {
 
 export default function Metodologia() {
   return (
-    <Container>
+    <Container id="metodologia">
       <Wrapper>
         <Title>A Life-long learning…</Title>
         <Information>
