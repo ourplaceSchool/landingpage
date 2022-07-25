@@ -26,17 +26,25 @@ export const TopBg = styled.div `
   background-size: contain;
   width: 100%;
   position: absolute;
-  left: -7.47%;
+  left: -16.47%;
   right: 63.26%;
-  top: -11.08%;
+  top: -18.08%;
   bottom: 79.55%;
   z-index: 0;
+
+  @media ${device.mobileM} { 
+    top: -23.47%;
+  }
+
+  @media ${device.mobileL} { 
+    top: -28.47%;
+  }
 
   @media ${device.tablet} { 
     left: -2.47%;
     right: 63.26%;
     top: -14.08%;
-    bottom: 73.55%;
+    bottom: 78.55%;
   }
 
   @media ${device.laptop} { 
@@ -46,7 +54,7 @@ export const TopBg = styled.div `
   }
 
   @media ${device.laptopM} { 
-    top: -35%;
+    top: -30%;
     bottom: -16.55%;
     width: 42%;
   }
@@ -67,7 +75,7 @@ export const Logo = styled.div `
   height: 25px;
   z-index: 1;
 
-  @media ${device.tablet} { 
+  @media ${device.tablet} {
     width: 135px;
     height: 36px;
   }

@@ -125,6 +125,11 @@ export const Info = styled.div`
   @media ${device.tablet} { 
     font-size: 16px;
   }
+
+  @media ${device.desktop} { 
+    font-size: 26px;
+  }
+  
 `;
 export const StainBottom = styled.div `
   display: none;
@@ -167,6 +172,8 @@ export const Wrapper = styled.form`
 
   @media ${device.desktop} { 
     width: 50%;
+    height: 646px;
+    margin-top: 15px;
   }
 `;
 export const InputBox = styled.div`
@@ -201,7 +208,7 @@ export const MessageField = styled.textarea`
   padding: 40px;
   z-index: 3;
 
-  ::placeholder{
+  ::placeholder {
     font-family: 'Poppins';
     font-style: italic;
     font-weight: 300;
@@ -220,7 +227,23 @@ export const MessageField = styled.textarea`
 
   @media ${device.laptop} { 
     width: 395px;
+    font-size: 18px;
+
+    ::placeholder{
+      font-size: 18px;
+    }
   }
+
+  @media ${device.desktop} { 
+    width: 437px;
+    height: 402px;
+    font-size: 22px;
+
+    ::placeholder{
+      font-size: 24px;
+    }
+  }
+
 `;
 export const InputDiv = styled.div`
   display: flex;
@@ -254,6 +277,10 @@ export const Input = styled.input `
 
   @media ${device.laptopM} { 
     width: 555px;
+  }
+
+  @media ${device.desktop} { 
+    font-size: 22px;
   }
 `;
 export const InputLabel = styled.label`
@@ -334,6 +361,12 @@ export const Button = styled.button `
 
   @media ${device.laptop} { 
     font-size: 20px;
+  }
+
+  @media ${device.desktop} { 
+    font-size: 26px;
+    width: 289px;
+    height: 83px;
   }
 
 `

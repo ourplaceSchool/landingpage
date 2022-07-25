@@ -168,6 +168,10 @@ export const H4 = styled.h4`
   @media ${device.tablet} { 
     font-size: 21px;
   }
+
+  @media ${device.desktop} { 
+    font-size: 60px;
+  }
 `;
 export const Information = styled.p`
   font-family: 'Poppins', sans-serif;
@@ -179,12 +183,24 @@ export const Information = styled.p`
   @media ${device.tablet} { 
     font-size: 12px;
   }
+
+  @media ${device.desktop} { 
+    font-size: 26px;
+  }
 `;
 export const Bold = styled.p`
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: 700;
   color: ${({ theme }) =>  theme.colors.darkPrimary};
+
+  @media ${device.tablet} { 
+    font-size: 12px;
+  }
+
+  @media ${device.desktop} { 
+    font-size: 26px;
+  }
 `;
 export const HouseLogo = styled.div `
   background-image: url(${houseLogo});

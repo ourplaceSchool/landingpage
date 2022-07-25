@@ -52,11 +52,17 @@ export const CurlyBg = styled.div `
 
   @media ${device.laptop} { 
     top: -30px;
+    height: 400px;
+  }
+
+  @media ${device.laptopM} { 
+    top: -30px;
+    height: 610px;
   }
 
   @media ${device.desktop} { 
     top: -183px;
-    height: 995px;
+    height: 1100px;
   }
 
 `;
@@ -83,6 +89,8 @@ export const ClassroomVector = styled.div `
   }
   @media ${device.desktop} { 
     height: 1188px;
+    width: 768px;
+    top: -156px;
   }
 `;
 
@@ -120,6 +128,13 @@ export const Star = styled.div `
    right: 178px;
    top: 128px;
   }
+
+  @media ${device.desktop} { 
+   right: 254px;
+   top: 188px;
+   width: 55px;
+   height: 55px;
+  }
 `;
 
 export const ArrowCurvey = styled.div `
@@ -156,6 +171,13 @@ export const ArrowCurvey = styled.div `
     top: 466px;
     left: 279px;
   }
+
+  @media ${device.desktop} { 
+    top: 820px;
+    left: 660px;
+    width: 180px;
+    height: 120px;
+  }
 `;
 export const Title = styled.h1`
   z-index: 5;
@@ -191,6 +213,7 @@ export const Title = styled.h1`
     display: flex;
     align-items: center;
     font-size: 120px;
+    margin-top: 206px;
   }
 `;
 
@@ -236,13 +259,14 @@ export const Title2 = styled.h1`
   @media ${device.laptopM} { 
     top: 597px;
     font-size: 76px;
-    width: 70%;
+    width: 73%;
   }
 
   @media ${device.desktop} { 
     display: flex;
     align-items: center;
-    font-size: 120px;
+    top: 1030px;
+    font-size: 130px;
   }
 `;
 export const Color = styled.h1`
@@ -253,7 +277,7 @@ export const Color = styled.h1`
 
   @media ${device.tablet} { 
     font-size: 33px;
-    margin-left: 6px;
+    margin-left: 15px;
   }
 
   @media ${device.laptop} { 
@@ -262,6 +286,10 @@ export const Color = styled.h1`
 
   @media ${device.laptopM} { 
     font-size: 76px;
+  }
+
+  @media ${device.desktop} { 
+    font-size: 130px;
   }
 `;
 export const InfoBox = styled.div `
@@ -290,6 +318,11 @@ export const TextInfoBox = styled.p`
   @media ${device.laptopM} { 
     top: 815px;
     font-size: 22px;
+  }
+
+  @media ${device.desktop} { 
+    top: 1350px;
+    font-size: 43px;
   }
 `;
 export const H5 = styled.h5 `
@@ -362,7 +395,8 @@ export const Button = styled.button `
     height: 65px;
     width: 380px;
     font-size: 26px;
-    top: 444px;
+    top: 742px;
+    left: 749px;
   }
 
 `;
@@ -446,6 +480,11 @@ export const InfoWrapper = styled.div `
     flex-wrap: wrap;
     align-items: flex-start;
     width: 100%;
+    margin-top: 0;
+  }
+
+  @media ${device.laptop} { 
+    margin-top: 40px;
   }
 `;
 export const InfoCard = styled.div`

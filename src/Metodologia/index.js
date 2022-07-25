@@ -35,7 +35,7 @@ export default function Metodologia() {
             <CardText>
               <TitleCard> 2 a 3 anos</TitleCard>
               <InfoCard>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Saiba mais... 
               </InfoCard>
             </CardText>
           </Card>
@@ -45,7 +45,7 @@ export default function Metodologia() {
             <CardText>
               <TitleCard> 7 a 9 anos</TitleCard>
               <InfoCard>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Saiba mais... 
               </InfoCard>
             </CardText>
           </Card>
@@ -55,7 +55,7 @@ export default function Metodologia() {
             <CardText>
               <TitleCard> 10 a 12 anos</TitleCard>
               <InfoCard>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Saiba mais... 
               </InfoCard>
             </CardText>
           </Card>

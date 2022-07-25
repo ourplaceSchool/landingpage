@@ -30,7 +30,7 @@ function App() {
           <Home />
           <QuemSomos />
           <Metodologia />
-          {/* <Galeria id="gallery"/> */}
+          {/* <Galeria /> */}
           <FaleConosco />
         <Footer />
 
