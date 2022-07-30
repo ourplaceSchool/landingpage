@@ -4,6 +4,8 @@ import asianKid from '../assets/images/asian-kid.png';
 import homeworKid from '../assets/images/homework-kid.png';
 import headphoneKid from '../assets/images/headphone-kid.png';
 import sunIcon from '../assets/images/sun-icon.png';
+import teenager from '../assets/images/teenager.png';
+import youngWoman from '../assets/images/young-woman.png';
 
 export const Container = styled.div `
   display: flex;
@@ -21,6 +23,20 @@ export const Wrapper = styled.div`
   z-index: 2;
   width: 80%;
   margin-bottom: 20px;
+`;
+export const CardWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  z-index: 2;
+  width: 80%;
+  margin-bottom: 20px;
+
+  @media ${device.laptop} { 
+    width: 95%;
+  }
 `;
 export const Title = styled.h1`
   display: flex;
@@ -69,33 +85,10 @@ export const CardContainer = styled.div`
     justify-content: center;
   }
 
-  @media ${device.laptop} { 
+  @media ${device.laptopM} { 
     flex-wrap: nowrap;
   }
 `
-export const FlipCard = styled.div `
-  background-color: transparent;
-  perspective: 1000px;
-  width: 100%;
-    @media ${device.tablet} { 
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-`;
-
-export const CardWrapper = styled.div `
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-
-  &:hover {
-    transform: rotateY(180deg);
-  }
-`;
 export const Card = styled.div`
   width: 100%;
   height: 385px;
@@ -111,9 +104,14 @@ export const Card = styled.div`
     cursor: pointer;
   }
 
-  @media ${device.tablet} { 
-    width: 46%;
+  @media ${device.mobileXL} { 
+    width: 60%;
   }
+
+  @media ${device.tablet} { 
+    width: 38%;
+  }
+
   @media ${device.desktop} { 
     width: 25%;
     height: 610px;
@@ -144,6 +142,10 @@ export const ImageBg1 = styled.div `
   align-self: baseline;
   z-index: 1;
 
+  @media ${device.laptop} { 
+    height: 610px;
+  }
+
   @media ${device.desktop} { 
     height: 800px;
   }
@@ -157,6 +159,10 @@ export const ImageBg2 = styled.div `
   align-self: baseline;
   z-index: 1;
 
+  @media ${device.laptop} { 
+    height: 610px;
+  }
+
   @media ${device.desktop} { 
     height: 800px;
   }
@@ -169,6 +175,44 @@ export const ImageBg3 = styled.div `
   height: 500px;
   align-self: baseline;
   z-index: 1;
+
+  @media ${device.laptop} { 
+    height: 610px;
+  }
+
+  @media ${device.desktop} { 
+    height: 800px;
+  }
+`;
+export const ImageBg4 = styled.div `
+  background-image: url(${teenager});
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 500px;
+  align-self: baseline;
+  z-index: 1;
+
+  @media ${device.tablet} { 
+    height: 610px;
+  }
+
+  @media ${device.desktop} { 
+    height: 800px;
+  }
+`;
+export const ImageBg5 = styled.div `
+  background-image: url(${youngWoman});
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 500px;
+  align-self: baseline;
+  z-index: 1;
+
+  @media ${device.laptop} { 
+    height: 610px;
+  }
 
   @media ${device.desktop} { 
     height: 800px;
