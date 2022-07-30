@@ -29,7 +29,7 @@ function App() {
           <Home />
           <QuemSomos />
           <Metodologia />
-          {/* <Galeria /> */}
+          <Galeria />
           <FaleConosco />
         <ScrollToTop />
         <Footer />

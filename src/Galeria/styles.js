@@ -7,9 +7,14 @@ export const Container = styled.div `
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 80px;
-  padding-top: 20px;
   position: relative;
+  /* margin-bottom: 220px; */
+
+  @media ${device.tablet} { 
+    padding: 80px;
+    overflow: hidden;
+    margin-bottom: 0;
+  }
 `;
 export const Title = styled.h1`
   display: flex;
@@ -38,12 +43,12 @@ export const ColoringGallery = styled.div `
 export const GalleryWrapper = styled.div `
   display: flex;
 `;
-export const GalleryPhoto = styled.div `
-  background-image: url(${galleryPhoto});
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-bottom: 215px;
-  width: 600px;
-  height: 400px;
-  z-index: 2;
-`;
+// export const GalleryPhoto = styled.div `
+//   background-image: url(${galleryPhoto});
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   margin-bottom: 215px;
+//   width: 600px;
+//   height: 400px;
+//   z-index: 2;
+// `;

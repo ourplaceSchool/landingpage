@@ -1,20 +1,19 @@
 import styled from "styled-components";
 import galleryPhoto from '../../assets/images/gallery-photo.png'
+import { device } from "../../device";
 
 export const Container = styled.div `
-  margin-bottom: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   overflow: hidden;
   margin: 0 auto;
-  overflow: hidden;
+
 `;
 export const SlideContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: 150px;
 `;
 export const SlideshowContainer = styled.div`
   display: flex;
@@ -24,16 +23,32 @@ export const SlideshowContainer = styled.div`
   width: 100%;
 `;
 export const SlideImage = styled.div`
-  margin: 25px;
   background-image: url(${galleryPhoto});
   background-repeat: no-repeat;
   background-size: contain;
-  width: 579px;
-  height: 377.87px;
+  position: absolute;
+  width: 224px;
+  height: 150px;
+
+  @media ${device.tablet} { 
+    position: relative;
+    margin: 25px;
+    width: 579px;
+    height: 377.87px;
+  }
 `;
 export const Arrows = styled.div`
   display: flex;
   justify-content: center;
+  margin-top: 165px;
+  margin-bottom: 10px;
+  z-index: 99;
+
+  @media ${device.tablet} { 
+    /* position: relative; */
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 `;
 export const ArrowLeft = styled.div`
   cursor: pointer;

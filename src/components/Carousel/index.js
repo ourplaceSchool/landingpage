@@ -79,6 +79,7 @@ export default function Carousel() {
             <SlideImage />
             <SlideImage />
         </SlideshowContainer>
+      </SlideContainer>      
           <Arrows>
             <ArrowLeft onClick={prior}>
               <FaArrowLeft />
@@ -87,7 +88,6 @@ export default function Carousel() {
               <FaArrowRight />
             </ArrowRight>
           </Arrows>
-      </SlideContainer>      
     </Container>
   )
 }

@@ -14,7 +14,7 @@ export default function Galeria() {
       <GalleryWrapper>
         <Carousel />
       </GalleryWrapper>
-      <ColoringGallery />
+      {/* <ColoringGallery /> */}
     </Container>
   )
 }
