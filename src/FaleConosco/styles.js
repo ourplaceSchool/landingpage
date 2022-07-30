@@ -335,9 +335,8 @@ export const Rainbow = styled.div `
   position: absolute;
   width: 370px;
   height: 395px;
-  bottom: -167px;
+  bottom: -190px;
   left: -40px;
-  z-index: 1;
 `;
 export const Button = styled.button `
   background-color: ${({ theme }) =>  theme.colors.primary};

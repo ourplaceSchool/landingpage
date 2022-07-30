@@ -1,0 +1,29 @@
+
+.goUpBtn {
+  display: flex;
+  justify-content: end;
+}
+
+.backToTop-btn {
+  opacity: 80;
+  color: #F7B151;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  background-color: #1B6270;
+  border-radius: 3px;
+  padding: 4px;
+
+  cursor: pointer;
+  &:hover {
+    color: #1B6270;
+    background-color: #F7B151;
+  }
+}
+
+.atTheTop {
+  opacity: 0;
+}

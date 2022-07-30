@@ -1,6 +1,6 @@
 import GlobalStyle from './globalStyles';
-import styled, { ThemeProvider } from 'styled-components';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
+import {ScrollToTop} from './components/ScrollToTop'
 import NavBar from './components/NavBar';
 import Footer from './components/Footer'
 import Home from './Home';
@@ -25,15 +25,14 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-
         <NavBar />
           <Home />
           <QuemSomos />
           <Metodologia />
           {/* <Galeria /> */}
           <FaleConosco />
+        <ScrollToTop />
         <Footer />
-
     </ThemeProvider>
   );
 }

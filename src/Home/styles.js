@@ -259,7 +259,7 @@ export const Title2 = styled.h1`
   @media ${device.laptopM} { 
     top: 597px;
     font-size: 76px;
-    width: 73%;
+    width: 75%;
   }
 
   @media ${device.desktop} { 
