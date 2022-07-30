@@ -73,9 +73,32 @@ export const CardContainer = styled.div`
     flex-wrap: nowrap;
   }
 `
+export const FlipCard = styled.div `
+  background-color: transparent;
+  perspective: 1000px;
+  width: 100%;
+    @media ${device.tablet} { 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+`;
+
+export const CardWrapper = styled.div `
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+
+  &:hover {
+    transform: rotateY(180deg);
+  }
+`;
 export const Card = styled.div`
   width: 100%;
-  height: 395px;
+  height: 385px;
   margin: 5px;
   border-radius: 8px;
   box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.25);
@@ -83,6 +106,10 @@ export const Card = styled.div`
   position: relative;
   z-index: 1;
   overflow: hidden;
+
+  &:hover {
+    cursor: pointer;
+  }
 
   @media ${device.tablet} { 
     width: 46%;
