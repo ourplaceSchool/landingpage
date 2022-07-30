@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { device } from "../device";
 import coloringGallery from '../assets/images/coloring-gallery.png'
-import galleryPhoto from '../assets/images/gallery-photo.png'
+
 
 export const Container = styled.div `
   display: flex;
@@ -43,12 +43,3 @@ export const ColoringGallery = styled.div `
 export const GalleryWrapper = styled.div `
   display: flex;
 `;
-// export const GalleryPhoto = styled.div `
-//   background-image: url(${galleryPhoto});
-//   background-repeat: no-repeat;
-//   background-size: contain;
-//   margin-bottom: 215px;
-//   width: 600px;
-//   height: 400px;
-//   z-index: 2;
-// `;

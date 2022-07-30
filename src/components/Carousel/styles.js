@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import galleryPhoto from '../../assets/images/gallery-photo.png'
+import galleryPhoto2 from '../../assets/photos/teens.png'
 import { device } from "../../device";
 
 export const Container = styled.div `
@@ -37,6 +38,21 @@ export const SlideImage = styled.div`
     height: 377.87px;
   }
 `;
+export const SlideImage2 = styled.div`
+  background-image: url(${galleryPhoto2});
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 224px;
+  height: 150px;
+
+  @media ${device.tablet} { 
+    position: relative;
+    margin: 25px;
+    width: 579px;
+    height: 377.87px;
+  }
+`;
 export const Arrows = styled.div`
   display: flex;
   justify-content: center;
@@ -45,7 +61,6 @@ export const Arrows = styled.div`
   z-index: 99;
 
   @media ${device.tablet} { 
-    /* position: relative; */
     margin-top: 0;
     margin-bottom: 0;
   }

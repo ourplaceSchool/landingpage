@@ -3,6 +3,7 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { 
   Container,
   SlideImage,
+  SlideImage2,
   SlideshowContainer,
   Arrows,
   ArrowLeft,
@@ -73,11 +74,11 @@ export default function Carousel() {
       <SlideContainer>
         <SlideshowContainer ref={slideshow}>
             <SlideImage />
+            <SlideImage2 />
             <SlideImage />
+            <SlideImage2 />
             <SlideImage />
-            <SlideImage />
-            <SlideImage />
-            <SlideImage />
+            <SlideImage2 />
         </SlideshowContainer>
       </SlideContainer>      
           <Arrows>
