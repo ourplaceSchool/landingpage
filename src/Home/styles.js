@@ -620,7 +620,7 @@ export const BlueVectorIcon = styled.div `
   left: -16.94%;
   left: 0;
   right: 74.31%;
-  top: 74.23%;
+  top: 58.23%;
   bottom: 6.31%;
 
   @media ${device.desktop} { 

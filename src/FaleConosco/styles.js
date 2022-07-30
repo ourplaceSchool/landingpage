@@ -8,7 +8,7 @@ import tintaVermelha from '../assets/images/tinta-vermelha.png';
 import profile from '../assets/images/Profile.png';
 import message from '../assets/images/Message.png';
 import call from '../assets/images/Call.png';
-import rainbow from '../assets/images/rainbow.png'
+import rainbow from '../assets/images/rainbow-icon.png'
 
 export const Container = styled.div `
   display: flex;
@@ -159,7 +159,6 @@ export const Wrapper = styled.form`
   position: relative;
   padding: 9px;
   z-index: 2;
-  /* padding: 50px; */
 
   @media ${device.tablet} { 
     width: 80%;
@@ -168,6 +167,7 @@ export const Wrapper = styled.form`
   @media ${device.laptop} { 
     width: 90%;
     height: 527px;
+    margin-bottom: 155px;
   }
 
   @media ${device.desktop} { 
@@ -333,10 +333,10 @@ export const Rainbow = styled.div `
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  width: 198px;
-  height: 335px;
+  width: 370px;
+  height: 395px;
   bottom: -167px;
-  right: 2px;
+  left: -40px;
   z-index: 1;
 `;
 export const Button = styled.button `

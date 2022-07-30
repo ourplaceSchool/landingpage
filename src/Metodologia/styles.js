@@ -276,5 +276,6 @@ export const SunIcon = styled.div `
   z-index: 1;
   position: absolute;
   bottom: -1px;
-  left: 0;
+  right: -30px;
+  transform: rotate(-90deg);
 `;

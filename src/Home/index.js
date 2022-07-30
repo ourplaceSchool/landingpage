@@ -87,10 +87,10 @@ export default function Home() {
       <ButtonBottom>Clique para uma aula teste!</ButtonBottom>
 
       {/* Bottom Icons */}
-      <BlueVectorIcon />
+      {/* <BlueVectorIcon />
       <OrangeDots />
       <OrangeDotsTwo />
-      <RainbowIcon />
+      <RainbowIcon /> */}
     </Container>
   )
 }
