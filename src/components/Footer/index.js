@@ -12,12 +12,13 @@ import {
   MailIcon,
   FacebookIcon,
   Div,
-  CopyRight
+  CopyRight,
+  AnchorLink
 } from './styles'
 
 export default function Footer() {
 
-  if(window.innerWidth < 769){
+  if(window.innerWidth < 900){
     return (
       <Container>
           <Div>
@@ -34,10 +35,28 @@ export default function Footer() {
               <Info>
                 <Titulo>Redes Sociais</Titulo>
                 <RedeSociais>
-                  <InstaIcon />
-                  <FacebookIcon />
+
+                  <AnchorLink
+                    href="https://www.instagram.com/inglesourplace/"
+                    target="_blank"
+                  >
+                    <InstaIcon />
+                  </AnchorLink>
+
+                  <AnchorLink
+                    href="https://www.facebook.com/inglesourplace/"
+                    target="_blank"
+                  >
+                    <FacebookIcon />
+                  </AnchorLink>
+
+                  <AnchorLink
+                    href="milena@ourplace.com.br"
+                    target="_blank"
+                  >
                   <MailIcon />
-                </RedeSociais>         
+                  </AnchorLink>
+                  </RedeSociais>           
               </Info>
             </Wrapper>
           </Div>
@@ -60,11 +79,7 @@ export default function Footer() {
               </Information>          
             </Info>
 
-            <Info
-              // style={{
-              //   marginLeft: '185px',
-              // }}            
-            >
+            <Info>
               <Titulo>Unidades</Titulo>
               <Information>
               Avenida Senador Casimiro da Rocha, 981, Sala 7 -
@@ -75,9 +90,27 @@ export default function Footer() {
             <Info>
               <Titulo>Redes Sociais</Titulo>
               <RedeSociais>
-                <InstaIcon />
-                <FacebookIcon />
+
+                <AnchorLink
+                  href="https://www.instagram.com/inglesourplace/"
+                  target="_blank"
+                >
+                  <InstaIcon />
+                </AnchorLink>
+
+                <AnchorLink
+                  href="https://www.facebook.com/inglesourplace/"
+                  target="_blank"
+                >
+                  <FacebookIcon />
+                </AnchorLink>
+
+                <AnchorLink
+                  href="milena@ourplace.com.br"
+                  target="_blank"
+                >
                 <MailIcon />
+                </AnchorLink>
               </RedeSociais>         
             </Info>
           </Wrapper>

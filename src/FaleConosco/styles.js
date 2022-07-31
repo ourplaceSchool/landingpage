@@ -368,5 +368,8 @@ export const Button = styled.button `
     width: 289px;
     height: 83px;
   }
-
 `
+export const AnchorLink = styled.a`
+  text-decoration: none;
+  color: ${({ theme }) =>  theme.colors.white};
+`;

@@ -27,6 +27,7 @@ import {
   CallIcon,
   Button,
   Rainbow,
+  AnchorLink
 } from './styles'
 
 export default function FaleConosco() {
@@ -93,13 +94,29 @@ export default function FaleConosco() {
 
         <Div>
           <PhoneIcon />
-          <Info>+11 94330-0535</Info>
+          <AnchorLink
+            href="tel:+5511943300535"
+            target="_blank"
+          >
+            <Info>+11 94330-0535</Info>
+          </AnchorLink>
+
+          <AnchorLink
+            href="tel:+5511999610535"
+            target="_blank"
+          >
           <Info>+11 99961-0535</Info>
+          </AnchorLink>
         </Div>
 
         <Div>
           <IconEmail />
-          <Info>milena@ourplace.com.br</Info>
+          <AnchorLink
+            href="mailto:milena@ourplace.com.br"
+            target="_blank"
+          >
+            <Info>milena@ourplace.com.br</Info>
+          </AnchorLink>
         </Div>
       </Box>
       <Wrapper ref={form} onSubmit={sendEmail}>

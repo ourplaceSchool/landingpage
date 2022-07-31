@@ -58,7 +58,7 @@ export const Logo = styled.div `
   @media ${device.laptopM} { 
     width: 245px;
     height: 56px;
-    left: 450px;
+    left: 560px;
   }
 
   @media ${device.laptopL} { 
@@ -126,12 +126,13 @@ export const Information = styled.p`
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 8px;
-  width: 80%;
+  width: 126px;
   color: ${({ theme }) =>  theme.colors.white};
   text-align: start;
 
   @media ${device.tablet} { 
     font-size: 12px;
+    width: 290px;
   }
 
   @media ${device.laptop} { 
@@ -168,8 +169,8 @@ export const InstaIcon = styled.svg `
   }
 
   @media ${device.laptopM} { 
-    width: 62px;
-    height: 62px;
+    width: 50px;
+    height: 50px;
   }
 `;
 export const FacebookIcon = styled.svg `
@@ -194,8 +195,8 @@ export const FacebookIcon = styled.svg `
   }
 
   @media ${device.laptopM} { 
-    width: 62px;
-    height: 62px;
+    width: 50px;
+    height: 50px;
   }
 `;
 export const MailIcon = styled.svg `
@@ -219,8 +220,8 @@ export const MailIcon = styled.svg `
   }
 
   @media ${device.laptopM} { 
-    width: 62px;
-    height: 62px;
+    width: 50px;
+    height: 50px;
   }
 `;
 export const Div = styled.div`
@@ -259,4 +260,8 @@ export const CopyRight = styled.div`
   @media ${device.desktop} { 
     font-size: 20px;
   }
+`;
+export const AnchorLink = styled.a`
+  text-decoration: none;
+  color: ${({ theme }) =>  theme.colors.white};
 `;
