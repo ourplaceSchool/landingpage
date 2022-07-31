@@ -55,7 +55,7 @@ export default function Metodologia() {
           >
               <ImageBg1 />
               <CardText>
-                <TitleCard> 2 a 3 anos</TitleCard>
+                <TitleCard> 3 a 6 anos</TitleCard>
                 <InfoCard>
                   Saiba mais...
                 </InfoCard>
