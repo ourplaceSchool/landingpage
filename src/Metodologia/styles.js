@@ -6,6 +6,7 @@ import headphoneKid from '../assets/images/headphone-kid.png';
 import sunIcon from '../assets/images/sun-icon.png';
 import teenager from '../assets/images/teenager.png';
 import youngWoman from '../assets/images/young-woman.png';
+import houseLogo from '../assets/images/house.png';
 
 export const Container = styled.div `
   display: flex;
@@ -242,7 +243,7 @@ export const InfoCard = styled.p`
     font-size: 25px;
   }
 `;
-export const Button = styled.button `
+export const Btn = styled.button `
   background-color: ${({ theme }) =>  theme.colors.primary};
   color: ${({ theme }) =>  theme.colors.white};
   margin-top: 30px;
@@ -278,4 +279,23 @@ export const SunIcon = styled.div `
   bottom: -1px;
   right: -30px;
   transform: rotate(-90deg);
+`;
+export const HouseLogo = styled.div `
+  background-image: url(${houseLogo});
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: .6;
+  width: 153px;
+  height: 88px;
+  align-self: baseline;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 22px;
+  margin-left: 13px;
+  z-index: 0;
+
+  @media ${device.tablet} { 
+    
+  }
 `;

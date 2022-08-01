@@ -9,6 +9,7 @@ import FaleConosco from './FaleConosco';
 import Metodologia from './Metodologia';
 import Galeria from './Galeria';
 
+
 const theme = {
   colors: {
     primary: '#AD4226',

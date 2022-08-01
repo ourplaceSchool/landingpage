@@ -1,12 +1,11 @@
-
 import React, { useState } from 'react'
-import {
-  Modal1,
-  Modal2,
-  Modal3,
-  Modal4,
-  Modal5
-} from '../components/Modal'
+import { device } from '../device';
+import { 
+  Button, 
+  Modal, 
+  Box, 
+  Typography,
+} from '@mui/material';
 
 import {
   Container,
@@ -24,9 +23,97 @@ import {
   ImageBg5,
   TitleCard,
   InfoCard,
-  Button,
-  SunIcon
+  Btn,
+  SunIcon,
+  HouseLogo
 } from './styles'
+import { screen } from '@testing-library/react';
+import { useEffect } from 'react';
+
+function rand() {
+  return Math.round(Math.random() * 20) - 10;
+}
+
+function getModalStyle() {
+  const top = 50 + rand();
+  const left = 50 + rand();
+
+  return {
+    top: `${top}%`,
+    left: `${left}%`,
+    transform: `translate(-${top}%, -${left}%)`
+  };
+}
+
+const useStyles = {
+  mobile: {
+    position: "absolute",
+    top: "5%",
+    left: "20px",
+    width: '70%',
+    backgroundColor: '#FEF5D0',
+    padding: '30px',
+    outline: "none",
+    border: 'none',
+    borderRadius: '5px',
+    color: '#1B6270',
+  },
+  mobileL: {
+    position: "absolute",
+    top: "5%",
+    left: "20px",
+    width: '75%',
+    backgroundColor: '#FEF5D0',
+    padding: '30px',
+    outline: "none",
+    border: 'none',
+    borderRadius: '5px',
+    color: '#1B6270',
+  },
+  tablet: {
+    position: "absolute",
+    top: "20%",
+    left: "45px",
+    width: '80%',
+    backgroundColor: '#FEF5D0',
+    padding: '30px',
+    outline: "none",
+    border: 'none',
+    borderRadius: '5px',
+    color: '#1B6270',
+  },
+  laptop: {
+    position: "absolute",
+    top: "20%",
+    left: "75px",
+    width: '80%',
+    backgroundColor: '#FEF5D0',
+    padding: '30px',
+    outline: "none",
+    border: 'none',
+    borderRadius: '5px',
+    color: '#1B6270',
+  },
+  laptopL: {
+    position: "absolute",
+    top: "20%",
+    left: "20%",
+    width: '55%',
+    backgroundColor: '#FEF5D0',
+    padding: '30px',
+    outline: "none",
+    border: 'none',
+    borderRadius: '5px',
+    color: '#1B6270',
+  },
+  primary: {
+    color: '#AD4226',
+  },
+  darkPrimary: {
+    color:'#1B6270',
+  }
+};
+
 
 export default function Metodologia() {
   let [modalOpen1, setModalOpen1] = useState(false)
@@ -34,6 +121,15 @@ export default function Metodologia() {
   let [modalOpen3, setModalOpen3] = useState(false)
   let [modalOpen4, setModalOpen4] = useState(false)
   let [modalOpen5, setModalOpen5] = useState(false)
+
+  // const box = useRef()
+
+  const responsiveness = (e) => {
+    if(screen < device.mobileL){
+      console.log('Responsiveness')
+      return e.current = useStyles.mobile
+    }
+  }
 
   return (
     <Container id="metodologia">
@@ -47,87 +143,62 @@ export default function Metodologia() {
           </Information>
         </Wrapper>
 
-      <CardWrapper>
+        <CardWrapper>
         <CardContainer>
-          { !modalOpen1 ?
-          <Card 
-            onClick={() => setModalOpen1(true)}
-          >
-              <ImageBg1 />
-              <CardText>
-                <TitleCard> 3 a 6 anos</TitleCard>
-                <InfoCard>
-                  Saiba mais...
-                </InfoCard>
-              </CardText>
+          <Card>
+            <ImageBg1 />
+            <CardText>
+              <TitleCard> 3 a 6 anos</TitleCard>
+              <InfoCard>
+              <Button 
+                onClick={() => setModalOpen1(true)}
+                style={{ color: '#AD4226'}}
+              >
+                Saiba mais...
+              </Button>
+              </InfoCard>
+            </CardText>
           </Card>
-          : <Modal1 closeModal1={setModalOpen1}/>
-        }
-
-        { !modalOpen2 ?
-                  <Card 
-                    onClick={() => setModalOpen2(true)}
-                  >
-                <ImageBg2 />
-                <CardText>
-                  <TitleCard> 7 a 9 anos</TitleCard>
-                  <InfoCard>
-                    Saiba mais... 
-                  </InfoCard>
-                </CardText>
-              </Card>
-          : <Modal2 closeModal2={setModalOpen2}/>
-        } 
-            
-        { !modalOpen3 ?
-          <Card 
-            onClick={() => setModalOpen3(true)}
+          <Modal
+            open={modalOpen1}
+            onClose={() => setModalOpen1(false)}
+            aria-labelledby="parent-modal-title"
+            aria-describedby="parent-modal-description"
           >
-                <ImageBg3 />
-                <CardText>
-                  <TitleCard> 10 a 12 anos</TitleCard>
-                  <InfoCard>
-                    Saiba mais... 
-                  </InfoCard>
-                </CardText>
-              </Card>
-          : <Modal3 closeModal3={setModalOpen3}/>
-        }
-
-        { !modalOpen4 ?
-          <Card 
-            onClick={() => setModalOpen4(true)}
-          >
-                <ImageBg4 />
-                <CardText>
-                  <TitleCard> 13 a 16 anos</TitleCard>
-                  <InfoCard>
-                    Saiba mais... 
-                  </InfoCard>
-                </CardText>
-              </Card>
-          : <Modal4 closeModal4={setModalOpen4}/>
-        }
-
-        { !modalOpen5 ?
-          <Card 
-            onClick={() => setModalOpen5(true)}
-          >
-                <ImageBg5 />
-                <CardText>
-                  <TitleCard> 13 a 16 anos</TitleCard>
-                  <InfoCard>
-                    Saiba mais... 
-                  </InfoCard>
-                </CardText>
-              </Card>
-          : <Modal5 closeModal5={setModalOpen5}/>
-        }
-
+            <Box style={
+              screen < '425px' ? useStyles.mobile : useStyles.mobileL
+            }>
+              <Typography  
+                id="modal-modal-title" 
+                variant="h6" 
+                component="h2"
+                sx={{ textAlign: 'center' }}
+                style={useStyles.primary}
+              >
+                3 a 6 anos
+              </Typography>
+              <Typography 
+                id="modal-modal-description" 
+                sx={{ mt: 2 }}
+                style={useStyles.darkPrimary}
+              >
+                <InfoCard>
+                  É cientificamente comprovado que a introdução da música na primeira infância causa inúmeros benefícios como :
+                  Melhora no aprendizado
+                  Desenvolvimento da expressão corporal
+                  Estímulo da memória
+                  Auxilia na coordenação motora
+                  Desenvolvimento da linguagem e criatividade 
+                </InfoCard>
+                <InfoCard>
+                Por isso criamos o nosso método no qual  por meio de muita música, brincadeiras e histórias, as crianças entram em contato com a sonoridade da língua inglesa, onde conhecem o novo vocabulário de maneira poderosa e divertida aprendendo a se comunicar desde os primeiros momentos da vida como se esta fosse sua língua nativa. Tudo isso enquanto se divertem e se beneficiam de estímulos psicomotores.
+                </InfoCard>
+              </Typography>
+              <HouseLogo />
+            </Box>
+          </Modal>
         </CardContainer>
-        <Button>MATRICULE-SE</Button>
-      </CardWrapper>
-      <SunIcon />
+        </CardWrapper>
     </Container>
   )
 }

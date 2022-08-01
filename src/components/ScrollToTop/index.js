@@ -10,11 +10,9 @@ export const ScrollToTop = () => {
     if(window.pageYOffset > 300) {
       btn.current.classList.remove("atTheTop")
       btn.current.classList.add("backToTop-btn");
-      console.log('scrolling happening')
     } else {
       btn.current.classList.remove("backToTop-btn")
       btn.current.classList.add("atTheTop");
-      console.log('at the top')
     }
   }
 

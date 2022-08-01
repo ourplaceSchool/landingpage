@@ -1,4 +1,6 @@
 import React from 'react'
+import { Modal, Button, Typography, Box } from '@mui/material';
+
 import { 
   ModalCard,
   CardText,
@@ -11,12 +13,15 @@ import {
   ManchaAmarela
 } from './styles'
 
-export function Modal1({ closeModal1 }) {
+export function Modal1({ open, closeModal1 }) {
   return (
-    <ModalCard
-      onClick={() => closeModal1(false)}
-    >
-      <CardText>
+    <>
+      <Modal
+        open={open}
+        onClick={() => closeModal1(false)}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
         <TitleCard> 2 a 3 anos</TitleCard>
         <InfoCard>
           É cientificamente comprovado que a introdução da música na primeira infância causa inúmeros benefícios como :
@@ -29,9 +34,18 @@ export function Modal1({ closeModal1 }) {
         <InfoCard>
         Por isso criamos o nosso método no qual  por meio de muita música, brincadeiras e histórias, as crianças entram em contato com a sonoridade da língua inglesa, onde conhecem o novo vocabulário de maneira poderosa e divertida aprendendo a se comunicar desde os primeiros momentos da vida como se esta fosse sua língua nativa. Tudo isso enquanto se divertem e se beneficiam de estímulos psicomotores.
         </InfoCard>
+        <HouseLogo />
+      </Modal>
+    {/* <ModalCard
+      
+    >
+      <CardText>
+        
+
       </CardText>
-      <HouseLogo />
-    </ModalCard>
+      
+    </ModalCard> */}
+    </>
   )
 }
 
