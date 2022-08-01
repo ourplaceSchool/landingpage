@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { device } from '../device';
 import { 
   Button, 
@@ -27,29 +27,24 @@ import {
   SunIcon,
   HouseLogo
 } from './styles'
-import { screen } from '@testing-library/react';
-import { useEffect } from 'react';
-
-function rand() {
-  return Math.round(Math.random() * 20) - 10;
-}
-
-function getModalStyle() {
-  const top = 50 + rand();
-  const left = 50 + rand();
-
-  return {
-    top: `${top}%`,
-    left: `${left}%`,
-    transform: `translate(-${top}%, -${left}%)`
-  };
-}
 
 const useStyles = {
   mobile: {
     position: "absolute",
     top: "5%",
     left: "20px",
+    width: '70%',
+    backgroundColor: '#FEF5D0',
+    padding: '30px',
+    outline: "none",
+    border: 'none',
+    borderRadius: '5px',
+    color: '#1B6270',
+  },
+  mobileM: {
+    position: "absolute",
+    top: "5%",
+    left: "25px",
     width: '70%',
     backgroundColor: '#FEF5D0',
     padding: '30px',
@@ -122,14 +117,41 @@ export default function Metodologia() {
   let [modalOpen4, setModalOpen4] = useState(false)
   let [modalOpen5, setModalOpen5] = useState(false)
 
-  // const box = useRef()
+  function getWindowSize() {
+    const {innerWidth, innerHeight} = window;
+    return {innerWidth, innerHeight};
+  }
+
+  const [windowSize, setWindowSize] = useState(getWindowSize());
+
+  useEffect(() => {
+    function handleWindowResize() {
+      setWindowSize(getWindowSize());
+    }
+    window.addEventListener('resize', handleWindowResize);
+
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  }, []);
 
   const responsiveness = (e) => {
-    if(screen < device.mobileL){
-      console.log('Responsiveness')
+    if(windowSize.innerWidth < 375){
       return e.current = useStyles.mobile
+    } else if(windowSize.innerWidth < 425){
+      return e.current = useStyles.mobileM
+    } else if (windowSize.innerWidth < 768){
+      return e.current = useStyles.mobileL
+    } else if (windowSize.innerWidth < 1000){
+      return e.current = useStyles.tablet
+    } else if (windowSize.innerWidth < 1300){
+      return e.current = useStyles.laptop
+    } else {
+      return e.current = useStyles.laptopL
     }
   }
+
+
 
   return (
     <Container id="metodologia">
@@ -165,7 +187,9 @@ export default function Metodologia() {
             aria-labelledby="parent-modal-title"
             aria-describedby="parent-modal-description"
           >
-            <Box >
+            <Box 
+              style={responsiveness(responsiveness)}
+            >
               <Typography  
                 id="modal-modal-title" 
                 variant="h6" 
