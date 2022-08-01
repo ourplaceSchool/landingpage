@@ -165,9 +165,7 @@ export default function Metodologia() {
             aria-labelledby="parent-modal-title"
             aria-describedby="parent-modal-description"
           >
-            <Box style={
-              screen < '425px' ? useStyles.mobile : useStyles.mobileL
-            }>
+            <Box >
               <Typography  
                 id="modal-modal-title" 
                 variant="h6" 

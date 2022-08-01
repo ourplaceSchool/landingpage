@@ -205,8 +205,14 @@ export const Title = styled.h1`
   }
 
   @media ${device.laptopM} { 
-    font-size: 76px;
-    width: 70%;
+    font-size: 69px;
+    width: 60%;
+    margin-right: 280px;
+    margin-top: 105px;
+  }
+
+  @media ${device.laptopL} { 
+    margin-top: 130px;
   }
 
   @media ${device.desktop} { 
