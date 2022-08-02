@@ -7,6 +7,9 @@ import sunIcon from '../assets/images/sun-icon.png';
 import teenager from '../assets/images/teenager.png';
 import youngWoman from '../assets/images/young-woman.png';
 import houseLogo from '../assets/images/house.png';
+import rainbowIcon from '../assets/images/rainbow-icon.png';
+import manchaLaranja from '../assets/images/mancha-laranja.png';
+import manchaAmarela from '../assets/images/mancha--amarela.png';
 
 export const Container = styled.div `
   display: flex;
@@ -271,13 +274,14 @@ export const SunIcon = styled.div `
   background-image: url(${sunIcon});
   background-repeat: no-repeat;
   background-size: contain;
-  width: 235px;
-  height: 175px;
+  width: 149px;
+  height: 154px;
   align-self: baseline;
   z-index: 1;
   position: absolute;
-  bottom: -1px;
-  right: -30px;
+  bottom: -2px;
+  right: -33px;
+  opacity: 0.5;
   transform: rotate(-90deg);
 `;
 export const HouseLogo = styled.div `
@@ -293,6 +297,59 @@ export const HouseLogo = styled.div `
   left: 0;
   margin-bottom: 22px;
   margin-left: 13px;
+  z-index: 0;
+
+  @media ${device.tablet} { 
+    
+  }
+`;
+export const RainbowIcon = styled.div `
+  background-image: url(${rainbowIcon});
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: .6;
+  width: 153px;
+  height: 88px;
+  align-self: baseline;
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  z-index: 0;
+
+  @media ${device.tablet} { 
+    
+  }
+`;
+
+export const ManchaLaranja = styled.div `
+  background-image: url(${manchaLaranja});
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: .4;
+  width: 153px;
+  height: 88px;
+  align-self: baseline;
+  position: absolute;
+  bottom: -2px;
+  left: -5px;
+  z-index: 0;
+  transform: rotate(15deg);
+
+  @media ${device.tablet} { 
+    
+  }
+`;
+export const ManchaAmarela = styled.div `
+  background-image: url(${manchaAmarela});
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: .6;
+  width: 153px;
+  height: 88px;
+  align-self: baseline;
+  position: absolute;
+  bottom: 0;
+  left: 1px;
   z-index: 0;
 
   @media ${device.tablet} { 
