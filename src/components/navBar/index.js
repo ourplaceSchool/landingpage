@@ -84,7 +84,18 @@ export default function NavBar() {
             <Link href="#contato"> Fale Conosco </Link>
             <Link href="#galeria"> Galeria </Link>
           </Wrapper>
-          <Button>MATRICULE-SE</Button>
+          <Button>
+            <a 
+              href='https://wa.me/5511999610535' 
+              target="blank"
+              style={{
+                textDecoration: 'none',
+                color: 'white',
+              }}
+              >
+                MATRICULE-SE
+            </a>
+          </Button>
         </Container>
       </>
     )

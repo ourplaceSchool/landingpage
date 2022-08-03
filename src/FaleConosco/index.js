@@ -95,14 +95,14 @@ export default function FaleConosco() {
         <Div>
           <PhoneIcon />
           <AnchorLink
-            href="tel:+5511943300535"
+            href='https://wa.me/5511943300535' 
             target="_blank"
           >
             <Info>+11 94330-0535</Info>
           </AnchorLink>
 
           <AnchorLink
-            href="tel:+5511999610535"
+            href='https://wa.me/5511999610535' 
             target="_blank"
           >
           <Info>+11 99961-0535</Info>

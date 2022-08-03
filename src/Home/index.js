@@ -42,7 +42,16 @@ export default function Home() {
         </Title>
         <H5>Inglês para crianças, adolescentes e adultos. Online e presencial.</H5>
         <Button>
-          Clique para uma aula teste!
+          <a 
+            href='https://wa.me/5511999610535' 
+            target="blank"
+            style={{
+              textDecoration: 'none',
+              color: 'white',
+            }}
+            >
+              Clique para uma aula teste!
+          </a>
         </Button>
         <ArrowCurvey />
 
@@ -84,13 +93,18 @@ export default function Home() {
           </Information>          
         </InfoCard>
       </InfoWrapper>
-      <ButtonBottom>Clique para uma aula teste!</ButtonBottom>
-
-      {/* Bottom Icons */}
-      {/* <BlueVectorIcon />
-      <OrangeDots />
-      <OrangeDotsTwo />
-      <RainbowIcon /> */}
+      <ButtonBottom>
+        <a 
+          href='https://wa.me/5511999610535' 
+          target="blank"
+          style={{
+            textDecoration: 'none',
+            color: 'white',
+          }}
+          >
+            Clique para uma aula teste!
+        </a>
+      </ButtonBottom>
     </Container>
   )
 }
