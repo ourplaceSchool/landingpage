@@ -10,7 +10,7 @@ import frameDots from '../assets/images/frame-dots.png'
 import rainbowFrame from '../assets/images/rainbow-frame.png'
 import star from '../assets/images/star.png'
 import arrowCurvey from '../assets/images/arrow-curvey.png'
-import vectorPhoto from '../assets/images/vector-photo.svg'
+import vectorPhoto from '../assets/images/mask-group.png'
 
 export const Container = styled.div `
   display: flex;
@@ -80,17 +80,18 @@ export const ClassroomVector = styled.div `
     z-index: 3;
     position: absolute;
     top: 0;
-    right: 0;
-    transform: rotate(-179.3deg);
+    right: -310px;
   }
 
   @media ${device.laptopM} { 
-    height: 667px;
+    height: 560px;
+    right: -148px;
   }
   @media ${device.desktop} { 
-    height: 1188px;
+    height: 831px;
     width: 768px;
-    top: -156px;
+    top: 17px;
+    right: -83px;
   }
 `;
 
