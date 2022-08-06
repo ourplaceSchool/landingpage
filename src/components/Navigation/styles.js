@@ -33,7 +33,7 @@ export const TopBg = styled.div `
   z-index: 0;
 
   @media ${device.mobileM} { 
-    top: -41%;
+    top: -38%;
     left: -19.08%;
   }
 
