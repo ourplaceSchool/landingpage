@@ -3,11 +3,11 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { 
   SlideImage,
   SlideContainer,
-  dotsContainer,
 } from './styles'
 
 export default function Slider({slides}) {
-  const [currentIndex, setCurrentIndex] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(0);
+  // const [active, setActive] = useState(false);
 
   const leftArrowStyle = {
     position: 'absolute',
@@ -17,7 +17,8 @@ export default function Slider({slides}) {
     fontSize: '55px',
     color: 'white',
     zIndex: 1,
-    cursor: 'pointer'
+    cursor: 'pointer',
+    opacity: '30%',
   };
 
   const rightArrowStyle = {
@@ -28,7 +29,8 @@ export default function Slider({slides}) {
     fontSize: '55px',
     color: 'white',
     zIndex: 1,
-    cursor: 'pointer'
+    cursor: 'pointer',
+    opacity: '30%',
   };
 
   const dotsContainer = {
@@ -36,12 +38,27 @@ export default function Slider({slides}) {
     justifyContent: 'center'
   };
 
-  const dotStyle = {
-    margin: '0 3px',
-    cursor: 'pointer',
-    fontSize: '20px',
-    color: '#1B6270',
-  };
+    const dotStyle = {
+      margin: '0 3px',
+      cursor: 'pointer',
+      fontSize: '20px',
+      color: '#1B6270',
+    }
+
+  // const dotStyle = {
+  //   notActive: {
+  //     margin: '0 3px',
+  //     cursor: 'pointer',
+  //     fontSize: '20px',
+  //     color: '#1B6270',
+  //   },
+  //   active: {
+  //     margin: '0 3px',
+  //     cursor: 'pointer',
+  //     fontSize: '20px',
+  //     color: '#AD4226',
+  //   },
+  // };
 
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;

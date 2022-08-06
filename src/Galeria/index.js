@@ -86,15 +86,49 @@ export default function Galeria() {
     }
   };
 
-
-  return (
-    <Container id="galeria">
-      <Title>Galeria</Title>
-      <GalleryWrapper>
-        <div style={containerStyles.tablet}>
-          <Slider slides={photos} />
-        </div>
-      </GalleryWrapper>
-    </Container>
-  )
+  if(window.innerWidth < 425) {
+    return (
+      <Container id="galeria">
+        <Title>Galeria</Title>
+        <GalleryWrapper>
+          <div style={containerStyles.mobile}>
+            <Slider slides={photos} />
+          </div>
+        </GalleryWrapper>
+      </Container>
+    )
+  } else if(window.innerWidth < 600) {
+    return (
+      <Container id="galeria">
+        <Title>Galeria</Title>
+        <GalleryWrapper>
+          <div style={containerStyles.mobileL}>
+            <Slider slides={photos} />
+          </div>
+        </GalleryWrapper>
+      </Container>
+    )
+  } else if(window.innerWidth < 1000) {
+    return (
+      <Container id="galeria">
+        <Title>Galeria</Title>
+        <GalleryWrapper>
+          <div style={containerStyles.tablet}>
+            <Slider slides={photos} />
+          </div>
+        </GalleryWrapper>
+      </Container>
+    )
+  } else {
+    return (
+      <Container id="galeria">
+        <Title>Galeria</Title>
+        <GalleryWrapper>
+          <div style={containerStyles.laptop}>
+            <Slider slides={photos} />
+          </div>
+        </GalleryWrapper>
+      </Container>
+    )
+  }
 }
