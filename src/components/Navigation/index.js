@@ -13,7 +13,7 @@ import {
   Link
 } from './styles'
 
-export default function NavBar() {
+export default function Navigation() {
   const dropDownRef = useRef(null)
   const [isActive, setIsActive] = useState(false)
   const onClick = () => setIsActive(!isActive)

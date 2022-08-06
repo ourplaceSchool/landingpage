@@ -1,7 +1,7 @@
 import GlobalStyle from './globalStyles';
 import { ThemeProvider } from 'styled-components';
 import {ScrollToTop} from './components/ScrollToTop'
-import NavBar from './components/NavBar';
+import Navigation from './components/Navigation';
 import Footer from './components/Footer'
 import Home from './Home';
 import QuemSomos from './QuemSomos';
@@ -26,7 +26,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-        <NavBar />
+        <Navigation />
           <Home />
           <QuemSomos />
           <Metodologia />
