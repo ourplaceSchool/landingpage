@@ -44,7 +44,7 @@ export const TopBg = styled.div `
   @media ${device.tablet} { 
     left: -2.47%;
     right: 63.26%;
-    top: -14.08%;
+    top: -40.08%;
     bottom: 78.55%;
   }
 
