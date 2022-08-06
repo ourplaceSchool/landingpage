@@ -95,7 +95,7 @@ export const CardContainer = styled.div`
 `
 export const Card = styled.div`
   width: 100%;
-  height: 385px;
+  height: 335px;
   margin: 5px;
   border-radius: 8px;
   box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.25);
@@ -138,7 +138,7 @@ export const CardText = styled.div `
   }
 `;
 export const ImageBg1 = styled.div `
-  background-image: url(${asianKid});
+  background-image: url(https://res.cloudinary.com/ourplaceeglishschool/image/upload/v1659787780/website/Faixa%20Etaria/3-6_ttjqqe.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
@@ -155,7 +155,7 @@ export const ImageBg1 = styled.div `
   }
 `;
 export const ImageBg2 = styled.div `
-  background-image: url(${homeworKid});
+  background-image: url(https://res.cloudinary.com/ourplaceeglishschool/image/upload/v1659787780/website/Faixa%20Etaria/7-9_fn5qat.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
@@ -172,7 +172,7 @@ export const ImageBg2 = styled.div `
   }
 `;
 export const ImageBg3 = styled.div `
-  background-image: url(${headphoneKid});
+  background-image: url(https://res.cloudinary.com/ourplaceeglishschool/image/upload/v1659787780/website/Faixa%20Etaria/10-12_nzvxym.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
@@ -189,7 +189,7 @@ export const ImageBg3 = styled.div `
   }
 `;
 export const ImageBg4 = styled.div `
-  background-image: url(${teenager});
+  background-image: url(https://res.cloudinary.com/ourplaceeglishschool/image/upload/v1659787780/website/Faixa%20Etaria/13-16_fksqvv.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
@@ -206,7 +206,7 @@ export const ImageBg4 = styled.div `
   }
 `;
 export const ImageBg5 = styled.div `
-  background-image: url(${youngWoman});
+  background-image: url(https://res.cloudinary.com/ourplaceeglishschool/image/upload/v1659789088/website/Faixa%20Etaria/pexels-rfstudio-3059748_fiq6tl.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
@@ -216,6 +216,10 @@ export const ImageBg5 = styled.div `
 
   @media ${device.laptop} { 
     height: 610px;
+  }
+
+  @media ${device.laptopM} {
+    width: 277px;
   }
 
   @media ${device.desktop} { 
