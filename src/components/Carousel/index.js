@@ -4,6 +4,17 @@ import {
   Container,
   SlideImage,
   SlideImage2,
+  SlideImage3,
+  SlideImage4,
+  SlideImage5,
+  SlideImage6,
+  SlideImage7,
+  SlideImage8,
+  SlideImage9,
+  SlideImage10,
+  SlideImage11,
+  SlideImage12,
+  SlideImage13,
   SlideshowContainer,
   Arrows,
   ArrowLeft,
@@ -75,10 +86,17 @@ export default function Carousel() {
         <SlideshowContainer ref={slideshow}>
             <SlideImage />
             <SlideImage2 />
-            <SlideImage />
-            <SlideImage2 />
-            <SlideImage />
-            <SlideImage2 />
+            <SlideImage3 />
+            <SlideImage4 />
+            <SlideImage5 />
+            <SlideImage6 />
+            <SlideImage7 />
+            <SlideImage8 />
+            <SlideImage9 />
+            <SlideImage10 />
+            <SlideImage11 />
+            <SlideImage12 />
+            <SlideImage13 />
         </SlideshowContainer>
       </SlideContainer>      
           <Arrows>
