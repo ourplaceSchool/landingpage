@@ -33,11 +33,12 @@ export const TopBg = styled.div `
   z-index: 0;
 
   @media ${device.mobileM} { 
-    top: -23.47%;
+    top: -41%;
+    left: -19.08%;
   }
 
   @media ${device.mobileL} { 
-    top: -28.47%;
+    top: -47%;
   }
 
   @media ${device.tablet} { 
@@ -75,7 +76,16 @@ export const Logo = styled.div `
   height: 25px;
   z-index: 1;
 
+  @media ${device.mobileM} {
+    margin: 0 75px;
+  }
+
+  @media ${device.mobileL} {
+    margin: 0 100px;
+  }
+
   @media ${device.tablet} {
+    position: inherit;
     width: 135px;
     height: 36px;
   }
@@ -145,10 +155,10 @@ export const DropDownWrapper = styled.div`
   position: absolute;
   right: 0;
   top: 0;
+  z-index: 5;
 
   &:hover { 
     color: ${({ theme }) => theme.colors.primary};
-    background-color: ${({ theme }) => theme.colors.darkPrimary};
   }
 
 `;

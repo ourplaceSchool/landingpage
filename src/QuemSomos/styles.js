@@ -160,6 +160,7 @@ export const H4 = styled.h4`
   font-size: 15px;
   color: ${({ theme }) =>  theme.colors.darkPrimary};
   margin: 0;
+  margin-top: 20px;
 
   @media ${device.mobileM} { 
     font-size: 16px;
