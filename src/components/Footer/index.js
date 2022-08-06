@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { AiFillFacebook, AiFillInstagram, AiFillMail } from 'react-icons/ai';
 import { 
   Container,
   Logo,
@@ -7,16 +7,25 @@ import {
   Titulo,
   Information,
   Info,
+  InfoSociais,
   RedeSociais,
-  InstaIcon,
-  MailIcon,
-  FacebookIcon,
   Div,
   CopyRight,
   AnchorLink
 } from './styles'
 
 export default function Footer() {
+  const socialIcons = {
+    tablet: {
+      width: '30px',
+      height: '30px',
+
+    },
+    laptop: {
+      width: '60px',
+      height: '60px',
+    }
+  }
 
   if(window.innerWidth < 900){
     return (
@@ -32,7 +41,7 @@ export default function Footer() {
                 </Information>          
               </Info>
 
-              <Info>
+              <InfoSociais>
                 <Titulo>Redes Sociais</Titulo>
                 <RedeSociais>
 
@@ -40,24 +49,24 @@ export default function Footer() {
                     href="https://www.instagram.com/inglesourplace/"
                     target="_blank"
                   >
-                    <InstaIcon />
+                    <AiFillInstagram style={socialIcons.tablet}/>
                   </AnchorLink>
 
                   <AnchorLink
                     href="https://www.facebook.com/inglesourplace/"
                     target="_blank"
                   >
-                    <FacebookIcon />
+                    <AiFillFacebook style={socialIcons.tablet}/>
                   </AnchorLink>
 
                   <AnchorLink
                     href="milena@ourplace.com.br"
                     target="_blank"
                   >
-                  <MailIcon />
+                  <AiFillMail style={socialIcons.tablet}/>
                   </AnchorLink>
                   </RedeSociais>           
-              </Info>
+              </InfoSociais>
             </Wrapper>
           </Div>
             <CopyRight>
@@ -87,7 +96,7 @@ export default function Footer() {
               </Information>          
             </Info>
 
-            <Info>
+            <InfoSociais>
               <Titulo>Redes Sociais</Titulo>
               <RedeSociais>
 
@@ -95,24 +104,24 @@ export default function Footer() {
                   href="https://www.instagram.com/inglesourplace/"
                   target="_blank"
                 >
-                  <InstaIcon />
+                  <AiFillInstagram style={socialIcons.laptop}/>
                 </AnchorLink>
 
                 <AnchorLink
                   href="https://www.facebook.com/inglesourplace/"
                   target="_blank"
                 >
-                  <FacebookIcon />
+                  <AiFillFacebook style={socialIcons.laptop}/>
                 </AnchorLink>
 
                 <AnchorLink
                   href="milena@ourplace.com.br"
                   target="_blank"
                 >
-                <MailIcon />
+                <AiFillMail style={socialIcons.laptop}/>
                 </AnchorLink>
               </RedeSociais>         
-            </Info>
+            </InfoSociais>
           </Wrapper>
         </Div>
           <CopyRight>

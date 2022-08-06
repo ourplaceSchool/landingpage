@@ -45,7 +45,7 @@ export const Logo = styled.div `
     height: 64px;
     width: 155px;
     left: 13px;
-    top: 72px;
+    top: 54px;
   }
 
  @media ${device.laptop} { 
@@ -74,8 +74,12 @@ export const Logo = styled.div `
 `;
 export const Wrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 40px;
+
+  @media ${device.laptop} { 
+    grid-template-columns: repeat(3, 1fr);
+  }  
 
   @media ${device.laptopM} { 
     grid-gap: 230px;
@@ -85,6 +89,22 @@ export const Wrapper = styled.div`
 export const Info = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media ${device.tablet} { 
+    width: 60%;
+  }
+
+  @media ${device.laptop} { 
+    width: 240px;
+    padding: 20px;
+    height: 125px;
+  }
+`;
+export const InfoSociais = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: center;
 
   @media ${device.tablet} { 
     width: 60%;
@@ -142,6 +162,7 @@ export const Information = styled.p`
 `;
 export const RedeSociais = styled.div `
   display: flex;
+  margin-top: 8px;
 
   @media ${device.tablet} { 
     width: 60%;
@@ -228,7 +249,7 @@ export const Div = styled.div`
   color: ${({ theme }) =>  theme.colors.white};
   display: flex;
   flex-direction: row;
-  align-self: flex-end;
+  align-self: center;
   margin-top: 40px;
 
   @media ${device.tablet} { 
@@ -264,4 +285,8 @@ export const CopyRight = styled.div`
 export const AnchorLink = styled.a`
   text-decoration: none;
   color: ${({ theme }) =>  theme.colors.white};
+
+  :hover{
+    color: ${({ theme }) => theme.colors.bgColor};
+  }
 `;
