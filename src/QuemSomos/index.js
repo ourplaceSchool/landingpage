@@ -15,13 +15,18 @@ import {
 } from './styles'
 
 export default function QuemSomos() {
+
+  const photo = {
+    backgroundImage: 'url(https://res.cloudinary.com/ourplaceeglishschool/image/upload/v1659787788/website/Quem%20Somos/milena_quemsomos_zm8hky.jpg)',
+  };
+
   return (
     <Container id="quemsomos">
       <Title>Quem Somos</Title>
       <Wrapper>
         <GreenFrame />
         <Box>
-          <ProfilePhoto />
+          <ProfilePhoto style={photo}/>
           <Info>
             <H4>Conheça a nossa Idealizadora</H4>
             <Information>

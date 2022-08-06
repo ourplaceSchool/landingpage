@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { device } from "../device";
 import frameTopBox from '../assets/images/frame-top-box.png';
-import ellipseProfile from '../assets/images/ellipse-profile.png';
 import houseLogo from '../assets/images/house-logo.png';
 import coloring from '../assets/images/coloring.png';
 import topGreen from '../assets/images/top-green.png';
@@ -106,29 +105,34 @@ export const GreenFrame = styled.div `
   
 `;
 export const ProfilePhoto = styled.div `
-  background-image: url(${ellipseProfile});
+  background-image: url(ehttps://res.cloudinary.com/ourplaceeglishschool/image/upload/v1659787788/website/Quem%20Somos/milena_quemsomos_zm8hky.jpgllipseProfile);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center center;
   width: 76px;
   height: 76px;
-  margin: 20px;
+  border-radius: 50%;
   position: absolute;
-  top: -16px;
+  top: 12px;
 
   @media ${device.mobileM} { 
     width: 103px;
     height: 103px;
   }
 
-  @media ${device.tablet} { 
+  @media ${device.laptop} { 
     position: inherit;
-    width: 219px;
-    height: 219px;
+    width: 35%;
+    height: 45%;
   }
 
-  @media ${device.laptopL} { 
-    width: 389px;
-    height: 389px;
+  @media ${device.laptopM} { 
+    width: 40%;
+    height: 58%;
+  }
+  @media ${device.desktop} { 
+    width: 16%;
+    height: 55%;
   }
 `;
 export const Box = styled.div `
