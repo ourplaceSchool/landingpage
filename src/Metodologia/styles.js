@@ -1,11 +1,6 @@
 import styled from "styled-components";
 import { device } from "../device"
-import asianKid from '../assets/images/asian-kid.png';
-import homeworKid from '../assets/images/homework-kid.png';
-import headphoneKid from '../assets/images/headphone-kid.png';
 import sunIcon from '../assets/images/sun-icon.png';
-import teenager from '../assets/images/teenager.png';
-import youngWoman from '../assets/images/young-woman.png';
 import houseLogo from '../assets/images/house.png';
 import rainbowIcon from '../assets/images/rainbow-icon.png';
 import manchaLaranja from '../assets/images/mancha-laranja.png';

@@ -1,7 +1,6 @@
 import styled from "styled-components"
 import { device } from "../device"
 import whiteBg from '../assets/images/white-bg.png'
-import classroomPhoto from '../assets/images/classroom-photo.png'
 import greenBook from '../assets/images/green-book.png'
 import openBook from '../assets/images/open-book.png'
 import teacher from '../assets/images/teacher.png'

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { device } from '../device';
+
 import { 
   Button, 
   Modal, 
@@ -23,7 +23,6 @@ import {
   ImageBg5,
   TitleCard,
   InfoCard,
-  Btn,
   SunIcon,
   HouseLogo,
   RainbowIcon,

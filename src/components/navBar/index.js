@@ -6,7 +6,6 @@ import {
   Container,
   Logo,
   Wrapper,
-  Navigation,
   Button,
   DropdownButton,
   DropDownWrapper,
@@ -19,15 +18,15 @@ export default function NavBar() {
   const [isActive, setIsActive] = useState(false)
   const onClick = () => setIsActive(!isActive)
 
-  let activeStyle = {
-    color: '#AD4226',
-    textDecoration: 'none'
-  };
+  // let activeStyle = {
+  //   color: '#AD4226',
+  //   textDecoration: 'none'
+  // };
 
-  let nonActive = {
-    color: '#1B6270',
-    textDecoration: 'none',
-  }
+  // let nonActive = {
+  //   color: '#1B6270',
+  //   textDecoration: 'none',
+  // }
 
 
   if(window.innerWidth < 769){
