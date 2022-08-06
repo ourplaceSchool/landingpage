@@ -14,7 +14,7 @@ export const Container = styled.div `
 
   @media ${device.tablet} { 
     margin: 0;
-  }
+  } 
 `;
 export const Title = styled.h1`
   display: flex;
@@ -105,7 +105,7 @@ export const GreenFrame = styled.div `
   
 `;
 export const ProfilePhoto = styled.div `
-  background-image: url(ehttps://res.cloudinary.com/ourplaceeglishschool/image/upload/v1659787788/website/Quem%20Somos/milena_quemsomos_zm8hky.jpgllipseProfile);
+  /* background-image: url(ehttps://res.cloudinary.com/ourplaceeglishschool/image/upload/v1659787788/website/Quem%20Somos/milena_quemsomos_zm8hky.jpgllipseProfile); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -113,7 +113,7 @@ export const ProfilePhoto = styled.div `
   height: 76px;
   border-radius: 50%;
   position: absolute;
-  top: 12px;
+  top: 10px;
 
   @media ${device.mobileM} { 
     width: 103px;

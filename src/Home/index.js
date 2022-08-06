@@ -26,7 +26,7 @@ import {
 
 export default function Home() {
   return (
-    <Container id="home">
+    <Container id="home" styles={{marginTop: '30px'}}>
       <BoxContainer>
         <Title>
           No matter where, we get there!
