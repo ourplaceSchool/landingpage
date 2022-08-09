@@ -168,7 +168,7 @@ export const ArrowCurvey = styled.div `
   }
 
   @media ${device.laptopM} { 
-    top: 466px;
+    top: 490px;
     left: 279px;
   }
 
@@ -190,7 +190,7 @@ export const Title = styled.h1`
   font-size:25px;
   color: ${({ theme }) =>  theme.colors.darkPrimary};
   width: 70%;
-  margin-top: 25px;
+  margin-top: 35px;
 
 
   @media ${device.tablet} { 
@@ -208,7 +208,7 @@ export const Title = styled.h1`
     font-size: 69px;
     width: 60%;
     margin-right: 280px;
-    margin-top: 105px;
+    margin-top: 135px;
   }
 
   @media ${device.laptopL} { 
@@ -393,7 +393,7 @@ export const Button = styled.button `
   }
 
   @media ${device.laptopM} { 
-    top: 420px;
+    top: 444px;
     left: 330px;
   }
 

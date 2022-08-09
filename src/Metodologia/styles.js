@@ -201,7 +201,7 @@ export const ImageBg4 = styled.div `
   }
 `;
 export const ImageBg5 = styled.div `
-  background-image: url(https://res.cloudinary.com/ourplaceeglishschool/image/upload/v1659789088/website/Faixa%20Etaria/pexels-rfstudio-3059748_fiq6tl.jpg);
+  background-image: url(https://res.cloudinary.com/ourplaceeglishschool/image/upload/v1659787780/website/Faixa%20Etaria/Adultos_lkoyeg.png);
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;

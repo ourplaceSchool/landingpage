@@ -102,7 +102,7 @@ export const Logo = styled.div `
     width: 288px;
     height: 72px;
     top: 40px;
-    left: 135px;
+    left: 65px;
   }
 
   @media ${device.desktop} { 
