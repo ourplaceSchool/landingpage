@@ -49,14 +49,14 @@ export const TopBg = styled.div `
   }
 
   @media ${device.laptop} { 
-left: -2.47%;
-    right: 75.26%;
-    top: -40.08%;
-    bottom: 81.55%;
+    left: -7.47%;
+    right: 55.26%;
+    top: -35.08%;
+    bottom: 85.55%;
   }
 
   @media ${device.laptopM} { 
-    top: -30%;
+    top: -35%;
     bottom: -16.55%;
     width: 42%;
   }
@@ -100,10 +100,10 @@ export const Logo = styled.div `
   }
 
   @media ${device.laptopM}{
-    width: 288px;
+    width: 237px;
     height: 72px;
-    top: 40px;
-    left: 65px;
+    top: 11px;
+    left: 63px;
   }
 
   @media ${device.desktop} { 
@@ -130,6 +130,10 @@ export const Link = styled.a`
 
   @media ${device.laptop} { 
     font-size: 16px;
+  }
+
+  @media ${device.laptopM} { 
+    font-size: 20px;
   }
 
   @media ${device.desktop} { 
