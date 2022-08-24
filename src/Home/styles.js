@@ -201,7 +201,7 @@ export const Title = styled.h1`
 
   @media ${device.laptop} { 
     font-size: 60px;
-    width: 60%;
+    width: 68%;
   }
 
   @media ${device.laptopM} { 
@@ -219,7 +219,7 @@ export const Title = styled.h1`
     display: flex;
     align-items: center;
     font-size: 120px;
-    margin-top: 206px;
+    margin-top: 216px;
   }
 `;
 
