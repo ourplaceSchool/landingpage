@@ -24,48 +24,51 @@ export const TopBg = styled.div `
   background-image: url(${topMenuVector});
   background-repeat: no-repeat;
   background-size: contain;
-  width: 100%;
+  width: 80%;
   position: absolute;
-  left: -16.47%;
-  right: 63.26%;
-  top: -18.08%;
-  bottom: 79.55%;
+  left: -0.53%;
+  top: -14%;
+  bottom: 78%;
   z-index: 0;
 
   @media ${device.mobileM} { 
-    top: -30%;
-    left: -20%;
+    top: -16%;
+    left: 0%;
   }
 
   @media ${device.mobileL} { 
-    top: -47%;
+    top: -20%;
   }
 
   @media ${device.tablet} { 
+    top: -30.08%;
+    right: 40.26%;
+    bottom: 83.55%;
     left: -5.47%;
-    right: 63.26%;
-    top: -40.08%;
-    bottom: 78.55%;
   }
 
   @media ${device.laptop} { 
+    top: -25.08%;
+    right: 70.26%;
+    bottom: 62.55%;
     left: -7.47%;
-    right: 55.26%;
-    top: -35.08%;
-    bottom: 85.55%;
+    width: 45%;
+    transform: rotate(347deg);
+
   }
 
   @media ${device.laptopM} { 
-    top: -35%;
+    top: -30%;
     bottom: -16.55%;
+    left: 0.53%;
     width: 42%;
   }
 
   @media ${device.desktop} {
     top: -28%;
     left: -0.47%;
-    bottom: -75.45%;
     width: 34%;
+    transform: translate(13px, 105px);
   }
 `;
 
@@ -73,44 +76,46 @@ export const Logo = styled.div `
   background-image: url(${logoHorizontal});
   background-repeat: no-repeat;
   background-size: contain;
-  width: 90px;
-  height: 25px;
+  width: 40%;
+  height: 60%;
+  margin-left: 35px;
   z-index: 1;
 
   @media ${device.mobileM} {
-    margin: 0 75px;
+    margin: 0 53px;
   }
 
   @media ${device.mobileL} {
-    margin: 0 100px;
+    margin: 0 77px;
   }
 
   @media ${device.tablet} {
     position: inherit;
-    width: 135px;
-    height: 36px;
+    width: 100%;
+    height: 70%;
+    margin: 10px 90px 0 90px;
   }
 
   @media ${device.laptop}{
     position: absolute;
-    top: 15px;
-    left: 40px;
-    width: 160px;
+    top: 22px;
+    left: -36px;
+    width: 197px;
     height: 100%;
   }
 
   @media ${device.laptopM}{
-    width: 237px;
+    width: 261px;
     height: 72px;
-    top: 11px;
-    left: 63px;
+    top: 23px;
+    left: -17px;
   }
 
   @media ${device.desktop} { 
-    width: 369px;
-    height: 90px;
+    width: 100%;
+    height: 100%;
     top: 80px;
-    left: 160px;
+    left: 98px;
   }
 `;
 export const Wrapper = styled.div`
