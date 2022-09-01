@@ -51,17 +51,17 @@ export const CurlyBg = styled.div `
 
   @media ${device.laptop} { 
     top: -30px;
-    height: 400px;
+    height: 540px;
   }
 
   @media ${device.laptopM} { 
     top: -30px;
-    height: 610px;
+    height: 640px;
   }
 
   @media ${device.desktop} { 
     top: -183px;
-    height: 1100px;
+    height: 1140px;
   }
 
 `;

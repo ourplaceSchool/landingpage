@@ -17,6 +17,10 @@ import {
 export default function QuemSomos() {
 
   const photo = {
+    margin: '0px 0px 0px 0px',
+    height: '100%',
+    width: '100%',
+    objectFit: 'cover',
     backgroundImage: 'url(https://res.cloudinary.com/ourplaceeglishschool/image/upload/v1659787788/website/Quem%20Somos/milena_quemsomos_zm8hky.jpg)',
   };
 
@@ -26,7 +30,18 @@ export default function QuemSomos() {
       <Wrapper>
         <GreenFrame />
         <Box>
-          <ProfilePhoto style={photo}/>
+          <ProfilePhoto>
+            <img 
+              style={{
+                margin: '0px 0px 0px 0px',
+                height: '100%',
+                width: '100%',
+                objectFit: 'cover',
+              }}  
+              alt="Foto da Milena"
+              src="https://res.cloudinary.com/ourplaceeglishschool/image/upload/v1659787788/website/Quem%20Somos/milena_quemsomos_zm8hky.jpg"
+            />
+          </ProfilePhoto>
           <Info>
             <H4>Conheça a nossa Idealizadora</H4>
             <Information>
@@ -39,7 +54,7 @@ export default function QuemSomos() {
           </Info>
         </Box>
       </Wrapper>
-      <ColoredBg />
+      {/* <ColoredBg /> */}
     </Container>
   )
 }

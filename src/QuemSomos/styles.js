@@ -105,39 +105,50 @@ export const GreenFrame = styled.div `
   
 `;
 export const ProfilePhoto = styled.div `
-  /* background-image: url(ehttps://res.cloudinary.com/ourplaceeglishschool/image/upload/v1659787788/website/Quem%20Somos/milena_quemsomos_zm8hky.jpgllipseProfile); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  width: 76px;
-  height: 76px;
+  background-color: white;
+  border: 1px solid #F0EFF5;
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
+  overflow: hidden;
+  object-fit: fill;
   position: absolute;
-  top: 10px;
+  top: -30px;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
 
-  @media ${device.mobileM} { 
-    width: 103px;
-    height: 103px;
+   @media ${device.mobileM} { 
+    top: -15px;
+    width: 120px;
+    height: 120px;
+  }
+
+  @media ${device.tablet} { 
+    top: 20px;
+    right: 30px;
+    width: 140px;
+    height: 140px;
   }
 
   @media ${device.laptop} { 
-    position: inherit;
-    width: 35%;
-    height: 45%;
+    top: 20px;
+    right: 30px;
+    width: 170px;
+    height: 170px;
   }
 
-  @media ${device.laptopM} { 
-    width: 40%;
-    height: 58%;
+   @media ${device.laptopM} { 
+    width: 230px;
+    height: 230px;
   }
-  @media ${device.desktop} { 
+  /* @media ${device.desktop} { 
     width: 16%;
     height: 55%;
-  }
+  } */
 `;
 export const Box = styled.div `
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   
@@ -174,8 +185,17 @@ export const H4 = styled.h4`
     font-size: 21px;
   }
 
+  @media ${device.laptop} { 
+    font-size: 35px;
+  }
+
+  @media ${device.laptopM} { 
+    margin-top: 70px;
+  }
+
   @media ${device.desktop} { 
-    font-size: 60px;
+    font-size: 50px;
+    margin-top: 20px;
   }
 `;
 export const Information = styled.p`
@@ -188,9 +208,17 @@ export const Information = styled.p`
   @media ${device.tablet} { 
     font-size: 12px;
   }
+  @media ${device.laptop} { 
+    font-size: 14px;
+  }
+
+  @media ${device.laptopM} { 
+    margin-top: 10px;
+    font-size: 14px;
+  }
 
   @media ${device.desktop} { 
-    font-size: 26px;
+    font-size: 24px;
   }
 `;
 export const Bold = styled.p`
@@ -202,9 +230,14 @@ export const Bold = styled.p`
   @media ${device.tablet} { 
     font-size: 12px;
   }
-
+  @media ${device.laptop} { 
+    font-size: 14px;
+  }
+  @media ${device.laptopM} { 
+    font-size: 16px;
+  }
   @media ${device.desktop} { 
-    font-size: 26px;
+    font-size: 24px;
   }
 `;
 export const HouseLogo = styled.div `
