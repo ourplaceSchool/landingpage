@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import { IoIosArrowDown } from 'react-icons/io';
 
@@ -10,24 +10,14 @@ import {
   DropdownButton,
   DropDownWrapper,
   TopBg,
-  Link
+  Link,
+  ContainerLaptop
 } from './styles'
 
 export default function Navigation() {
   const dropDownRef = useRef(null)
   const [isActive, setIsActive] = useState(false)
   const onClick = () => setIsActive(!isActive)
-
-  // let activeStyle = {
-  //   color: '#AD4226',
-  //   textDecoration: 'none'
-  // };
-
-  // let nonActive = {
-  //   color: '#1B6270',
-  //   textDecoration: 'none',
-  // }
-
 
   if(window.innerWidth < 769){
     return(
@@ -73,8 +63,8 @@ export default function Navigation() {
   } else {
     return (
       <>
-        <TopBg />
-        <Container>
+        {/* <TopBg /> */}
+        <ContainerLaptop>
           <Logo />
           <Wrapper>
             <Link href="#home"> Home </Link>
@@ -95,9 +85,8 @@ export default function Navigation() {
                 MATRICULE-SE
             </a>
           </Button>
-        </Container>
+        </ContainerLaptop>
       </>
     )
   }
-
-}
+};

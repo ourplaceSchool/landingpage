@@ -13,6 +13,7 @@ import Galeria from './Galeria';
 const theme = {
   colors: {
     primary: '#AD4226',
+    primaryHover: 'rgba(173, 66, 38, .8)',
     darkPrimary: '#1B6270',
     white: '#FFFFFF',
     darkHover: 'rgba(27, 98, 112, 0.8)',
@@ -39,9 +40,3 @@ function App() {
 }
 
 export default App;
-
-// const Container = styled.div`
-//   display: grid;
-//   grid-template-columns: repeat(auto-fill, 1fr);
-//   grid-gap: 50px;
-// `;

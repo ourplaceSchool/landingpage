@@ -10,14 +10,21 @@ export const Container = styled.div `
   position: relative;
   height: 57px;
   padding: 0 20px;
-  color: ${({ theme }) => theme.colors.wite};
+  color: ${({ theme }) => theme.colors.white};
   z-index: 10;
+`;
 
-  @media ${device.laptop} { 
-    height: 32px;
-    padding: 40px 40px;
-    justify-content: flex-end;
-  }
+export const ContainerLaptop = styled.div `
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  height: 57px;
+  padding: 0 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: ${({ theme }) => theme.colors.primaryHover};
+  z-index: 10;
 `;
 
 export const TopBg = styled.div `
@@ -47,7 +54,7 @@ export const TopBg = styled.div `
     left: -5.47%;
   }
 
-  @media ${device.laptop} { 
+  /* @media ${device.laptop} { 
     top: -25.08%;
     right: 70.26%;
     bottom: 62.55%;
@@ -69,19 +76,18 @@ export const TopBg = styled.div `
     left: -0.47%;
     width: 34%;
     transform: translate(13px, 105px);
-  }
+  } */
 `;
 
 export const Logo = styled.div `
   background-image: url(${logoHorizontal});
   background-repeat: no-repeat;
   background-size: contain;
-  width: 40%;
+  width: 30%;
   height: 60%;
-  margin-left: 35px;
   z-index: 1;
 
-  @media ${device.mobileM} {
+  /* @media ${device.mobileM} {
     margin: 0 53px;
   }
 
@@ -102,9 +108,9 @@ export const Logo = styled.div `
     left: -36px;
     width: 197px;
     height: 100%;
-  }
+  } */
 
-  @media ${device.laptopM}{
+  /* @media ${device.laptopM}{
     width: 261px;
     height: 72px;
     top: 23px;
@@ -116,7 +122,7 @@ export const Logo = styled.div `
     height: 100%;
     top: 80px;
     left: 98px;
-  }
+  } */
 `;
 export const Wrapper = styled.div`
   display: flex;
@@ -133,12 +139,21 @@ export const Link = styled.a`
     color: ${({ theme }) => theme.colors.primary};
   }
 
+  @media ${device.laptopS} { 
+    font-size: 14px;
+    color: ${({ theme }) => theme.colors.white};
+
+    &:hover { 
+    color: ${({ theme }) => theme.colors.darkPrimary};
+  }
+  }
+
   @media ${device.laptop} { 
-    font-size: 16px;
+    font-size: 18px;
   }
 
   @media ${device.laptopM} { 
-    font-size: 20px;
+    font-size: 25px;
   }
 
   @media ${device.desktop} { 
@@ -186,6 +201,12 @@ export const Button = styled.button `
 
   &:hover {
     background-color: ${({ theme }) =>  theme.colors.darkHover};
+  }
+
+  @media ${device.laptopS} { 
+    &:hover {
+    background-color: ${({ theme }) =>  theme.colors.darkHover};
+  }
   }
 
   @media ${device.desktop} { 
