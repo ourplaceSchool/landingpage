@@ -36,8 +36,8 @@ export default function Footer() {
               <Info>
                 <Titulo>Unidades</Titulo>
                 <Information>
-                Avenida Senador Casimiro da Rocha, 981, Sala 7 -
-                Mirandopolis - São Paulo
+                  Avenida Açocê, 494, São Paulo<br/>
+                  CEP 04075-023
                 </Information>          
               </Info>
 
@@ -70,7 +70,7 @@ export default function Footer() {
             </Wrapper>
           </Div>
             <CopyRight>
-              © 2022 by Our Place. Todos os direitos reservados.
+              {`© ${new Date().getFullYear()} by Our Place. Todos os direitos reservados.`}
             </CopyRight>
       </Container>
     )
@@ -91,8 +91,8 @@ export default function Footer() {
             <Info>
               <Titulo>Unidades</Titulo>
               <Information>
-              Avenida Senador Casimiro da Rocha, 981, Sala 7 -
-              Mirandopolis - São Paulo
+                Avenida Açocê, 494, São Paulo<br/>
+                CEP 04075-023
               </Information>          
             </Info>
 
@@ -115,7 +115,7 @@ export default function Footer() {
                 </AnchorLink>
 
                 <AnchorLink
-                  href="milena@ourplace.com.br"
+                  href="mailto:milena@ourplace.com.br"
                   target="_blank"
                 >
                 <AiFillMail style={socialIcons.laptop}/>
@@ -125,7 +125,7 @@ export default function Footer() {
           </Wrapper>
         </Div>
           <CopyRight>
-            © 2022 by Our Place. Todos os direitos reservados.
+            {`© ${new Date().getFullYear()} by Our Place. Todos os direitos reservados.`}
           </CopyRight>
       </Container>
     )

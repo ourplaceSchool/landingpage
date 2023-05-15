@@ -89,7 +89,9 @@ export default function FaleConosco() {
       <Box>
         <Div style={{deviceSize}}>
           <PinLocation/>
-          <Info>Av. Sen. Casemiro da Rocha, 981</Info>
+          <Info>
+            Avenida Açocê, 494, São Paulo - CEP 04075-023
+          </Info>
         </Div>
 
         <Div>
