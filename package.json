@@ -1,7 +1,7 @@
 {
   "name": "ourplace",
   "homepage": "http://www.ourplace.com.br",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
