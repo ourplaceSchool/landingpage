@@ -1,6 +1,7 @@
 import GlobalStyle from './globalStyles';
 import { ThemeProvider } from 'styled-components';
 import {ScrollToTop} from './components/ScrollToTop'
+import {WhatsappBtn} from './components/WhatsappBtn'
 import Navigation from './components/Navigation';
 import Footer from './components/Footer'
 import Home from './Home';
@@ -34,6 +35,7 @@ function App() {
           <Galeria />
           <FaleConosco />
         <ScrollToTop />
+        <WhatsappBtn />
         <Footer />
     </ThemeProvider>
   );
