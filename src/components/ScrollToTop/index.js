@@ -3,7 +3,6 @@ import { BiArrowFromBottom } from "react-icons/bi";
 import './styles.scss'
 
 export const ScrollToTop = () => {
-  // const [isVisible, setIsVisible] = useState(false)
   const btn = useRef('false')
 
   const toggleVisibility = () => {
