@@ -9,6 +9,8 @@ import {
   SubTitle,
   Button,
   Listing,
+  List,
+  GreenFrame,
 } from "./styles";
 
 export default function Parceiro() {
@@ -17,6 +19,7 @@ export default function Parceiro() {
       <Title>Seja Nosso Parceiro</Title>
       <Wrapper>
         <Box>
+        <GreenFrame />
           <Info>
             <SubTitle>
               Leve o ensino de idiomas para sua escola ou empresa
@@ -38,12 +41,14 @@ export default function Parceiro() {
               e internacional.
               <br />
               <br />
-              <Listing>
-                <li>Metodologia inovadora e personalizada;</li>
-                <li>Aulas presenciais ou online;</li>
-                <li>Parceria flexível e adaptável ao seu espaço e rotina.</li>
-              </Listing>
             </Information>
+              <Listing>
+                <List>
+                    <li>Metodologia inovadora e personalizada;</li>
+                    <li>Aulas presenciais ou online;</li>
+                    <li>Parceria flexível e adaptável ao seu espaço e rotina.</li>
+                </List>
+              </Listing>
             <Button>
               <a
                 href="https://wa.me/5511999610535"

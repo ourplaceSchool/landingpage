@@ -218,13 +218,12 @@ export const ImageBg4 = styled.div `
   }
 `;
 export const ImageBg5 = styled.div `
-  background-image: url(https://res.cloudinary.com/ourplaceeglishschool/image/upload/v1659787780/website/Faixa%20Etaria/Adultos_lkoyeg.png);
+  background-image: url(https://res.cloudinary.com/ourplaceeglishschool/image/upload/c_crop,w_500,h_500,g_auto/v1748381002/website/Faixa%20Etaria/7_edeajc.png);
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
   height: 500px;
   align-self: baseline;
-  margin-top: 50px;
   z-index: 1;
 
   @media ${device.laptop} {
@@ -232,13 +231,11 @@ export const ImageBg5 = styled.div `
   }
 
   @media ${device.laptopM} {
-    margin-top: 50px;
     width: 277px;
   }
 
   @media ${device.desktop} {
     width: 100%;
-    margin-top: 100px;
   }
 `;
 export const TitleCard = styled.h1`

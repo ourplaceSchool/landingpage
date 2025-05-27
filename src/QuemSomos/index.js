@@ -56,6 +56,7 @@ export default function QuemSomos() {
               <br/>
               <br/>
               <Bold>Welcome to Our Place! Bienvenidos a Nuestro Lugar!</Bold>
+              <br/>
             </Information>
             <HouseLogo />
           </Info>

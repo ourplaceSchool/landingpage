@@ -44,15 +44,16 @@ export const TopBg = styled.div `
   }
 
   @media ${device.mobileL} {
-    top: -13%;
+    top: -18%;
   }
 
   @media ${device.mobileXL} {
-    top: -16%;
+      top: -22%;
+      left: -5%;
   }
 
   @media ${device.tablet} {
-    top: -27%;
+    top: -20%;
     right: 40.26%;
     bottom: 83.55%;
     left: -5.47%;

@@ -172,7 +172,7 @@ export const Wrapper = styled.form`
   @media ${device.laptop} {
     width: 90%;
     height: 527px;
-    margin-bottom: 155px;
+    margin-bottom: 250px;
   }
 
   @media ${device.desktop} {
@@ -199,7 +199,7 @@ export const InputFields = styled.div`
   /* padding: 40px; */
 
   @media ${device.laptop} {
-    margin-right: 80px;
+    margin-right: 40px;
   }
 `;
 export const MessageField = styled.textarea`

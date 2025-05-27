@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { device } from "../device";
+import frameTopBox from "../assets/images/tinta-verde-box.png";
 
-export const Container = styled.div `
+export const Container = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -14,32 +15,32 @@ export const Container = styled.div `
 `;
 export const Title = styled.h1`
   text-align: center;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 25px;
-  color: ${({ theme }) =>  theme.colors.darkPrimary};
+  color: ${({ theme }) => theme.colors.darkPrimary};
   width: 100%;
   z-index: 2;
 
   @media ${device.tablet} {
     width: 50%;
     font-size: 54px;
-    color: ${({ theme }) =>  theme.colors.darkPrimary};
+    color: ${({ theme }) => theme.colors.darkPrimary};
   }
   @media ${device.laptopM} {
     width: 50%;
     font-size: 64px;
-    color: ${({ theme }) =>  theme.colors.darkPrimary};
+    color: ${({ theme }) => theme.colors.darkPrimary};
   }
 `;
 export const SubTitle = styled.h1`
   text-align: center;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 20px;
-  color: ${({ theme }) =>  theme.colors.darkPrimary};
+  color: ${({ theme }) => theme.colors.darkPrimary};
   width: 100%;
   z-index: 2;
 
-    @media ${device.laptopM} {
+  @media ${device.laptopM} {
     font-size: 32px;
   }
 `;
@@ -47,7 +48,7 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: space-around;
   width: 85%;
-  background-color: ${({ theme }) =>  theme.colors.white};
+  background-color: ${({ theme }) => theme.colors.white};
   margin-top: 25px;
   border-radius: 8px;
   margin-bottom: 65px;
@@ -62,9 +63,8 @@ export const Wrapper = styled.div`
     width: 90%;
     margin-top: 0;
   }
-
 `;
-export const Box = styled.div `
+export const Box = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -81,9 +81,9 @@ export const Info = styled.div`
   }
 `;
 export const Information = styled.p`
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 9px;
-  color: ${({ theme }) =>  theme.colors.darkPrimary};
+  color: ${({ theme }) => theme.colors.darkPrimary};
   padding: 10px 0px;
   margin: 0;
 
@@ -103,23 +103,23 @@ export const Information = styled.p`
     font-size: 24px;
   }
 `;
-export const Button = styled.button `
-  background-color: ${({ theme }) =>  theme.colors.primary};
-  color: ${({ theme }) =>  theme.colors.white};
+export const Button = styled.button`
+  background-color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.white};
   border-radius: 8px;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 177px;
   height: 33px;
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 11px;
   line-height: 18px;
   z-index: 3;
   margin-bottom: 20px;
 
   &:hover {
-    background-color: ${({ theme }) =>  theme.colors.darkHover};
+    background-color: ${({ theme }) => theme.colors.darkHover};
   }
 
   @media ${device.tablet} {
@@ -133,7 +133,7 @@ export const Button = styled.button `
   @media ${device.laptopM} {
     font-size: 18px;
     width: 290px;
-    margin-top:10px;
+    margin-top: 10px;
     margin-bottom: 30px;
   }
 
@@ -142,13 +142,61 @@ export const Button = styled.button `
     padding: 15px;
     width: 380px;
     height: auto;
-    margin-top:10px;
+    margin-top: 10px;
     margin-bottom: 30px;
   }
-  `;
+`;
 
-  export const Listing = styled.ul `
-    padding: 15px;
-    margin: 0px;
-  `;
+export const List = styled.ul`
+  font-family: "Poppins", sans-serif;
+  font-size: 9px;
+  color: ${({ theme }) => theme.colors.darkPrimary};
+  padding: 6px 0px;
 
+
+  @media ${device.tablet} {
+    font-size: 12px;
+  }
+  @media ${device.laptop} {
+    font-size: 14px;
+  }
+
+  @media ${device.laptopM} {
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 3px 0px;
+  }
+
+  @media ${device.desktop} {
+    font-size: 24px;
+    padding: 6px 0px;
+  }`;
+
+export const Listing = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+export const GreenFrame = styled.div`
+  display: none;
+
+  @media ${device.laptopM} {
+    display: block;
+    background-image: url(${frameTopBox});
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 300px;
+    height: 296px;
+    position: absolute;
+    top: 275px;
+    left: 0;
+  }
+
+  @media ${device.laptopL} {
+    top: 250px;
+  }
+
+  @media ${device.desktop} {
+    top: 302px;
+  }
+`;
