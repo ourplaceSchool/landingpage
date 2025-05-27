@@ -221,7 +221,7 @@ export const Information = styled.p`
     font-size: 24px;
   }
 `;
-export const Bold = styled.p`
+export const Bold = styled.span`
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: 700;

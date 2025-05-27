@@ -53,6 +53,8 @@ export default function QuemSomos() {
               qualidade das aulas e, por isso, fazemos constantemente cursos de
               reciclagem e aperfeiçoamento, focando tanto nas técnicas de ensino
               quanto no conhecimento das línguas inglesa e espanhola.
+              <br/>
+              <br/>
               <Bold>Welcome to Our Place! Bienvenidos a Nuestro Lugar!</Bold>
             </Information>
             <HouseLogo />

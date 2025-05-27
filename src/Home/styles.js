@@ -353,7 +353,7 @@ export const PrimaryColor = styled.span`
 
 `;
 
-export const Color = styled.h1`
+export const Color = styled.span`
   color: ${({ theme }) =>  theme.colors.primary};
   font-family: 'Quicksand', sans-serif;
   font-size: 30px;
