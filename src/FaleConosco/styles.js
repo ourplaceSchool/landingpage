@@ -26,7 +26,7 @@ export const Title = styled.h1`
   color: ${({ theme }) =>  theme.colors.darkPrimary};
   width: 100%;
 
-  @media ${device.laptop} { 
+  @media ${device.laptop} {
     width: 50%;
     font-size: 64px;
   }
@@ -34,7 +34,7 @@ export const Title = styled.h1`
 export const ColoredTopBg = styled.div `
   display: none;
 
-  @media ${device.tablet} { 
+  @media ${device.tablet} {
     background-image: url(${coloringTop});
     background-repeat: no-repeat;
     background-size: contain;
@@ -48,14 +48,17 @@ export const ColoredTopBg = styled.div `
   }
 `;
 export const Box = styled.div`
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  align-items: baseline;
+  margin: 9px;
+
+  @media ${device.tablet} {
     justify-content: center;
     align-items: baseline;
-    margin: 9px;
-
-  @media ${device.tablet} { 
-    margin: 0;
+    flex-wrap: nowrap;
   }
 `;
 export const PinLocation = styled.div `
@@ -73,7 +76,7 @@ export const PhoneIcon = styled.div `
   width: 25px;
   height: 25px;
 
-  @media ${device.laptop} { 
+  @media ${device.laptop} {
     width: 40px;
     height: 40px;
   }
@@ -85,7 +88,7 @@ export const IconEmail = styled.div `
   width: 25px;
   height: 25px;
 
-  @media ${device.laptop} { 
+  @media ${device.laptop} {
     width: 50px;
     height: 50px;
   }
@@ -97,10 +100,10 @@ export const Div = styled.div `
   align-items: center;
   margin-Bottom: 10px;
 
-  @media ${device.laptop} { 
+  @media ${device.laptop} {
     margin: 50px;
   }
-  
+
 `;
 export const Div2 = styled.div `
   width: 82%;
@@ -109,10 +112,10 @@ export const Div2 = styled.div `
   align-items: center;
   margin-Bottom: 10px;
 
-  @media ${device.laptop} { 
+  @media ${device.laptop} {
     margin: 50px;
   }
-  
+
 `;
 export const Info = styled.div`
   display: flex;
@@ -122,21 +125,22 @@ export const Info = styled.div`
   color: ${({ theme }) =>  theme.colors.darkPrimary};
   margin-top: 10px;
   margin-left: 5px;
+  text-align: center;
 
-  @media ${device.tablet} { 
+  @media ${device.tablet} {
     font-size: 16px;
   }
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     font-size: 26px;
   }
-  
+
 `;
 export const StainBottom = styled.div `
   display: none;
 
-  @media ${device.laptop} {  
-    display: block;  
+  @media ${device.laptop} {
+    display: block;
     background-image: url(${tintaVermelha});
     background-repeat: no-repeat;
     background-size: contain;
@@ -161,17 +165,17 @@ export const Wrapper = styled.form`
   padding: 9px;
   z-index: 2;
 
-  @media ${device.tablet} { 
+  @media ${device.tablet} {
     width: 80%;
     height: 935px;
   }
-  @media ${device.laptop} { 
+  @media ${device.laptop} {
     width: 90%;
     height: 527px;
     margin-bottom: 155px;
   }
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     width: 50%;
     height: 646px;
     margin-top: 15px;
@@ -184,7 +188,7 @@ export const InputBox = styled.div`
   align-items: center;
   margin-bottom: 10px;
 
-  @media ${device.laptop} { 
+  @media ${device.laptop} {
    flex-direction: row;
   }
 
@@ -194,7 +198,7 @@ export const InputFields = styled.div`
   flex-direction: column;
   /* padding: 40px; */
 
-  @media ${device.laptop} { 
+  @media ${device.laptop} {
     margin-right: 80px;
   }
 `;
@@ -221,12 +225,12 @@ export const MessageField = styled.textarea`
     padding-left: 10px;
   }
 
-  @media ${device.tablet} { 
+  @media ${device.tablet} {
     width: 430px;
     height: 291px;
   }
 
-  @media ${device.laptop} { 
+  @media ${device.laptop} {
     width: 395px;
     font-size: 18px;
 
@@ -235,7 +239,7 @@ export const MessageField = styled.textarea`
     }
   }
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     width: 437px;
     height: 402px;
     font-size: 22px;
@@ -266,21 +270,21 @@ export const Input = styled.input `
     border: 2px solid ${({ theme }) =>  theme.colors.darkPrimary};
   }
 
-  @media ${device.tablet} { 
+  @media ${device.tablet} {
     width: 470px;
     height: 66px;
   }
 
-  @media ${device.laptop} { 
+  @media ${device.laptop} {
     width: 266px;
 
   }
 
-  @media ${device.laptopM} { 
+  @media ${device.laptopM} {
     width: 555px;
   }
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     font-size: 22px;
   }
 `;
@@ -359,11 +363,11 @@ export const Button = styled.button `
     background-color: ${({ theme }) =>  theme.colors.darkHover};
   }
 
-  @media ${device.laptop} { 
+  @media ${device.laptop} {
     font-size: 20px;
   }
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     font-size: 26px;
     width: 289px;
     height: 83px;
@@ -372,4 +376,12 @@ export const Button = styled.button `
 export const AnchorLink = styled.a`
   text-decoration: none;
   color: ${({ theme }) =>  theme.colors.white};
+`;
+export const RedeSociais = styled.div `
+  display: flex;
+  align-items: center;
+
+@media ${device.laptop} {
+
+  }
 `;

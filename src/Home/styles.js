@@ -22,16 +22,16 @@ export const Container = styled.div `
 `;
 export const BoxContainer = styled.div `
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
   margin-top: 15px;
 
-  @media ${device.tablet} { 
-    flex-direction: column; 
+  @media ${device.tablet} {
+    flex-direction: column;
     align-items: start;
   }
 
-  @media ${device.laptopM} { 
+  @media ${device.laptopM} {
     align-items: start;
   }
 `;
@@ -49,17 +49,17 @@ export const CurlyBg = styled.div `
     margin-top: 100px;
   }
 
-  @media ${device.laptop} { 
+  @media ${device.laptop} {
     top: -30px;
     height: 540px;
   }
 
-  @media ${device.laptopM} { 
+  @media ${device.laptopM} {
     top: -30px;
     height: 640px;
   }
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     top: -183px;
     height: 1140px;
   }
@@ -82,11 +82,11 @@ export const ClassroomVector = styled.div `
     right: -310px;
   }
 
-  @media ${device.laptopM} { 
+  @media ${device.laptopM} {
     height: 560px;
     right: -148px;
   }
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     height: 831px;
     width: 768px;
     top: 17px;
@@ -104,32 +104,32 @@ export const Star = styled.div `
   right: 9px;
   top: 38px;
 
-  @media ${device.mobileM} { 
+  @media ${device.mobileM} {
    right: 44px;
   }
 
-  @media ${device.mobileL} { 
+  @media ${device.mobileL} {
    right: 65px;
   }
 
-  @media ${device.tablet} { 
+  @media ${device.tablet} {
    right: 34px;
    top: 62px;
   }
 
-  @media ${device.laptop} { 
+  @media ${device.laptop} {
    right: 45px;
    top: 100px;
    width: 35px;
    height: 35px;
   }
 
-  @media ${device.laptopM} { 
+  @media ${device.laptopM} {
    right: 178px;
    top: 128px;
   }
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
    right: 254px;
    top: 188px;
    width: 55px;
@@ -145,36 +145,36 @@ export const ArrowCurvey = styled.div `
   height: 70px;
   position: absolute;
   left: 24px;
-  top: 210px;
+  top: 220px;
 
-  @media ${device.mobileM} { 
+  @media ${device.mobileM} {
     left: 46px;
   }
 
-  @media ${device.mobileL} { 
+  @media ${device.mobileL} {
     left: 75px;
   }
 
-  @media ${device.tablet} { 
+  @media ${device.tablet} {
     top: 315px;
     left: 65px;
   }
 
-  @media ${device.laptop} { 
-    top: 399px;
+  @media ${device.laptop} {
+    top: 370px;
     left: 151px;
     width: 90px;
     height: 90px;
   }
 
-  @media ${device.laptopM} { 
-    top: 490px;
-    left: 279px;
+  @media ${device.laptopM} {
+    top: 480px;
+    left: 310px;
   }
 
-  @media ${device.desktop} { 
-    top: 820px;
-    left: 660px;
+  @media ${device.desktop} {
+    top: 780px;
+    left: 650px;
     width: 180px;
     height: 120px;
   }
@@ -191,35 +191,61 @@ export const Title = styled.h1`
   color: ${({ theme }) =>  theme.colors.darkPrimary};
   width: 70%;
   margin-top: 35px;
+  margin-bottom: 10px;
 
 
-  @media ${device.tablet} { 
+  @media ${device.tablet} {
     font-size: 38px;
     margin-top: 68px;
     width: 52%;
   }
 
-  @media ${device.laptop} { 
-    font-size: 60px;
+  @media ${device.laptop} {
+    font-size: 54px;
     width: 68%;
   }
 
-  @media ${device.laptopM} { 
+  @media ${device.laptopM} {
     font-size: 69px;
     width: 60%;
     margin-right: 280px;
     margin-top: 135px;
   }
 
-  @media ${device.laptopL} { 
+  @media ${device.laptopL} {
     margin-top: 130px;
   }
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     display: flex;
     align-items: center;
     font-size: 120px;
     margin-top: 216px;
+  }
+`;
+
+export const SubTitle = styled(Title)`
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 80px;
+
+  @media ${device.tablet} {
+    font-size: 24px;
+  }
+  @media ${device.laptop} {
+    font-size: 32px;
+  }
+
+  @media ${device.laptopM} {
+    font-size: 38px;
+  }
+
+  @media ${device.laptopL} {
+    margin-top: 5px;
+  }
+
+  @media ${device.desktop} {
+    font-size: 70px;
   }
 `;
 
@@ -237,7 +263,7 @@ export const Title = styled.h1`
 // `;
 export const Title2 = styled.h1`
   position: absolute;
-  top: 253px;
+  top: 330px;
   left: 30px;
   z-index: 5;
   display: flex;
@@ -250,51 +276,103 @@ export const Title2 = styled.h1`
   width: 85%;
 
   @media ${device.tablet} {
-    flex-direction: row; 
+    flex-direction: row;
     font-size: 33px;
     width: 80%;
-    top: 390px;
+    top: 530px;
     left: 165px;
   }
 
-  @media ${device.laptop} { 
-    font-size: 50px;
-    top: 484px;
+  @media ${device.laptop} {
+    font-size: 48px;
+    top: 610px;
   }
 
-  @media ${device.laptopM} { 
-    top: 597px;
-    font-size: 76px;
+  @media ${device.laptopM} {
+    top: 750px;
+    font-size: 60px;
+    left: 200px;
     width: 75%;
   }
 
-  @media ${device.desktop} { 
+  @media ${device.laptopL} {
+    top: 780px;
+  }
+
+  @media ${device.desktop} {
     display: flex;
     align-items: center;
-    top: 1030px;
-    font-size: 130px;
+    top: 1220px;
+    left: 400px;
+    font-size: 120px;
   }
 `;
+
+export const SubTitle2 = styled(Title2)`
+  top: 410px;
+  left: 30px;
+  font-size: 20px;
+
+  @media ${device.tablet} {
+    font-size: 25px;
+    width: 70%;
+    top: 570px;
+    left: 180px;
+  }
+
+  @media ${device.laptop} {
+    font-size: 36px;
+    top: 670px;
+  }
+
+  @media ${device.laptopM} {
+    top: 840px;
+    left: 303px;
+    font-size: 40px;
+    width: 75%;
+  }
+
+  @media ${device.laptopL} {
+    top: 870px;
+  }
+
+  @media ${device.desktop} {
+    top: 1380px;
+    left: 560px;
+    font-size: 85px;
+  }`;
+
+export const PrimaryColor = styled.span`
+  color: ${({ theme }) => theme.colors.primary};
+  @media ${device.tablet} {
+    margin-left: 10px;
+  }
+  @media ${device.laptopM} {
+    margin-left: 15px;
+  }
+
+`;
+
 export const Color = styled.h1`
   color: ${({ theme }) =>  theme.colors.primary};
   font-family: 'Quicksand', sans-serif;
   font-size: 30px;
   margin: 0;
 
-  @media ${device.tablet} { 
+  @media ${device.tablet} {
     font-size: 33px;
     margin-left: 15px;
   }
 
-  @media ${device.laptop} { 
+  @media ${device.laptop} {
     font-size: 50px;
   }
 
-  @media ${device.laptopM} { 
+  @media ${device.laptopM} {
     font-size: 76px;
   }
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     font-size: 130px;
   }
 `;
@@ -303,7 +381,7 @@ export const InfoBox = styled.div `
 `;
 export const TextInfoBox = styled.p`
   position: absolute;
-  top: 390px;
+  top: 480px;
   left: 20px;
   width: 90%;
   font-family: 'Poppins', sans-serif;
@@ -311,23 +389,28 @@ export const TextInfoBox = styled.p`
   color: ${({ theme }) =>  theme.colors.darkPrimary};
   text-align: center;
 
-  @media ${device.tablet} { 
-    top: 454px;
+  @media ${device.tablet} {
+    top: 630px;
     left: 50px;
   }
 
-  @media ${device.laptop} { 
-    top: 610px;
+  @media ${device.laptop} {
+    top: 750px;
     font-size: 18px;
   }
 
-  @media ${device.laptopM} { 
-    top: 815px;
+  @media ${device.laptopM} {
+    top: 925px;
     font-size: 22px;
   }
 
-  @media ${device.desktop} { 
-    top: 1350px;
+  @media ${device.laptopL} {
+    top: 970px;
+    font-size: 22px;
+  }
+
+  @media ${device.desktop} {
+    top: 1600px;
     font-size: 43px;
   }
 `;
@@ -336,25 +419,34 @@ export const H5 = styled.h5 `
   font-size: 13px;
   width: 70%;
   margin: 0;
+  margin-top: 10px;
 
-  @media ${device.mobileL} { 
-   font-size: 16px;
+  @media ${device.mobileM} {
+   width: 80%;
+   margin-top: 20px;
   }
 
-  @media ${device.tablet} { 
+  @media ${device.mobileL} {
+    margin-top: 50px;
+    font-size: 16px;
+  }
+
+  @media ${device.tablet} {
     font-size: 22px;
     width: 69%;
   }
-  @media ${device.laptop} { 
-    top: 170px;
+  @media ${device.laptop} {
     font-size: 25px;
+    margin-top: 80px;
   }
-  @media ${device.laptopM} { 
+  @media ${device.laptopM} {
     top: 195px;
     font-size: 32px;
+    margin-left: 50px;
   }
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     font-size: 50px;
+    margin-top: 200px;
   }
 `;
 export const Button = styled.button `
@@ -371,38 +463,38 @@ export const Button = styled.button `
   line-height: 18px;
   z-index: 3;
   position: absolute;
-  top: 166px;
+  top: 180px;
   /* top: 193px; */
 
   &:hover {
     background-color: ${({ theme }) =>  theme.colors.darkHover};
   }
 
-  @media ${device.tablet} { 
+  @media ${device.tablet} {
     font-size: 14px;
     width: 223px;
     top: 273px;
     left: 108px;
   }
-  @media ${device.laptop} { 
+  @media ${device.laptop} {
     font-size: 18px;
-    top: 346px;
+    top: 320px;
     width: 277px;
     height: 35px;
     left: 212px;
   }
 
-  @media ${device.laptopM} { 
-    top: 444px;
-    left: 330px;
+  @media ${device.laptopM} {
+    top: 424px;
+    left: 420px;
   }
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     height: 65px;
     width: 380px;
     font-size: 26px;
-    top: 742px;
-    left: 749px;
+    top: 680px;
+    left: 790px;
   }
 
 `;
@@ -413,19 +505,19 @@ export const Wrapper = styled.div `
   margin-top: 626px;
   width: 80%;
 
-  @media ${device.tablet} { 
+  @media ${device.tablet} {
     margin-top: -330px;
   }
 
-  @media ${device.laptop} { 
+  @media ${device.laptop} {
     margin-top: 723px;
   }
 
-  @media ${device.laptopM} { 
+  @media ${device.laptopM} {
     margin-top: 864px;
   }
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     margin-top: 65px;
   }
 `;
@@ -436,11 +528,11 @@ export const H2 = styled.h2`
   text-align: center;
   margin-bottom: 0;
   z-index: 3;
-  @media ${device.laptop} { 
+  @media ${device.laptop} {
     font-size: 56px;
   }
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     font-size: 110px;
   }
 `;
@@ -450,15 +542,15 @@ export const Text = styled.p`
   color: ${({ theme }) =>  theme.colors.darkPrimary};
   text-align: center;
 
-  @media ${device.tablet} { 
+  @media ${device.tablet} {
     font-size: 14px;
   }
 
-  @media ${device.laptop} { 
+  @media ${device.laptop} {
     font-size: 18px;
   }
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     font-size: 34px;
   }
 `;
@@ -469,7 +561,7 @@ export const Bold = styled.p`
   color: ${({ theme }) =>  theme.colors.darkPrimary};
   text-align: center;
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     font-size: 34px;
   }
 `;
@@ -481,7 +573,7 @@ export const InfoWrapper = styled.div `
   position: relative;
   margin-top: 580px;
 
-  @media ${device.tablet} { 
+  @media ${device.tablet} {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -489,7 +581,7 @@ export const InfoWrapper = styled.div `
     margin-top: 0;
   }
 
-  @media ${device.laptop} { 
+  @media ${device.laptop} {
     margin-top: 40px;
   }
 `;
@@ -499,7 +591,7 @@ export const InfoCard = styled.div`
   align-items: center;
   position: relative;
   width: 80%;
-  
+
   margin-bottom: 12px;
   padding: 20px;
   background: ${({ theme }) =>  theme.colors.white};
@@ -507,16 +599,16 @@ export const InfoCard = styled.div`
   box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.25);
   z-index: 3;
 
-  @media ${device.mobileL} { 
+  @media ${device.mobileL} {
     width: 300px;
   }
 
-  @media ${device.tablet} { 
+  @media ${device.tablet} {
     margin-right: 10px;
     height: 410px;
   }
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     width: 500px;
     height: 700px;
   }
@@ -529,7 +621,7 @@ export const Titulo = styled.p`
   text-align: center;
   margin-bottom: 0;
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     font-size: 30px;
   }
 `;
@@ -539,7 +631,7 @@ export const Information = styled.p`
   color: ${({ theme }) =>  theme.colors.darkPrimary};
   text-align: center;
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     font-size: 20px;
   }
 `;
@@ -550,7 +642,7 @@ export const BookIcon = styled.div `
   width: 80px;
   height: 80px;
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     width: 120px;
     height: 120px;
   }
@@ -562,7 +654,7 @@ export const OpenBookIcon = styled.div `
   width: 80px;
   height: 80px;
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     width: 120px;
     height: 120px;
   }
@@ -574,7 +666,7 @@ export const TeacherIcon = styled.div `
   width: 80px;
   height: 80px;
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     width: 120px;
     height: 120px;
   }
@@ -597,20 +689,20 @@ export const ButtonBottom = styled.button `
     background-color: ${({ theme }) =>  theme.colors.darkHover};
   }
 
-  @media ${device.mobileM} { 
+  @media ${device.mobileM} {
     font-size: 18px;
   }
 
-  @media ${device.mobileL} { 
+  @media ${device.mobileL} {
     width: 335px;
     font-size: 22px;
   }
 
-  @media ${device.tablet} { 
+  @media ${device.tablet} {
     margin-top: 20px;
   }
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     font-size: 24px;
     width: 390px;
     height: 65px;
@@ -629,7 +721,7 @@ export const BlueVectorIcon = styled.div `
   top: 58.23%;
   bottom: 6.31%;
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     top: 80.23%;
   }
 `;

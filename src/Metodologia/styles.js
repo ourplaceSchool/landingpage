@@ -21,7 +21,7 @@ export const Wrapper = styled.div`
   position: relative;
   z-index: 2;
   width: 80%;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 `;
 export const CardWrapper = styled.div`
   display: flex;
@@ -33,7 +33,7 @@ export const CardWrapper = styled.div`
   width: 80%;
   margin-bottom: 20px;
 
-  @media ${device.laptop} { 
+  @media ${device.laptop} {
     width: 95%;
   }
 `;
@@ -43,31 +43,48 @@ export const Title = styled.h1`
   text-align: center;
   font-family: 'Quicksand', sans-serif;
   font-size: 25px;
+  margin-bottom: 0px;
+  margin-top: 0px;
   color: ${({ theme }) =>  theme.colors.darkPrimary};
 
-  @media ${device.tablet} { 
-    font-size: 64px;
+  @media ${device.tablet} {
+    font-size: 60px;
   }
 
-  @media ${device.desktop} { 
-    font-size: 150px;
+  @media ${device.desktop} {
+    font-size: 100px;
   }
 `;
+
+export const SubTitle = styled(Title)`
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-size: 15px;
+
+  @media ${device.tablet} {
+    font-size: 36px;
+  }
+
+  @media ${device.desktop} {
+    font-size: 70px;
+  }
+`;
+
 export const Information = styled.p`
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 12px;
   text-align: justify;
   color: ${({ theme }) =>  theme.colors.darkPrimary};
   margin: 0;
 
-  @media ${device.tablet} { 
+  @media ${device.tablet} {
     font-size: 18px;
     line-height: 32px;
     width: 80%;
   }
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     font-size: 30px;
     line-height: 50px;
   }
@@ -78,13 +95,13 @@ export const CardContainer = styled.div`
   align-items: center;
   width: 100%;
 
-  @media ${device.tablet} { 
+  @media ${device.tablet} {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  @media ${device.laptopM} { 
+  @media ${device.laptopM} {
     flex-wrap: nowrap;
   }
 `
@@ -103,15 +120,15 @@ export const Card = styled.div`
     cursor: pointer;
   }
 
-  @media ${device.mobileXL} { 
+  @media ${device.mobileXL} {
     width: 60%;
   }
 
-  @media ${device.tablet} { 
+  @media ${device.tablet} {
     width: 38%;
   }
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     width: 25%;
     height: 610px;
   }
@@ -128,7 +145,7 @@ export const CardText = styled.div `
   bottom: 0;
   z-index: 2;
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     height: 170px;
   }
 `;
@@ -141,11 +158,11 @@ export const ImageBg1 = styled.div `
   align-self: baseline;
   z-index: 1;
 
-  @media ${device.laptop} { 
+  @media ${device.laptop} {
     height: 610px;
   }
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     height: 800px;
   }
 `;
@@ -158,11 +175,11 @@ export const ImageBg2 = styled.div `
   align-self: baseline;
   z-index: 1;
 
-  @media ${device.laptop} { 
+  @media ${device.laptop} {
     height: 610px;
   }
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     height: 800px;
   }
 `;
@@ -175,11 +192,11 @@ export const ImageBg3 = styled.div `
   align-self: baseline;
   z-index: 1;
 
-  @media ${device.laptop} { 
+  @media ${device.laptop} {
     height: 610px;
   }
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     height: 800px;
   }
 `;
@@ -192,11 +209,11 @@ export const ImageBg4 = styled.div `
   align-self: baseline;
   z-index: 1;
 
-  @media ${device.tablet} { 
+  @media ${device.tablet} {
     height: 610px;
   }
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     height: 800px;
   }
 `;
@@ -207,18 +224,21 @@ export const ImageBg5 = styled.div `
   width: 100%;
   height: 500px;
   align-self: baseline;
+  margin-top: 50px;
   z-index: 1;
 
-  @media ${device.laptop} { 
+  @media ${device.laptop} {
     height: 610px;
   }
 
   @media ${device.laptopM} {
+    margin-top: 50px;
     width: 277px;
   }
 
-  @media ${device.desktop} { 
-    height: 800px;
+  @media ${device.desktop} {
+    width: 100%;
+    margin-top: 100px;
   }
 `;
 export const TitleCard = styled.h1`
@@ -230,18 +250,18 @@ export const TitleCard = styled.h1`
   color: ${({ theme }) =>  theme.colors.darkPrimary};
   margin: 3px;
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     font-size: 30px;
   }
 `;
 export const InfoCard = styled.p`
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   color: ${({ theme }) =>  theme.colors.darkPrimary};
   margin: 3px;
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     font-size: 25px;
   }
 `;
@@ -263,7 +283,7 @@ export const Btn = styled.button `
     background-color: ${({ theme }) =>  theme.colors.darkHover};
   }
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     width: 245px;
     height: 60px;
     font-size: 23px;
@@ -298,8 +318,8 @@ export const HouseLogo = styled.div `
   margin-left: 13px;
   z-index: 0;
 
-  @media ${device.tablet} { 
-    
+  @media ${device.tablet} {
+
   }
 `;
 export const RainbowIcon = styled.div `
@@ -315,8 +335,8 @@ export const RainbowIcon = styled.div `
   left: 0;
   z-index: 0;
 
-  @media ${device.tablet} { 
-    
+  @media ${device.tablet} {
+
   }
 `;
 
@@ -334,8 +354,8 @@ export const ManchaLaranja = styled.div `
   z-index: 0;
   transform: rotate(15deg);
 
-  @media ${device.tablet} { 
-    
+  @media ${device.tablet} {
+
   }
 `;
 export const ManchaAmarela = styled.div `
@@ -351,7 +371,7 @@ export const ManchaAmarela = styled.div `
   left: 1px;
   z-index: 0;
 
-  @media ${device.tablet} { 
-    
+  @media ${device.tablet} {
+
   }
 `;

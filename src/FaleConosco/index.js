@@ -27,11 +27,13 @@ import {
   CallIcon,
   Button,
   Rainbow,
-  AnchorLink
+  AnchorLink,
+  RedeSociais
 } from './styles'
+import { AiFillFacebook, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 
 export default function FaleConosco() {
-  // SweetAlert 
+  // SweetAlert
   const MySwal = withReactContent(Swal)
 
   const success = () => {
@@ -58,7 +60,7 @@ export default function FaleConosco() {
     });
   };
 
-  // Contact form 
+  // Contact form
   const form = useRef();
 
   const sendEmail = async (e) => {
@@ -82,11 +84,51 @@ export default function FaleConosco() {
     }
   }
 
+  const socialIcons = {
+    tablet: {
+      width: '30px',
+      height: '30px',
+    },
+    laptop: {
+      width: '45px',
+      height: '45px',
+      color: '#1B6270',
+    }
+  }
+
   return (
     <Container id="contato">
       <ColoredTopBg />
       <Title>Fale Conosco</Title>
       <Box>
+        <Div style={{deviceSize}}>
+              <RedeSociais>
+                <AnchorLink
+                  href="https://www.instagram.com/inglesourplace/"
+                  target="_blank"
+                >
+                  <AiFillInstagram style={socialIcons.laptop}/>
+                </AnchorLink>
+
+                <AnchorLink
+                  href="https://www.facebook.com/inglesourplace/"
+                  target="_blank"
+                >
+                  <AiFillFacebook style={socialIcons.laptop}/>
+                </AnchorLink>
+
+                <AnchorLink
+                  href="https://www.facebook.com/inglesourplace/"
+                  target="_blank"
+                >
+                  <AiFillLinkedin style={socialIcons.laptop}/>
+                </AnchorLink>
+              </RedeSociais>
+              <Info>
+                Acesse nossas redes sociais!
+              </Info>
+        </Div>
+
         <Div style={{deviceSize}}>
           <PinLocation/>
           <Info>
@@ -97,14 +139,14 @@ export default function FaleConosco() {
         <Div>
           <PhoneIcon />
           <AnchorLink
-            href='https://wa.me/5511943300535' 
+            href='https://wa.me/5511943300535'
             target="_blank"
           >
             <Info>+11 94330-0535</Info>
           </AnchorLink>
 
           <AnchorLink
-            href='https://wa.me/5511999610535' 
+            href='https://wa.me/5511999610535'
             target="_blank"
           >
           <Info>+11 99961-0535</Info>
