@@ -1,8 +1,8 @@
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useRef, useState } from 'react'
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import { IoIosArrowDown } from 'react-icons/io';
 
-import { 
+import {
   Container,
   Logo,
   Wrapper,
@@ -25,12 +25,12 @@ export default function Navigation() {
         <TopBg />
         <Container>
         <Logo />
-        <DropdownButton             
-          onClick={onClick} 
+        <DropdownButton
+          onClick={onClick}
           ref={dropDownRef}
         >
         { !isActive ?
-          <HiOutlineMenuAlt3 
+          <HiOutlineMenuAlt3
             style={{
             color: '#AD4226',
             height: '25px',
@@ -39,7 +39,7 @@ export default function Navigation() {
 
           : (
             <>
-              <IoIosArrowDown 
+              <IoIosArrowDown
                 style={{
                 color: '#AD4226',
                 height: '25px',
@@ -50,6 +50,7 @@ export default function Navigation() {
                   <Link href="#home"> Home </Link>
                   <Link href="#metodologia"> Metodologia </Link>
                   <Link href="#quemsomos"> Quem Somos </Link>
+                  <Link href="#parceiro"> Seja Nosso Parceiro </Link>
                   <Link href="#contato"> Fale Conosco </Link>
                   <Link href="#galeria"> Galeria </Link>
               </DropDownWrapper>
@@ -70,12 +71,13 @@ export default function Navigation() {
             <Link href="#home"> Home </Link>
             <Link href="#metodologia"> Metodologia </Link>
             <Link href="#quemsomos"> Quem Somos </Link>
+            <Link href="#parceiro"> Seja Nosso Parceiro </Link>
             <Link href="#contato"> Fale Conosco </Link>
             <Link href="#galeria"> Galeria </Link>
           </Wrapper>
           <Button>
-            <a 
-              href='https://wa.me/5511999610535' 
+            <a
+              href='https://wa.me/5511999610535'
               target="blank"
               style={{
                 textDecoration: 'none',
