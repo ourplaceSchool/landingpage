@@ -44,32 +44,26 @@ export const TopBg = styled.div `
   }
 
   @media ${device.mobileL} {
-    top: -18%;
+    top: -15%;
   }
 
   @media ${device.mobileXL} {
-      top: -22%;
+      top: -20%;
       left: -5%;
   }
 
   @media ${device.tablet} {
-    top: -20%;
+    top: -28%;
     right: 40.26%;
     bottom: 83.55%;
     left: -5.47%;
   }
 
-  /* @media ${device.laptop} {
-    top: -25.08%;
-    right: 70.26%;
-    bottom: 62.55%;
-    left: -7.47%;
-    width: 45%;
-    transform: rotate(347deg);
-
+  @media ${device.laptop} {
+    top: -30%;
   }
 
-  @media ${device.laptopM} {
+  /*@media ${device.laptopM} {
     top: -30%;
     bottom: -16.55%;
     left: 0.53%;
