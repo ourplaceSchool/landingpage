@@ -44,11 +44,6 @@ export default function Galeria() {
       height: 1,
     },
     {
-      src: "https://res.cloudinary.com/ourplaceeglishschool/image/upload/v1748341922/website/Galeria/Novas%20Fotos/ldalie42epvh70aesiea.jpg",
-      width: 16,
-      height: 9,
-    },
-    {
       src: "https://res.cloudinary.com/ourplaceeglishschool/image/upload/v1748341922/website/Galeria/Novas%20Fotos/f4h8tgxnfz78xv0gezvf.jpg",
       width: 16,
       height: 9,
