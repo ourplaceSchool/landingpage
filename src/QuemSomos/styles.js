@@ -123,6 +123,12 @@ export const ProfilePhoto = styled.div `
     height: 120px;
   }
 
+  @media ${device.mobileXL} {
+    top: 20px;
+    width: 120px;
+    height: 120px;
+  }
+
   @media ${device.tablet} {
     top: 20px;
     right: 30px;
@@ -138,8 +144,8 @@ export const ProfilePhoto = styled.div `
   }
 
    @media ${device.laptopM} {
-    width: 230px;
-    height: 230px;
+    width: 200px;
+    height: 200px;
   }
   /* @media ${device.desktop} {
     width: 16%;
@@ -162,6 +168,10 @@ export const Info = styled.div`
   align-items: center;
   width: 80%;
   margin-left: 20px;
+
+  @media ${device.laptopM} {
+    margin-left: 0px;
+  }
 `;
 export const H4 = styled.h4`
   display: flex;

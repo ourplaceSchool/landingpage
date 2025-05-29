@@ -14,11 +14,6 @@ export default function Galeria() {
       height: 9,
     },
     {
-      src: "https://res.cloudinary.com/ourplaceeglishschool/image/upload/v1748373481/website/Galeria/Novas%20Fotos/IMG_4316_v0rwej.jpg",
-      width: 3,
-      height: 4,
-    },
-    {
       src: "https://res.cloudinary.com/ourplaceeglishschool/image/upload/v1748373459/website/Galeria/Novas%20Fotos/IMG_4205_ju2aye.jpg",
       width: 16,
       height: 9,
@@ -29,6 +24,11 @@ export default function Galeria() {
       height: 3,
     },
     {
+      src: "https://res.cloudinary.com/ourplaceeglishschool/image/upload/v1748373481/website/Galeria/Novas%20Fotos/IMG_4316_v0rwej.jpg",
+      width: 3,
+      height: 4,
+    },
+    {
       src: "https://res.cloudinary.com/ourplaceeglishschool/image/upload/v1748373456/website/Galeria/Novas%20Fotos/IMG_4321_itrrox.jpg",
       width: 16,
       height: 9,
@@ -37,11 +37,6 @@ export default function Galeria() {
       src: "https://res.cloudinary.com/ourplaceeglishschool/image/upload/v1748373454/website/Galeria/Novas%20Fotos/IMG_4201_gmu8fn.jpg",
       width: 16,
       height: 9,
-    },
-    {
-      src: "https://res.cloudinary.com/ourplaceeglishschool/image/upload/v1748373436/website/Galeria/Novas%20Fotos/IMG_4195_lsmior.jpg",
-      width: 1,
-      height: 1,
     },
     {
       src: "https://res.cloudinary.com/ourplaceeglishschool/image/upload/v1748341922/website/Galeria/Novas%20Fotos/f4h8tgxnfz78xv0gezvf.jpg",
@@ -55,6 +50,16 @@ export default function Galeria() {
     },
     {
       src: "https://res.cloudinary.com/ourplaceeglishschool/image/upload/v1748341922/website/Galeria/Novas%20Fotos/kxjqetqtc5nqhlccmaf8.jpg",
+      width: 2,
+      height: 3,
+    },
+    {
+      src: "https://res.cloudinary.com/ourplaceeglishschool/image/upload/v1748534202/website/Galeria/Novas%20Fotos/wtqljkyogsdxctkhipvv.jpg",
+      width: 16,
+      height: 9,
+    },
+    {
+      src: "https://res.cloudinary.com/ourplaceeglishschool/image/upload/v1748534202/website/Galeria/Novas%20Fotos/v03xnykeomkdpih6if8q.jpg",
       width: 2,
       height: 3,
     },

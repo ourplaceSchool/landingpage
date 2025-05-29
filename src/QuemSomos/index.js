@@ -30,7 +30,7 @@ export default function QuemSomos() {
                 objectFit: "cover",
               }}
               alt="Foto da Milena"
-              src="https://res.cloudinary.com/ourplaceeglishschool/image/upload/v1659787788/website/Quem%20Somos/milena_quemsomos_zm8hky.jpg"
+              src="https://res.cloudinary.com/ourplaceeglishschool/image/upload/c_fill,w_200,h_356,ar_9:16,g_auto/v1748533046/website/Quem%20Somos/IMG_4280_hf6fzu.jpg"
             />
           </ProfilePhoto>
           <Info>
