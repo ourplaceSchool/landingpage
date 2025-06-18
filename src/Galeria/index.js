@@ -9,9 +9,9 @@ export default function Galeria() {
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
   const photos = [
     {
-      src: "https://res.cloudinary.com/ourplaceeglishschool/image/upload/v1748373471/website/Galeria/Novas%20Fotos/IMG_4169_uzmuqz.jpg",
-      width: 16,
-      height: 9,
+      src: "https://res.cloudinary.com/ourplaceeglishschool/image/upload/v1750270159/website/Galeria/Novas%20Fotos/livros_ourplace_hawbml.jpg",
+      width: 7,
+      height: 11,
     },
     {
       src: "https://res.cloudinary.com/ourplaceeglishschool/image/upload/v1748373459/website/Galeria/Novas%20Fotos/IMG_4205_ju2aye.jpg",
