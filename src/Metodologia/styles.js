@@ -181,12 +181,20 @@ export const ImageBg2 = styled.div `
     height: 610px;
   }
 
+  @media ${device.laptopM} {
+    margin-top: 0px;
+  }
+
+  @media (min-width: 1920px){
+    margin-top: -40px;
+  }
+
   @media ${device.desktop} {
     height: 800px;
   }
 `;
 export const ImageBg3 = styled.div `
-  background-image: url(https://res.cloudinary.com/ourplaceeglishschool/image/upload/v1750242451/website/Faixa%20Etaria/10-12_anos_xqmpd3.jpg);
+  background-image: url(https://res.cloudinary.com/ourplaceeglishschool/image/upload/v1748516856/website/Faixa%20Etaria/ygtkitakjzfkpagw1aoj.png);
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
@@ -203,7 +211,7 @@ export const ImageBg3 = styled.div `
   }
 `;
 export const ImageBg4 = styled.div `
-  background-image: url(https://res.cloudinary.com/ourplaceeglishschool/image/upload/v1750259444/website/Faixa%20Etaria/13-16_anos_z9fwvm.jpg);
+  background-image: url(https://res.cloudinary.com/ourplaceeglishschool/image/upload/v1750242451/website/Faixa%20Etaria/10-12_anos_xqmpd3.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
