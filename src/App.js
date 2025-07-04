@@ -9,6 +9,7 @@ import QuemSomos from './QuemSomos';
 import FaleConosco from './FaleConosco';
 import Metodologia from './Metodologia';
 import Galeria from './Galeria';
+import Parceiro from './Parceiro';
 
 
 const theme = {
@@ -32,6 +33,7 @@ function App() {
           <Home />
           <QuemSomos />
           <Metodologia />
+          <Parceiro />
           <Galeria />
           <FaleConosco />
         <ScrollToTop />

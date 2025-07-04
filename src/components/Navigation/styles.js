@@ -38,33 +38,32 @@ export const TopBg = styled.div `
   bottom: 78%;
   z-index: 0;
 
-  @media ${device.mobileM} { 
+  @media ${device.mobileM} {
     top: -16%;
     left: 0%;
   }
 
-  @media ${device.mobileL} { 
-    top: -20%;
+  @media ${device.mobileL} {
+    top: -15%;
   }
 
-  @media ${device.tablet} { 
-    top: -30.08%;
+  @media ${device.mobileXL} {
+      top: -20%;
+      left: -5%;
+  }
+
+  @media ${device.tablet} {
+    top: -28%;
     right: 40.26%;
     bottom: 83.55%;
     left: -5.47%;
   }
 
-  /* @media ${device.laptop} { 
-    top: -25.08%;
-    right: 70.26%;
-    bottom: 62.55%;
-    left: -7.47%;
-    width: 45%;
-    transform: rotate(347deg);
-
+  @media ${device.laptop} {
+    top: -30%;
   }
 
-  @media ${device.laptopM} { 
+  /*@media ${device.laptopM} {
     top: -30%;
     bottom: -16.55%;
     left: 0.53%;
@@ -117,7 +116,7 @@ export const Logo = styled.div `
     left: -17px;
   }
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     width: 100%;
     height: 100%;
     top: 80px;
@@ -127,6 +126,7 @@ export const Logo = styled.div `
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `;
 export const Link = styled.a`
   font-family: Poppins, sans-serif;
@@ -135,29 +135,33 @@ export const Link = styled.a`
   cursor: pointer;
   margin-right: 15px;
 
-  &:hover { 
+  &:hover {
     color: ${({ theme }) => theme.colors.primary};
   }
 
-  @media ${device.laptopS} { 
+  @media ${device.laptopS} {
     font-size: 14px;
     color: ${({ theme }) => theme.colors.white};
 
-    &:hover { 
-    color: ${({ theme }) => theme.colors.darkPrimary};
-  }
+    &:hover {
+      color: ${({ theme }) => theme.colors.darkPrimary};
+    }
   }
 
-  @media ${device.laptop} { 
+  @media ${device.laptop} {
     font-size: 18px;
   }
 
-  @media ${device.laptopM} { 
-    font-size: 25px;
+  @media ${device.laptopM} {
+    font-size: 21px;
+
+    &:last-child {
+      margin-right: 20px;
+    }
   }
 
-  @media ${device.desktop} { 
-    font-size: 40px;
+  @media ${device.desktop} {
+    font-size: 32px;
     margin-right: 30px;
 
     &:last-child {
@@ -182,7 +186,7 @@ export const DropDownWrapper = styled.div`
   top: 0;
   z-index: 5;
 
-  &:hover { 
+  &:hover {
     color: ${({ theme }) => theme.colors.primary};
   }
 
@@ -203,13 +207,13 @@ export const Button = styled.button `
     background-color: ${({ theme }) =>  theme.colors.darkHover};
   }
 
-  @media ${device.laptopS} { 
+  @media ${device.laptopS} {
     &:hover {
     background-color: ${({ theme }) =>  theme.colors.darkHover};
   }
   }
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     font-size: 20px;
     width: 212px;
     height: 65px;

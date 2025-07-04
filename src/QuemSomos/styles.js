@@ -12,9 +12,9 @@ export const Container = styled.div `
   overflow: hidden;
   position: relative;
 
-  @media ${device.tablet} { 
+  @media ${device.tablet} {
     margin: 0;
-  } 
+  }
 `;
 export const Title = styled.h1`
   display: flex;
@@ -26,12 +26,12 @@ export const Title = styled.h1`
   width: 100%;
   z-index: 2;
 
-  @media ${device.tablet} { 
+  @media ${device.tablet} {
     width: 50%;
     font-size: 54px;
     color: ${({ theme }) =>  theme.colors.darkPrimary};
   }
-  @media ${device.laptopM} { 
+  @media ${device.laptopM} {
     width: 50%;
     font-size: 64px;
     color: ${({ theme }) =>  theme.colors.darkPrimary};
@@ -48,7 +48,7 @@ export const TopBgGreen = styled.div `
   right: 0;
   top: 0;
 
-  @media ${device.tablet} { 
+  @media ${device.tablet} {
     display: none;
   }
 `;
@@ -64,16 +64,16 @@ export const Wrapper = styled.div`
   position: relative;
   z-index: 2;
 
-  @media ${device.mobileL} { 
+  @media ${device.mobileL} {
     margin-top: 48px;
   }
 
-  @media ${device.tablet} { 
+  @media ${device.tablet} {
     width: 90%;
     margin-top: 0;
   }
 
-  @media ${device.laptopM} { 
+  @media ${device.laptopM} {
     width: 75%;
   }
 `;
@@ -91,7 +91,7 @@ export const ColoredBg = styled.div `
 export const GreenFrame = styled.div `
   display: none;
 
-  @media ${device.tablet} { 
+  @media ${device.tablet} {
     display: block;
     background-image: url(${frameTopBox});
     background-repeat: no-repeat;
@@ -102,7 +102,7 @@ export const GreenFrame = styled.div `
     top: 0;
     left: 0;
   }
-  
+
 `;
 export const ProfilePhoto = styled.div `
   background-color: white;
@@ -117,31 +117,37 @@ export const ProfilePhoto = styled.div `
   top: -30px;
   box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
 
-   @media ${device.mobileM} { 
+   @media ${device.mobileM} {
     top: -15px;
     width: 120px;
     height: 120px;
   }
 
-  @media ${device.tablet} { 
+  @media ${device.mobileXL} {
+    top: 20px;
+    width: 120px;
+    height: 120px;
+  }
+
+  @media ${device.tablet} {
     top: 20px;
     right: 30px;
     width: 140px;
     height: 140px;
   }
 
-  @media ${device.laptop} { 
+  @media ${device.laptop} {
     top: 20px;
     right: 30px;
     width: 170px;
     height: 170px;
   }
 
-   @media ${device.laptopM} { 
-    width: 230px;
-    height: 230px;
+   @media ${device.laptopM} {
+    width: 200px;
+    height: 200px;
   }
-  /* @media ${device.desktop} { 
+  /* @media ${device.desktop} {
     width: 16%;
     height: 55%;
   } */
@@ -151,8 +157,8 @@ export const Box = styled.div `
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  
-  @media ${device.tablet} { 
+
+  @media ${device.tablet} {
     padding: 80px;
   }
 `;
@@ -162,6 +168,10 @@ export const Info = styled.div`
   align-items: center;
   width: 80%;
   margin-left: 20px;
+
+  @media ${device.laptopM} {
+    margin-left: 0px;
+  }
 `;
 export const H4 = styled.h4`
   display: flex;
@@ -173,27 +183,27 @@ export const H4 = styled.h4`
   margin: 0;
   margin-top: 20px;
 
-  @media ${device.mobileM} { 
+  @media ${device.mobileM} {
     font-size: 16px;
   }
 
-  @media ${device.mobileL} { 
+  @media ${device.mobileL} {
     font-size: 19px;
   }
 
-  @media ${device.tablet} { 
+  @media ${device.tablet} {
     font-size: 21px;
   }
 
-  @media ${device.laptop} { 
+  @media ${device.laptop} {
     font-size: 35px;
   }
 
-  @media ${device.laptopM} { 
+  @media ${device.laptopM} {
     margin-top: 70px;
   }
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     font-size: 50px;
     margin-top: 20px;
   }
@@ -205,38 +215,38 @@ export const Information = styled.p`
   padding: 20px 0px;
   margin: 0;
 
-  @media ${device.tablet} { 
+  @media ${device.tablet} {
     font-size: 12px;
   }
-  @media ${device.laptop} { 
+  @media ${device.laptop} {
     font-size: 14px;
   }
 
-  @media ${device.laptopM} { 
+  @media ${device.laptopM} {
     margin-top: 10px;
     font-size: 14px;
   }
 
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     font-size: 24px;
   }
 `;
-export const Bold = styled.p`
+export const Bold = styled.span`
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: 700;
   color: ${({ theme }) =>  theme.colors.darkPrimary};
 
-  @media ${device.tablet} { 
+  @media ${device.tablet} {
     font-size: 12px;
   }
-  @media ${device.laptop} { 
+  @media ${device.laptop} {
     font-size: 14px;
   }
-  @media ${device.laptopM} { 
+  @media ${device.laptopM} {
     font-size: 16px;
   }
-  @media ${device.desktop} { 
+  @media ${device.desktop} {
     font-size: 24px;
   }
 `;
@@ -248,13 +258,14 @@ export const HouseLogo = styled.div `
   height: 88px;
   align-self: baseline;
   position: absolute;
+  top: 670px;
   bottom: 0;
   left: 0;
   margin-bottom: 22px;
   margin-left: 13px;
 
-  @media ${device.tablet} { 
-    
+  @media ${device.tablet} {
+
   }
 `;
 
