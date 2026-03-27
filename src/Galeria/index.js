@@ -1,12 +1,14 @@
-import React, { useState } from "react";
-import Gallery from "react-photo-gallery";
+import React, { useState, useCallback } from "react";
+import { MasonryPhotoAlbum } from "react-photo-album";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import "react-photo-album/masonry.css";
+
 import { Container, Title, GalleryWrapper } from "./styles";
-import Carousel, { Modal, ModalGateway } from "react-images";
-import { useCallback } from "react";
 
 export default function Galeria() {
-  const [currentImage, setCurrentImage] = useState(0);
-  const [viewerIsOpen, setViewerIsOpen] = useState(false);
+  const [index, setIndex] = useState(-1);
+
   const photos = [
     {
       src: "https://res.cloudinary.com/ourplaceeglishschool/image/upload/v1750270159/website/Galeria/Novas%20Fotos/livros_ourplace_hawbml.jpg",
@@ -65,105 +67,49 @@ export default function Galeria() {
     },
   ];
 
-  const openLightbox = useCallback((event, { photo, index }) => {
-    setCurrentImage(index);
-    setViewerIsOpen(true);
+  const openLightbox = useCallback(({ index }) => {
+    setIndex(index);
   }, []);
-
-  const closeLightbox = () => {
-    setCurrentImage(0);
-    setViewerIsOpen(false);
-  };
+  const enhancedPhotos = photos.map((photo) => ({
+    ...photo,
+    src: photo.src.replace("/upload/", "/upload/w_400,q_auto,f_auto/"),
+    srcSet: [400, 800, 1200].map((w) => ({
+      src: photo.src.replace("/upload/", `/upload/w_${w},q_auto,f_auto/`),
+      width: w,
+      height: Math.round((photo.height / photo.width) * w),
+    })),
+  }));
 
   return (
     <Container id="galeria">
       <Title>Galeria</Title>
       <GalleryWrapper>
-        <Gallery photos={photos} onClick={openLightbox} />
-        <ModalGateway>
-          {viewerIsOpen ? (
-            <Modal onClose={closeLightbox}>
-              <Carousel
-                currentIndex={currentImage}
-                views={photos.map((x) => ({
-                  ...x,
-                  srcset: x.srcSet,
-                  caption: x.title,
-                }))}
-              />
-            </Modal>
-          ) : null}
-        </ModalGateway>
+        <MasonryPhotoAlbum
+        padding={0}
+        spacing={16}
+        onClick={openLightbox}
+        photos={enhancedPhotos}
+        columns={(containerWidth) => {
+          if (containerWidth < 768) return 1;
+          if (containerWidth < 1024) return 2;
+          if (containerWidth < 1300) return 3;
+          return 4;
+        }}
+        sizes={{
+          size: "(max-width: 768px) 100vw, (max-width: 1024px) 50vw, (max-width: 1300px) 33vw, 25vw",
+        }}
+        />
+
+        <Lightbox
+          open={index >= 0}
+          index={index}
+          close={() => setIndex(-1)}
+          slides={enhancedPhotos.map((photo) => ({
+            src: photo.src.replace("/upload/", "/upload/w_1600,q_auto,f_auto/"),
+            srcSet: photo.srcSet,
+          }))}
+        />
       </GalleryWrapper>
     </Container>
   );
-
-  //   const containerStyles = {
-  //     mobile: {
-  //       width: '300px',
-  //       height: '540px',
-  //       margin: '0 auto',
-  //     },
-  //     mobileL: {
-  //       width: '395px',
-  //       height: '540px',
-  //       margin: '0 auto',
-  //     },
-  //     tablet: {
-  //       width: '532px',
-  //       height: '540px',
-  //       margin: '0 auto',
-  //     },
-  //     laptop: {
-  //       width: '570px',
-  //       height: '540px',
-  //       margin: '0 auto',
-  //     }
-  //   };
-
-  //   if(window.innerWidth < 425) {
-  //     return (
-  //       <Container id="galeria">
-  //         <Title>Galeria</Title>
-  //         <GalleryWrapper>
-  //           <div style={containerStyles.mobile}>
-  //             <Slider slides={photos} />
-  //           </div>
-  //         </GalleryWrapper>
-  //       </Container>
-  //     )
-  //   } else if(window.innerWidth < 600) {
-  //     return (
-  //       <Container id="galeria">
-  //         <Title>Galeria</Title>
-  //         <GalleryWrapper>
-  //           <div style={containerStyles.mobileL}>
-  //             <Slider slides={photos} />
-  //           </div>
-  //         </GalleryWrapper>
-  //       </Container>
-  //     )
-  //   } else if(window.innerWidth < 1000) {
-  //     return (
-  //       <Container id="galeria">
-  //         <Title>Galeria</Title>
-  //         <GalleryWrapper>
-  //           <div style={containerStyles.tablet}>
-  //             <Slider slides={photos} />
-  //           </div>
-  //         </GalleryWrapper>
-  //       </Container>
-  //     )
-  //   } else {
-  //     return (
-  //       <Container id="galeria">
-  //         <Title>Galeria</Title>
-  //         <GalleryWrapper>
-  //           <div style={containerStyles.laptop}>
-  //             <Slider slides={photos} />
-  //           </div>
-  //         </GalleryWrapper>
-  //       </Container>
-  //     )
-  //   }
 }

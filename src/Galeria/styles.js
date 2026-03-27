@@ -21,9 +21,15 @@ export const GalleryWrapper = styled.div `
     border-radius: 8px;
     background-color: #fff;
 
-      @media ${device.tablet} {
-    margin-left: 60px;
-    margin-right: 60px;
-    padding: 24px;
-  }
+    @media ${device.mobileS} {
+      margin-left: 24px;
+      margin-right: 24px;
+      padding: 12px;
+    }
+
+    @media ${device.tablet} {
+      margin-left: 60px;
+      margin-right: 60px;
+      padding: 24px;
+    }
 `;
